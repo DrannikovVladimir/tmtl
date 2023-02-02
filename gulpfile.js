@@ -1,0 +1,42 @@
+const { src, dest, parallel, series, watch } = require('gulp');
+const browserSync = require('browser-sync').create();
+const sass = require('gulp-sass')(require('sass'));
+const autoprefixer = require('gulp-autoprefixer');
+const sourcemaps = require('gulp-sourcemaps');
+const cleanCss = require('gulp-clean-css');
+
+function getBrowserSync() {
+  browserSync.init({
+    server: {
+      baseDir: 'src/',
+      notify: false,
+    }
+  });
+};
+
+function getCss() {
+  return src('src/sass/style.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass())
+    .pipe(autoprefixer({
+      // cascade: false,
+      overrideBrowserslist: ['last 10 versions'],
+      grid: true,
+    }))
+    .pipe(cleanCss({
+      
+    }))
+    .pipe(sourcemaps.write('.sourcemaps'))
+    .pipe(dest('src/css'))
+    .pipe(browserSync.stream());
+}
+
+function startWatch() {
+  watch('src/**/*.html').on('change', browserSync.reload);
+  watch('src/sass/**/*.scss', getCss);
+}
+
+exports.browserSync = getBrowserSync;
+exports.css = getCss;
+
+exports.default = parallel(getBrowserSync, getCss, startWatch);
