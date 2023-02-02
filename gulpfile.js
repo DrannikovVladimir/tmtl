@@ -19,7 +19,6 @@ function getCss() {
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(autoprefixer({
-      // cascade: false,
       overrideBrowserslist: ['last 10 versions'],
       grid: true,
     }))
@@ -39,4 +38,4 @@ function startWatch() {
 exports.browserSync = getBrowserSync;
 exports.css = getCss;
 
-exports.default = parallel(getBrowserSync, getCss, startWatch);
+exports.default = parallel(getCss, getBrowserSync, startWatch);
