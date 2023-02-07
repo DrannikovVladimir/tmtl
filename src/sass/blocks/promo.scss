@@ -1,0 +1,36 @@
+.promo__container {
+  width: 1440px;
+  min-height: 600px;
+  padding-top: 200px;
+  padding-right: 40px;
+  padding-left: 40px;
+
+  background-image: url('../../img/bg-promo-girl.png'),
+    url('../../img/icon-bg-promo-right.svg');
+  background-repeat: no-repeat;
+  background-position: center right,
+    right center;
+}
+
+.promo__title {
+  width: 630px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 96px;
+  text-align: center;
+  color: $title-color;
+  text-transform: uppercase;
+}
+
+.promo__subtitle {
+  margin: 0;
+  bottom: 0;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  color: $title-color;
+}
