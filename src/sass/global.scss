@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'TT Commons';
+  src: local('TT Commons Regular'), local('TTcommons-regular'),
+    url('../fonts/TTCommons-Regular.woff2') format('woff2'),
+    url('../fonts/TTCommons-Regular.woff') format(('woff'));
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Commons';
+  src: local('TT Commons Medium'), local('TTcommons-medium'),
+    url('../fonts/TTCommons-Medium.woff2') format('woff2'),
+    url('../fonts/TTCommons-Medium.woff') format(('woff'));
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Commons';
+  src: local('TT Commons Bold'), local('TTcommons-bold'),
+    url('../fonts/TTCommons-Bold.woff2') format('woff2'),
+    url('../fonts/TTCommons-Bold.woff') format(('woff'));
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 360px;
+
+  font-family: 'TT Commons', 'Tahoma', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
