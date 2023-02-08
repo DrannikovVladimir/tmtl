@@ -74,9 +74,9 @@
           </div>
           <div class="booking__content">
             <ul class="booking__list booking-list">
-              <li class="booking-list__item">
+              <li class="booking-list__item booking-list__item--active">
                 <button class="booking-list__button">Экономия денег</button>
-                <p class="booking-list__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam libero non, corrupti necessitatibus qui obcaecati odit, dolorem sed dignissimos autem, porro soluta recusandae.</p>
+                <p class="booking-list__text booking-list__text--show">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam libero non, corrupti necessitatibus qui obcaecati odit, dolorem sed dignissimos autem, porro soluta recusandae.</p>
               </li>
               <li class="booking-list__item">
                 <button class="booking-list__button">Сами выбираете отель</button>
@@ -91,6 +91,7 @@
                 <p class="booking-list__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam libero non, corrupti necessitatibus qui obcaecati odit, dolorem sed dignissimos autem, porro soluta recusandae.</p>
               </li>
             </ul>
+            <button type="button" class="booking__button">Забронировать тур</button>
           </div>
         </div>
       </section>
@@ -113,5 +114,27 @@
       buttonMenu.classList.remove('main-nav__button--opened');
     }
   });
+</script>
+
+<script>
+  const bookingItems = document.querySelectorAll('.booking-list__item');
+  const bookingButtons = document.querySelectorAll('.booking-list__button');
+  const bookingTexts = document.querySelectorAll('.booking-list__text');
+
+  bookingButtons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+
+      bookingTexts.forEach((text) => {
+        text.classList.remove('booking-list__text--show');
+      });
+
+      bookingItems.forEach((item) => {
+        item.classList.remove('booking-list__item--active');
+      })
+
+      button.nextElementSibling.classList.add('booking-list__text--show');
+      button.parentElement.classList.add('booking-list__item--active');
+    })
+  })
 </script>
 </html>

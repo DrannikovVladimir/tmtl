@@ -26,6 +26,7 @@
 }
 
 .booking__container {
+  position: relative;
   width: 1280px;
   margin: 0 auto;
   min-height: 1204px;
@@ -59,5 +60,121 @@
 }
 
 .booking__image-container {
-  
+  position: absolute;
+  top: 400px;
+  left: 40px;
+  width: 691px;
+  height: 588px;
+  border-radius: 25px;
+
+  z-index: 1;
+}
+
+.booking__image {
+  width: 691px;
+  height: 588px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.booking__content {
+  position: relative;
+  width: 590px;
+  min-height: 469px;
+  margin-top: 120px;
+  margin-left: 630px;
+  padding: 50px 25px;
+  border-radius: 22px;
+  box-shadow: -12px 6px 34px 3px rgba(0, 0, 0, 0.13);
+  background-color: $bg-color;
+
+  z-index: 10;
+}
+
+.booking-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.booking-list__item {
+  position: relative;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    background-image: url('../../img/icon-arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+.booking-list__item--active {
+  &::before {
+    background-image: url('../../img/icon-arrow-up.svg');
+  }
+}
+
+.booking-list__button {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-left: 17px;
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: $basic-color;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 13px;
+    left: 2px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: $basic-color;
+  }
+}
+
+.booking-list__text {
+  display: none;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.booking-list__text--show {
+  display: block;
+}
+
+.booking__button {
+  width: 225px;
+  min-height: 44px;
+  padding: 13px 50px;
+  border: none;
+  border-radius: 4px;
+
+  background-color: $basic-color;
+  color: $bg-color;
+
+  transition: 0.2s linear;
+
+  &:hover {
+    background-color: #E06B2A;
+  }
+
+  &:active {
+    color: $basic-color;
+  }
 }
