@@ -3,34 +3,34 @@
   background-image: url('../../img/icon-bg-promo-right.svg'),
     url('../../img/icon-bg-promo-left.svg');
   background-repeat: no-repeat;
-  background-position: center right -100px,
-    bottom left -200px;
+  background-position: top 50px right -100px,
+    top -350px left -200px;
 }
 
 .promo__container {
   width: 1440px;
   min-height: 600px;
-  padding-top: 250px;
+  padding-top: 200px;
   padding-right: 40px;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   padding-left: 40px;
 
   background-image: url('../../img/bg-promo-girl.png'),
-    url('../../img/bg-promo-glasses.png'),
+    // url('../../img/bg-promo-glasses.png'),
     url('../../img/icon-bg-promo-center.svg'),
     url('../../img/icon-bg-promo-compass.svg');
   background-repeat: no-repeat;
   background-position: top 100px right,
-    bottom left 50px,
-    center right,
-    top 90px left 20%;
+    // bottom left 50px,
+    top 100px right,
+    top 450px left 80px;
 }
 
 .promo__title {
   width: 630px;
   margin: 0;
   margin-bottom: 20px;
-  margin-left: 300px;
+  margin-left: 230px;
   padding: 0;
   font-weight: 700;
   font-size: 96px;
@@ -41,19 +41,17 @@
 
 .promo__subtitle {
   margin: 0;
-  margin-left: 300px;
+  margin-left: 230px;
   bottom: 0;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 20px;
+  line-height: 24px;
   color: $title-color;
 }
 
 .promo__tours {
-  width: 800px;
-  height: 70px;
+  width: 900px;
   margin: 0 auto;
   margin-top: 50px;
-  border: 2px solid $basic-color;
   border-radius: 5px;
 }
