@@ -1,9 +1,33 @@
+.booking-wrap {
+  position: relative;
+  padding-top: 100px; 
+}
+
 .booking {
-  background-image: linear-gradient(180deg, #7CE0FF 0%, rgba(67, 216, 198, 0) 100%);
+  background-image: url('../../img/icon-bg-booking.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-40%);
+    width: 611px;
+    height: 167px;
+
+    background-image: url('../../img/airplane.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+  }
 }
 
 .booking__container {
   width: 1280px;
+  margin: 0 auto;
   min-height: 1204px;
   margin: 0 auto;
   padding-top: 190px;
@@ -26,8 +50,14 @@
 
 .booking__subtitle {
   margin: 0 auto;
+  margin-bottom: 40px;
   padding: 0;
   width: 792px;
+
   color: #025472;
   text-align: center;
+}
+
+.booking__image-container {
+  
 }
