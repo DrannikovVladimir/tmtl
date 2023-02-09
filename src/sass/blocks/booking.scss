@@ -1,6 +1,7 @@
 .booking-wrap {
   position: relative;
-  padding-top: 100px; 
+  padding-top: 80px;
+  overflow: hidden;
 }
 
 .booking {
@@ -12,7 +13,7 @@
   &::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 50%;
     transform: translateX(-40%);
     width: 611px;
@@ -35,6 +36,40 @@
   padding-right: 40px;
   padding-bottom: 80px;
   padding-left: 40px;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 300px;
+    right: -280px;
+    width: 700px;
+    height: 419px;
+    background-image: url('../../img/bg-booking-palm.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 700px auto;
+    transform: rotate(30deg);
+
+    z-index: 10;
+  }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    bottom: 150px;
+    left: -100px;
+    width: 280px;
+    height: 196px;
+
+    background-image: url('../../img/bg-booking-shell.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    z-index: 10;
+  }
 }
 
 .booking__title {
@@ -81,8 +116,8 @@
   position: relative;
   width: 590px;
   min-height: 469px;
-  margin-top: 120px;
-  margin-left: 630px;
+  margin-top: 110px;
+  margin-left: 610px;
   padding: 50px 25px;
   border-radius: 22px;
   box-shadow: -12px 6px 34px 3px rgba(0, 0, 0, 0.13);
@@ -126,13 +161,14 @@
   position: relative;
   display: inline-block;
   margin-bottom: 10px;
-  padding-left: 17px;
+  padding: 17px;
   border: none;
   background-color: transparent;
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
   color: $basic-color;
+  vertical-align: middle;
 
   &::before {
     content: '';
