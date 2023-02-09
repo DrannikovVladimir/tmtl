@@ -10,6 +10,7 @@
 .promo__container {
   width: 1440px;
   min-height: 600px;
+  margin: 0 auto;
   padding-top: 200px;
   padding-right: 40px;
   padding-bottom: 100px;
@@ -54,4 +55,46 @@
   margin: 0 auto;
   margin-top: 50px;
   border-radius: 5px;
+}
+
+@media (max-width: 1440px) {
+  .promo__container {
+    width: auto;
+  }
+}
+
+@media (max-width: 1330px) {
+  .promo__title {
+    margin-left: 130px;
+  }
+
+  .promo__subtitle {
+    margin-left: 130px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .promo__tours {
+    width: auto;
+  }
+  
+  .promo__title {
+    margin-left: 60px;
+    font-size: 76px;
+    line-height: 86px;
+  }
+
+  .promo__subtitle {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 1010px) {
+  .promo__title {
+    margin-left: 0;
+  }
+
+  .promo__subtitle {
+    margin-left: 0;
+  }
 }
