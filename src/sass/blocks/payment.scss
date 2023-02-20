@@ -1,0 +1,86 @@
+.payment-wrap {
+  position: relative;
+  padding-top: 100px;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: -100px;
+    width: 250px;
+    height: 255px;
+    background-image: url('../../img/payment-hat.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    z-index: 10;
+  }
+}
+
+.payment {
+  background-image: url('../../img/payment-hand-card.png'), 
+    url('../../img/payment-bg.png');
+  background-repeat: no-repeat;
+  background-position: right bottom -20px, center;
+  background-size: 350px 350px, cover;
+}
+
+.payment__container {
+  width: 1280px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-top: 80px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+
+.payment__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  font-size: 48px;
+  line-height: 55px;
+  font-weight: 700;
+  color: $title-color;
+  text-align: center;
+}
+
+.payment__subtitle {
+  width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+@media (max-width: 1280px) {
+  .payment__container {
+    width: auto;
+  }
+}
+
+@media (max-width: 860px) {
+  .payment-wrap {  
+    &::before {
+      background-image: none;
+    }
+  }
+
+  .payment__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .payment__title {
+    margin-bottom: 40px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .payment__subtitle {
+    margin-bottom: 40px;
+    width: auto;
+  }
+}
