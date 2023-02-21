@@ -2,13 +2,17 @@
   position: relative;
   padding-top: 80px;
   overflow: hidden;
+  background: linear-gradient(180deg, #ffffff 0%, #ffffff 12%,  #7CE0FF 12%, rgba(67, 216, 198, 0) 100%);
+
+  z-index: 10;
 }
 
 .booking {
-  background-image: url('../../img/icon-bg-booking.svg');
+  position: relative;
+  background-image: url('../../img/bg-booking.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: top center;
 
   &::before {
     content: '';
@@ -24,6 +28,8 @@
     background-position: top center;
     background-size: contain;
   }
+
+  z-index: 10;
 }
 
 .booking__container {
