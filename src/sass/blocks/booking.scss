@@ -2,22 +2,21 @@
   position: relative;
   padding-top: 80px;
   overflow: hidden;
-  background: linear-gradient(180deg, #ffffff 0%, #ffffff 12%,  #7CE0FF 12%, rgba(67, 216, 198, 0) 100%);
-
+  
   z-index: 10;
 }
 
 .booking {
   position: relative;
-  background-image: url('../../img/bg-booking.png');
+  background-image: url('../../img/icon-bg-booking.svg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: top center;
 
   &::before {
     content: '';
     position: absolute;
-    top: 20px;
+    top: -65px;
     left: 50%;
     transform: translateX(-40%);
     width: 611px;
@@ -36,9 +35,9 @@
   position: relative;
   width: 1280px;
   margin: 0 auto;
-  min-height: 1104px;
+  min-height: 990px;
   margin: 0 auto;
-  padding-top: 190px;
+  padding-top: 160px;
   padding-right: 40px;
   padding-bottom: 80px;
   padding-left: 40px;
@@ -86,7 +85,7 @@
   font-weight: 700;
   font-size: 48px;
   line-height: 56px;
-  color: $bg-color;
+  color: $title-color;
   text-align: center;
 }
 
@@ -95,6 +94,7 @@
   margin-bottom: 40px;
   padding: 0;
   width: 792px;
+  min-height: 40px;
 
   color: #025472;
   text-align: center;
@@ -102,7 +102,7 @@
 
 .booking__image-container {
   position: absolute;
-  top: 400px;
+  top: 310px;
   left: 40px;
   width: 691px;
   height: 588px;
@@ -122,7 +122,7 @@
   position: relative;
   width: 590px;
   min-height: 469px;
-  margin-top: 110px;
+  margin-top: 90px;
   margin-left: auto;
   padding: 40px 25px 30px;
   border-radius: 22px;
@@ -203,7 +203,7 @@
 }
 
 .booking__button {
-  width: 225px;
+  min-width: 225px;
   min-height: 44px;
   padding: 13px 50px;
   border: none;
@@ -238,7 +238,7 @@
 @media (max-width: 790px) {
   .booking {
     &::before {
-      top: 50px;
+      top: -30px;
       width: 300px;
       height: 82px;
       transform: translateX(-55%);
@@ -247,8 +247,6 @@
 
   .booking__container {
     padding-top: 80px;
-    padding-left: 20px;
-    padding-right: 20px;
 
     &::before {
       background: none;
@@ -280,10 +278,22 @@
   }
 }
 
+@media (max-width: 700px) {
+  .booking__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .booking__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
 @media (max-width: 530px) {
   .booking__container {
     min-height: 400px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
 
   .booking__container {

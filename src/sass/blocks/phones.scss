@@ -1,19 +1,51 @@
 .phones-list {
+  position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
   margin: 0;
   padding: 0;
+  padding-left: 50px;
 
   list-style: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-image: url('../../img/icon-phone.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.phones-list__item {
+  padding-top: 5px;
 }
 
 .phones-list__link {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 22px;
+  line-height: 28px;
 }
 
 @media (max-width: 550px) {
+  .phones-list {
+    padding-left: 40px;
+    &::before {
+      content: '';
+      width: 30px;
+      height: 30px;
+    }
+  }
+
   .phones-list__link {
     font-size: 18px;
     line-height: 24px;
