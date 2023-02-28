@@ -49,6 +49,12 @@
   }
 }
 
+.payment-list__item-4 {
+  &::before {
+    content: '4';
+  }
+}
+
 .payment-list__content-wrapper {
   width: 290px;
   margin-left: auto;
