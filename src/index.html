@@ -289,6 +289,7 @@
               </div>
             </li>
           </ul>
+          <div class="swiper-pagination"></div>
           <button class="hot-tours__slider-button hot-tours__slider-button--prev swiper-button-prev">
             <span class="visually-hidden">Назад</span>
           </button>
@@ -307,6 +308,7 @@
 <script>
   const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
+    autoHeight: true,
     loop: true,
     autoplay: {
       delay: 20000,
@@ -319,6 +321,10 @@
     navigation: {
       nextEl: '.hot-tours__slider-button--next',
       prevEl: '.hot-tours__slider-button--prev',
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
     },
   });
 </script>

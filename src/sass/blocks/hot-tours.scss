@@ -83,3 +83,50 @@
   }
 }
 
+@media (max-width: 1280px) {
+  .hot-tours__container {
+    width: auto;
+  }
+}
+
+@media (max-width: 990px) {
+  .hot-tours__container {
+    background-image: none;
+  }
+
+  .hot-tours .hot-tours__slider {
+    margin-right: auto;
+  }
+
+  .hot-tours__slider .hot-tours__slider-button--prev {
+    left: 30px;
+  }
+  
+  .hot-tours__slider .hot-tours__slider-button--next {
+    right: 30px;
+  }
+}
+
+@media (max-width: 780px) {
+  .hot-tours__slider .hot-tours__slider-button {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .hot-tours__container {
+    padding-left: 0;
+    padding-top: 40px;
+    padding-right: 0;
+  }
+
+  .hot-tours__slider .hot-tours__slider-button {
+    display: none;
+  }
+
+  .hot-tours__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
