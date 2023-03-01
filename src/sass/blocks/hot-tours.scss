@@ -7,6 +7,12 @@
   padding-right: 40px;
   padding-bottom: 80px;
   padding-left: 40px;
+
+  background-image: url('../../img/hot-tours-bg-girl.jpg'),
+    url('../../img/hot-tours-bg-crab.png');
+  background-repeat: no-repeat;
+  background-size: 581px auto, 255px auto;
+  background-position: left top 200px, top 20px right -10px;
 }
 
 .hot-tours__title {

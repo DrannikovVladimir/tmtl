@@ -41,6 +41,13 @@
   background-color: $basic-color;
 }
 
+.tours-list__content-img__wrapper {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 120px;
+}
+
 .tours-list__title {
   margin: 0;
   padding: 0;
