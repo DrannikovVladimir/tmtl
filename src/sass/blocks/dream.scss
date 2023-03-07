@@ -1,10 +1,10 @@
 .dream {
   background-image: url('../../img/dream-bg-elephant.png'),
-    url('../../img/icon-dream-bg-left.svg'),
+    url('../../img/icon-bg-promo-left.svg'),
     url('../../img/icon-dream-bg-right.svg');
   background-repeat: no-repeat;
-  background-size: 438px 444px, 707px 595pxx, 707px 595px;
-  background-position: left -150px bottom, top 100px left -100px, center right -100px;
+  background-size: 438px 444px, 707px 700px, 707px 595px;
+  background-position: left -150px bottom, top 200px left 5%, center right 5%;
 }
 
 .dream__container {
@@ -66,25 +66,9 @@
   }
 }
 
-@media (max-width: 1240px) {
-  .dream {
-    background-image: url('../../img/dream-bg-elephant.png'),
-      url('../../img/icon-dream-bg-left.svg'),
-      url('../../img/icon-dream-bg-right.svg');
-    background-repeat: no-repeat;
-    background-size: 438px 444px, 707px 595px, 707px 595px;
-    background-position: left -200px bottom, top 100px left -250px, center right -250px;
-  }
-}
-
 @media (max-width: 1140px) {
   .dream {
-    background-image: url('../../img/dream-bg-elephant.png'),
-      url('../../img/icon-dream-bg-left.svg'),
-      url('../../img/icon-dream-bg-right.svg');
-    background-repeat: no-repeat;
-    background-size: 438px 444px, 707px 595pxx, 707px 595px;
-    background-position: left -230px bottom, top 100px left -250px, center right -250px;
+    background-position: left -130px bottom, top 100px left -250px, center right -150px;
   }
 
   .dream__container {
@@ -93,15 +77,6 @@
 }
 
 @media (max-width: 1040px) {
-  .dream {
-    background-image: url('../../img/dream-bg-elephant.png'),
-      url('../../img/icon-dream-bg-left.svg'),
-      url('../../img/icon-dream-bg-right.svg');
-    background-repeat: no-repeat;
-    background-size: 438px 444px, 707px 595pxx, 707px 595px;
-    background-position: left -270px bottom, top 100px left -250px, center right -250px;
-  }
-
   .dream__container {
     background-image: none;
   }
@@ -109,11 +84,6 @@
 
 @media (max-width: 770px) {
   .dream {
-    background-image: url('../../img/dream-bg-elephant.png'),
-      url('../../img/icon-dream-bg-left.svg'),
-      url('../../img/icon-dream-bg-right.svg');
-    background-repeat: no-repeat;
-    background-size: 438px 444px, 707px 595pxx, 707px 595px;
     background-position: left -300px bottom, top 100px left -350px, center right -350px;
   }
 }
