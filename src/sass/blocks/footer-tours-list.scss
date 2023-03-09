@@ -1,0 +1,23 @@
+.footer-tours-list {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  padding-left: 40px;
+
+  list-style: none;
+}
+
+.footer-tours-list__item {
+  margin-bottom: 20px;
+}
+
+.footer-tours-list__link {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@media (max-width: 400px) {
+  .footer-tours-list {
+    padding-left: 20px;
+  }
+}
