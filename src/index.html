@@ -59,7 +59,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <!-- <section class="about">
       <div class="about__container">
         <h2 class="about__title">Неколько слов о нас</h2>
         <p class="about__subtitle">Добро пожаловать в наше туристическое агенство, где мы создаём незабываемое путешествие
@@ -74,7 +74,7 @@
           поездки. Не упустите возможность отправиться в незабываемое приключение и связаться с нами уже сегодня, чтобы начать 
           планировать вашу следующую поездку!</p>
       </div>
-    </section>
+    </section> -->
 
     <div class="booking-wrap">
       <section class="booking">
@@ -465,6 +465,35 @@
       <p class="footer__copy">&#169; Time to travel, 2023</p>
     </div>
   </footer>
+
+  <section class="modal">
+    <div class="modal__wrapper">
+      <div class="modal__content">
+        <h2 class="modal__title">Успей приобрести супер-пупер выгодное предложение!</h2>
+        <button class="modal__close">
+          <span class="visually-hidden">Закрыть</span>
+
+        </button>
+        <form action="post" class="feedback-form">
+          <ul class="feedback-form__list">
+            <li class="feedback-form__list-item">
+              <input type="text" id="name" class="feedback-form__input">
+              <label for="name" class="visually-hidden">Имя</label>
+            </li>
+            <li class="feedback-form__list-item">
+              <input type="text" id="phone" class="feedback-form__input">
+              <label for="phone" class="visually-hidden">Телефон</label>
+            </li>
+            <li class="feedback-form__list-item">
+              <textarea type="text" id="message" class="feedback-form__textarea"></textarea>
+              <label for="message" class="visually-hidden">Комментарий</label>
+            </li>
+          </ul>
+          <button class="feedback-form__submit" type="submit">Хочу подобрать тур</button>
+        </form>
+      </div>
+    </div>
+  </section>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
