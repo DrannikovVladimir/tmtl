@@ -104,7 +104,7 @@
   position: absolute;
   top: 310px;
   left: 40px;
-  width: 691px;
+  width: 784px;
   height: 588px;
   border-radius: 25px;
   overflow: hidden;
@@ -113,7 +113,7 @@
 }
 
 .booking__image {
-  width: 691px;
+  width: 784px;
   height: 588px;
   overflow: hidden;
 }
@@ -196,6 +196,7 @@
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
+  padding-right: 40px;
 }
 
 .booking-list__text--show {
@@ -280,8 +281,8 @@
 
 @media (max-width: 700px) {
   .booking__container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .booking__title {

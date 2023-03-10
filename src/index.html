@@ -82,7 +82,7 @@
           <h2 class="booking__title">Раннее бронирование</h2>
           <p class="booking__subtitle">Если вы любите планировать путешествие заранее, то вам необходимо присмотреться к раннему бронированию</p>
           <div class="booking__image-container">
-            <img src="./img/booking-image.jpeg" alt="Раннее бронирование" class="booking__image">
+            <img src="./img/booking-image.jpg" alt="Раннее бронирование" class="booking__image">
           </div>
           <div class="booking__content">
             <ul class="booking__list booking-list">
@@ -467,7 +467,7 @@
     <div class="modal__wrapper modal__wrapper--subs">
       <div class="modal__content">
         <h2 class="modal__title">Лучшие предложения и актуальные новости из мира туризма!</h2>
-        <button class="modal__close">
+        <button class="modal__close modal__close--subs">
           <span class="visually-hidden">Закрыть</span>
 
         </button>
@@ -486,9 +486,8 @@
     <div class="modal__wrapper">
       <div class="modal__content">
         <h2 class="modal__title">Успей приобрести супер-пупер выгодное предложение!</h2>
-        <button class="modal__close">
+        <button class="modal__close modal__close--feedback">
           <span class="visually-hidden">Закрыть</span>
-
         </button>
         <form action="post" class="feedback-form">
           <ul class="feedback-form__list">
@@ -515,142 +514,9 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/imask"></script>
 
-<script>
-  const modalFeedback = document.querySelector('.modal-feedback');
-  const modalSubs = document.querySelector('.modal-subs');
-
-  const formFeedback = document.querySelector('.feedback-form');
-  const formSubs = document.querySelector('.subs-form');
-
-  const phoneElement = document.getElementById('phone');
-  const bookingButton = document.querySelector('.booking__button');
-  const dreamButton = document.querySelector('.dream__button');
-  const subsButton = document.querySelector('.subs__button');
-  const buttonClose = document.querySelector('.modal__close');
-
-  const maskOptions = {
-    mask: '+{7}(000)000-00-00',
-    lazy: false,
-  };
-  const mask = IMask(phoneElement, maskOptions);
-
-  const serializeData = (data) => {
-    const formData = new FormData(data);
-    
-    return JSON.stringify(Object.fromEntries(formData));
-  };
-
-  const setDisabledFields = (form) => {
-      const nameField = form.querySelector('[name="name"]');
-      const phoneField = form.querySelector('[name="phone"]');
-      const commentField = form.querySelector('[name="comment"]');
-      const buttonSubmit = form.querySelector('.feedback-form__submit');
-
-      nameField.setAttribute('disabled', true);
-      phoneField.setAttribute('disabled', true);
-      commentField.setAttribute('disabled', true);
-      buttonSubmit.setAttribute('disabled', true);
-    };
-
-  console.log(modalSubs);
-
-  formFeedback.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const data = serializeData(e.target);
-    // setDisabledFields(e.target);
-    console.log(data);
-  });
-
-  formSubs.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const data = serializeData(e.target);
-    console.log(data);
-  });
-
-  buttonClose.addEventListener('click', (e) => {
-    e.preventDefault();
-    modalFeedback.classList.add('hidden');
-    modalSubs.classList.add('hidden');
-  });
-
-  subsButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    modalSubs.classList.remove('hidden');
-  });
-
-  bookingButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    modalFeedback.classList.remove('hidden');
-  });
-
-  dreamButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    modalFeedback.classList.remove('hidden');
-  });
-
-</script>
-
-<script>
-  const swiper1 = new Swiper('.hot-tours__slider', {
-    direction: 'horizontal',
-    autoHeight: true,
-    loop: true,
-    autoplay: {
-      delay: 20000,
-    },
-    effect: 'fade',
-    fadeEffect: {
-      crossFade: true,
-    },
-
-    navigation: {
-      nextEl: '.hot-tours__slider-button--next',
-      prevEl: '.hot-tours__slider-button--prev',
-    },
-
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  });
-</script>
-
-<script>
-  const buttonMenu = document.querySelector('.main-nav__button');
-  const navContainer = document.querySelector('.main-nav');
-  const menu = document.querySelector('.main-nav__list');
-
-  buttonMenu.addEventListener('click', (e) => {
-    navContainer.classList.toggle('main-nav--show');
-    if (buttonMenu.classList.contains('main-nav__button--closed')) {
-      buttonMenu.classList.remove('main-nav__button--closed');
-      buttonMenu.classList.add('main-nav__button--opened');
-    } else {
-      buttonMenu.classList.add('main-nav__button--closed');
-      buttonMenu.classList.remove('main-nav__button--opened');
-    }
-  });
-</script>
-
-<script>
-  const bookingItems = document.querySelectorAll('.booking-list__item');
-  const bookingButtons = document.querySelectorAll('.booking-list__button');
-  const bookingTexts = document.querySelectorAll('.booking-list__text');
-
-  bookingButtons.forEach((button) => {
-    button.addEventListener('click', (e) => {
-
-      bookingTexts.forEach((text) => {
-        text.classList.remove('booking-list__text--show');
-      });
-
-      bookingItems.forEach((item) => {
-        item.classList.remove('booking-list__item--active');
-      })
-
-      button.nextElementSibling.classList.add('booking-list__text--show');
-      button.parentElement.classList.add('booking-list__item--active');
-    })
-  })
-</script>
+<script src="js/forms.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/mobile-menu.js"></script>
+<script src="js/booking-menu.js"></script>
 
 </html>
