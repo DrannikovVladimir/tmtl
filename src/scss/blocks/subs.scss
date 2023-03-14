@@ -1,0 +1,144 @@
+.subs {
+  position: relative;
+  min-height: 445px;
+  margin-bottom: 80px;
+
+  background-image: url('../img/hot-tours-bg-crab.png');
+  background-repeat: no-repeat;
+  background-size: 255px auto;
+  background-position: top 54px right 5%;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 243px;
+
+    background-image: linear-gradient(to right, #a9f7fd, #a9f7fd 30%, #41c7df 70%, #41c7df);
+  }
+}
+
+.subs__inner-wrapper {
+  position: relative;
+  min-height: 445px;
+
+  background-image: url('../img/subs-bg.png');
+  background-repeat: no-repeat;
+  background-size: 1440px 445px;
+  background-position: bottom, center;
+
+  z-index: 10;
+}
+
+.subs__container {
+  display: flex;
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 240px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.subs__content {
+  width: 500px;
+  margin-left: auto;
+}
+
+.subs__subtitle {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 500;
+  color: $bg-color;
+}
+
+.subs__buttons-wrapper {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+}
+
+.subs__button {
+  min-width: 225px;
+  min-height: 44px;
+  padding: 13px 50px;
+  border: none;
+  border-radius: 4px;
+
+  background-color: $basic-color;
+  color: $bg-color;
+
+  transition: 0.2s linear;
+
+  &:hover {
+    background-color: #E06B2A;
+  }
+
+  &:active {
+    color: $basic-color;
+  }
+}
+
+@media (max-width: 1280px) {
+  .subs__container {
+    width: auto;
+  }
+}
+
+@media (max-width: 780px) {
+  .subs {
+    min-height: 645px;
+    background-image: none;
+
+    &::before {
+      background-image: none;
+    }
+  }
+
+  .subs__container {
+    padding-top: 80px;
+  }
+
+  .subs__inner-wrapper {
+    min-height: 645px;
+
+    background-image: url('../img/subs-bg-mobile.png');
+    background-size: contain;
+  }
+
+  .subs__content {
+    width: auto;
+    margin-right: auto;
+  }
+
+  .subs__subtitle {
+    color: $title-color;
+  }
+}
+
+@media (max-width: 700px) {
+  .subs__container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  .subs__container {
+    min-width: 360px;
+  }
+
+  .subs__buttons-wrapper {
+    width: auto;
+    min-height: 120px;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}

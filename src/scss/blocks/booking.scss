@@ -8,7 +8,7 @@
 
 .booking {
   position: relative;
-  background-image: url('../../img/icon-bg-booking.svg');
+  background-image: url('../img/icon-bg-booking.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -22,7 +22,7 @@
     width: 611px;
     height: 167px;
 
-    background-image: url('../../img/airplane.png');
+    background-image: url('../img/airplane.png');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
@@ -50,7 +50,7 @@
     right: -280px;
     width: 700px;
     height: 419px;
-    background-image: url('../../img/bg-booking-palm.png');
+    background-image: url('../img/bg-booking-palm.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 700px auto;
@@ -68,7 +68,7 @@
     width: 180px;
     height: 126px;
 
-    background-image: url('../../img/bg-booking-shell.png');
+    background-image: url('../img/bg-booking-shell.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -151,7 +151,7 @@
     right: 10px;
     width: 24px;
     height: 24px;
-    background-image: url('../../img/icon-arrow-down.svg');
+    background-image: url('../img/icon-arrow-down.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -160,7 +160,7 @@
 
 .booking-list__item--active {
   &::before {
-    background-image: url('../../img/icon-arrow-up.svg');
+    background-image: url('../img/icon-arrow-up.svg');
   }
 }
 

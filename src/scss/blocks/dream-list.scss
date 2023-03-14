@@ -1,0 +1,147 @@
+.dream-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 990px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.dream-list__item {
+  width: 276px;
+  margin-bottom: 40px;
+
+  &:nth-child(4) {
+    margin-left: 45px;
+    margin-right: auto;
+  }
+
+  &:nth-child(5) {
+    margin-left: auto;
+    margin-right: 45px;
+  }
+}
+
+.dream-list__item-last__child {
+  order: 5;
+}
+
+.dream-list__image-wrapper {
+  position: relative;
+
+  width: 266px;
+  height: 222px;
+  border: 12px solid $bg-color;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dream-list__count {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding-top: 7px;
+  padding-right: 5px;
+  border-radius: 8px;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: $basic-color;
+
+  background-color: #fff;
+}
+
+.dream-list__image {
+  width: 242px;
+  vertical-align: middle;
+}
+
+@media (max-width: 1070px) {
+  .dream-list {
+    width: 900px;
+  }
+
+  .dream-list__item {
+  
+    &:nth-child(4) {
+      margin-left: 20px;
+    }
+  
+    &:nth-child(5) {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 970px) {
+  .dream-list {
+    width: 760px;
+  }
+
+  .dream-list__item {
+    width: 226px;
+    margin-bottom: 20px;
+  }
+
+  .dream-list__image-wrapper {
+    width: auto;
+    height: auto
+  }
+  
+  .dream-list__image {
+    width: auto;
+  }
+}
+
+@media (max-width: 830px) {
+  .dream-list {
+    width: 630px;
+  }
+
+  .dream-list__item {
+    width: 190px;
+
+    &:nth-child(4) {
+      margin-left: 15px;
+    }
+  
+    &:nth-child(5) {
+      margin-right: 15px;
+    }
+  }
+}
+
+@media (max-width: 670px) {
+  .dream-list {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .dream-list__item {
+    width: 280px;
+
+    &:nth-child(4) {
+      margin-left: auto;
+    }
+  
+    &:nth-child(5) {
+      margin-right: auto;
+    }
+  }
+
+  .dream-list__item-last__child {
+    order: 0;
+  }
+}

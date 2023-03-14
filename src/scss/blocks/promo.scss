@@ -1,7 +1,7 @@
 .promo {
   margin-top: -110px;
-  background-image: url('../../img/icon-bg-promo-right.svg'),
-    url('../../img/icon-bg-promo-left.svg');
+  background-image: url('../img/icon-bg-promo-right.svg'),
+    url('../img/icon-bg-promo-left.svg');
   background-repeat: no-repeat;
   background-position: top 50px right -100px,
     top -350px left -200px;
@@ -16,9 +16,9 @@
   padding-bottom: 100px;
   padding-left: 40px;
 
-  background-image: url('../../img/bg-promo-girl.png'),
-    url('../../img/icon-bg-promo-center.svg'),
-    url('../../img/icon-bg-promo-compass.svg');
+  background-image: url('../img/bg-promo-girl.png'),
+    url('../img/icon-bg-promo-center.svg'),
+    url('../img/icon-bg-promo-compass.svg');
   background-repeat: no-repeat;
   background-position: top 100px right,
     top 100px right,
@@ -99,9 +99,9 @@
 
 @media (max-width: 800px) {
   .promo__container {  
-    background-image: url('../../img/bg-promo-girl.png'),
-      url('../../img/icon-bg-promo-center.svg'),
-      url('../../img/icon-bg-promo-compass.svg');
+    background-image: url('../img/bg-promo-girl.png'),
+      url('../img/icon-bg-promo-center.svg'),
+      url('../img/icon-bg-promo-compass.svg');
     background-size: 200px auto;
     background-position: top 250px right,
       top 100px right,
@@ -114,9 +114,9 @@
     padding-right: 20px;
     padding-left: 20px;
 
-    background-image: url('../../img/bg-promo-girl.png'),
-      url('../../img/icon-bg-promo-center.svg'),
-      url('../../img/icon-bg-promo-compass.svg');
+    background-image: url('../img/bg-promo-girl.png'),
+      url('../img/icon-bg-promo-center.svg'),
+      url('../img/icon-bg-promo-compass.svg');
     background-size: 200px auto;
     background-position: top 180px right,
       top 100px right,
@@ -136,9 +136,9 @@
 
 @media (max-width: 520px) {
   .promo__container {
-    background-image: url('../../img/bg-promo-girl.png'),
-      url('../../img/icon-bg-promo-center.svg'),
-      url('../../img/icon-bg-promo-compass.svg');
+    background-image: url('../img/bg-promo-girl.png'),
+      url('../img/icon-bg-promo-center.svg'),
+      url('../img/icon-bg-promo-compass.svg');
     background-size: 200px auto;
     background-position: top 300px right -40px,
       top 100px right,

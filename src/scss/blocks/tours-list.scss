@@ -1,0 +1,152 @@
+.swiper {
+  width: 700px;
+  // min-height: 700px;
+}
+
+.swiper-pagination {
+  display: none !important;
+}
+
+.swiper-pagination-bullet-active {
+	background: $bg-color !important;
+  z-index: 100;
+}
+
+.tours-list {
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+.tours-list__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.tours-list__image-wrapper {
+  position: relative;
+
+  width: 585px;
+  height: 355px;
+  margin-left: auto;
+  border-radius: 20px;
+  overflow: hidden;
+
+  z-index: 10;
+}
+
+.tours-list__content {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 585px;
+  min-height: 385px;
+  margin-top: -20px;
+  margin-left: 40px;
+  padding: 60px 80px 40px 40px;
+  border-radius: 20px;
+
+  background-color: $basic-color;
+}
+
+.tours-list__content-img__wrapper {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 120px;
+}
+
+.tours-list__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 500;
+  color: $bg-color;
+}
+
+.tours-list__text {
+  width: 400px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: $bg-color;
+  font-weight: 400;
+}
+
+@media (max-width: 990px) {
+  .tours-list__image-wrapper {
+    margin-right: auto;
+  }
+
+  .tours-list__content {
+    margin-top: -40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    z-index: 20;
+  }
+
+  .tours-list__content-img__wrapper {
+    bottom: 300px;
+  }
+}
+
+@media (max-width: 780px) {
+  .swiper {
+    width: 600px;
+  }
+
+  .swiper-pagination {
+    display: block !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .swiper {
+    display: flex;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  .tours-list__image-wrapper {
+    width: 100%;
+  }
+  
+  .tours-list__content {
+    width: 100%;
+    margin-top: -80px;
+    padding-top: 40px;
+  }
+
+  .tours-list__content-img__wrapper {
+    bottom: 300px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 540px) {
+  .tours-list__content {
+    margin-top: -160px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .tours-list__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .tours-list__text {
+    width: auto;
+  }
+
+  .tours-list__content-img__wrapper {
+    bottom: 400px;
+  }
+}

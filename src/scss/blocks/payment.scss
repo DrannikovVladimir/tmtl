@@ -10,7 +10,7 @@
     right: -100px;
     width: 250px;
     height: 255px;
-    background-image: url('../../img/payment-hat.png');
+    background-image: url('../img/payment-hat.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -20,8 +20,8 @@
 }
 
 .payment {
-  background-image: url('../../img/payment-hand-card.png'), 
-    url('../../img/payment-bg.png');
+  background-image: url('../img/payment-hand-card.png'), 
+    url('../img/payment-bg.png');
   background-repeat: no-repeat;
   background-position: right bottom -20px, center;
   background-size: 350px 350px, cover;
