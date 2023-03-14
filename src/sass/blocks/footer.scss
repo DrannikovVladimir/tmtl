@@ -1,5 +1,7 @@
 .footer {
   position: relative;
+  margin-top: 120px;
+
   background-image: url('../../img/footer-bg-palm1.png'),
     url('../../img/footer-bg-palm2.png'),
     url('../../img/icon-bg-booking.svg');
@@ -52,6 +54,8 @@
 
 @media (max-width: 700px) {
   .footer {
+    margin-top: 80px;
+
     background-size: 128px auto, 100px auto, cover;
   }
 

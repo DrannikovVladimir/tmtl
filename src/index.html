@@ -6,16 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Time to travel</title>
   <link rel="stylesheet" href="css/style.css">
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
 </head>
 <body>
   <header class="header">
     <div class="header__container">
-      <a href="" class="header__logo">
+      <a class="header__logo">
         <img src="./img/Logo.png" width="50" height="50" alt="Логотип" class="header__logo-image">
       </a>
       <nav class="header__nav main-nav">
@@ -325,8 +322,8 @@
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="#" class="socials__link">
-                      <img src="img/icon-facebook.svg" alt="Facebook" target="_blank" class="socials__icon">
+                    <a href="#" target="_blank" class="socials__link">
+                      <img src="img/icon-facebook.svg" alt="Facebook" class="socials__icon">
                       <span class="visually-hidden">Facebook</span>
                     </a>
                   </li>
@@ -345,9 +342,9 @@
 
       <section class="news">
         <div class="news__container">
-          <h2 class="news__title">Новости</h2>
+          <h2 class="news__title">Интересное о туризме</h2>
             <ul class="news__list news-list">
-              <li class="news-list__item">
+              <!-- <li class="news-list__item">
                 <a href="#" class="news-list__link">
                   <h3 class="news-list__title">Горящих туров не существует. Это лживая неправда</h3>
                 </a>
@@ -360,24 +357,24 @@
                 </a>
                 <p class="news-list__text">Горящих туров не существует. Это лживая неправда. Горящие туры существовали, существуют и будут существовать. Подводя итог вышеописанной схеме, вы должны были понять, что горящие туры возникают из-за нереализованности запланированных и заранее </p>
                 <time class="news-list__date" datetime="2023-03-05">05.03.2023</time>
+              </li> -->
+              <li class="news-list__item">
+                <a href="articles/2023-03-15.html" target="_blank" class="news-list__link">
+                  <h3 class="news-list__title">Как выбирать рестораны и блюда путешествуя по Турции</h3>
+                </a>
+                <p class="news-list__text">Путешествие в Турцию - это отличная возможность попробовать местную кухню, которая славится своим разнообразием и вкусом. Вот несколько советов, которые помогут вам выбрать хороший ресторан и насладиться вкусными блюдами во время вашего путешествия...</p>
+                <time class="news-list__date" datetime="2023-03-15">15.03.2023</time>
               </li>
               <li class="news-list__item">
-                <a href="#" class="news-list__link">
-                  <h3 class="news-list__title">Горящих туров не существует. Это лживая неправда</h3>
+                <a href="articles/2023-03-07.html" target="_blank" class="news-list__link">
+                  <h3 class="news-list__title">Что посетить в Турции, чтобы испытать сильные эмоции</h3>
                 </a>
-                <p class="news-list__text">Горящих туров не существует. Это лживая неправда. Горящие туры существовали, существуют и будут существовать. Подводя итог вышеописанной схеме, вы должны были понять, что горящие туры возникают из-за нереализованности запланированных и заранее </p>
-                <time class="news-list__date" datetime="2023-03-05">05.03.2023</time>
-              </li>
-              <li class="news-list__item">
-                <a href="#" class="news-list__link">
-                  <h3 class="news-list__title">Горящих туров не существует. Это лживая неправда</h3>
-                </a>
-                <p class="news-list__text">Горящих туров не существует. Это лживая неправда. Горящие туры существовали, существуют и будут существовать. Подводя итог вышеописанной схеме, вы должны были понять, что горящие туры возникают из-за нереализованности запланированных и заранее </p>
-                <time class="news-list__date" datetime="2023-03-05">05.03.2023</time>
+                <p class="news-list__text">Турция - это удивительная страна с богатой историей, красивой природой и множеством достопримечательностей. Если вы хотите испытать сильные эмоции во время своего путешествия, то вот несколько мест в Турции, которые стоит посетить...</p>
+                <time class="news-list__date" datetime="2023-03-07">07.03.2023</time>
               </li>
             </ul>
           <div class="news__button-wrapper">
-            <button class="news__button" type="button">Читать все новости</button>
+            <a href="articles/index.html" target="_blank" class="news__button">Читать все новости</a>
           </div>
         </div>
       </section>
@@ -389,7 +386,7 @@
     <div class="footer__container">
       <ul class="footer__block-list">
         <li class="footer__block-list__item footer__block-list__item--logo">
-          <a href="" class="footer__logo">
+          <a class="footer__logo">
             <img src="./img/Logo.png" width="50" height="50" alt="Логотип" class="footer__logo-image">
           </a>
         </li>
@@ -445,8 +442,8 @@
               </a>
             </li>
             <li class="socials__item">
-              <a href="#" class="socials__link">
-                <img src="img/icon-facebook.svg" alt="Facebook" target="_blank" class="socials__icon">
+              <a href="#" target="_blank" class="socials__link">
+                <img src="img/icon-facebook.svg" alt="Facebook" class="socials__icon">
                 <span class="visually-hidden">Facebook</span>
               </a>
             </li>
@@ -500,7 +497,7 @@
               <label for="phone" class="visually-hidden">Телефон</label>
             </li>
             <li class="feedback-form__list-item">
-              <textarea type="text" id="comment" name="comment" class="feedback-form__textarea" placeholder="Комментарий"></textarea>
+              <textarea id="comment" name="comment" class="feedback-form__textarea" placeholder="Комментарий"></textarea>
               <label for="comment" class="visually-hidden">Комментарий</label>
             </li>
           </ul>
@@ -509,14 +506,14 @@
       </div>
     </div>
   </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+
+  <script src="js/forms.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/mobile-menu.js"></script>
+  <script src="js/booking-menu.js"></script>
 </body>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script src="https://unpkg.com/imask"></script>
-
-<script src="js/forms.js"></script>
-<script src="js/swiper.js"></script>
-<script src="js/mobile-menu.js"></script>
-<script src="js/booking-menu.js"></script>
 
 </html>

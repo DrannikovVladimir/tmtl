@@ -1,0 +1,25 @@
+.article {
+  background-image: url('../../img/icon-dream-bg-left.svg'),
+    url('../../img/icon-bg-promo-left.svg');
+  background-repeat: no-repeat;
+  background-size: 707px 595px, 701px 1019px;
+  background-position: bottom 100px right -10%, top 100px left -10%;
+}
+
+.article__container {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 80px;
+}
+
+.article__title {
+  width: 800px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 700;
+  color: $title-color;
+}
