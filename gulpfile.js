@@ -3,15 +3,16 @@ const browserSync = require('browser-sync').create();
 const plumber = require('gulp-plumber');
 const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
-const cssbeautify = require('gulp-cssbeautify');
+// const cssbeautify = require('gulp-cssbeautify');
 const cssnano = require('gulp-cssnano');
-const rename = require('gulp-rename');
+// const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
 const cleanCss = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
+const del = require('del');
 
 //  paths
 const srcPath = "src/";
@@ -103,9 +104,15 @@ function images() {
 };
 
 function fonts() {
-  return src(path.src.fonts, { base: srcPath + "fonts/"})
+  return src(path.src.fonts, { base: srcPath + "fonts/" })
     .pipe(dest(path.build.fonts));
 };
+
+async function clean() {
+  return await del(path.clean);
+};
+
+const build = series(clean, images, getWebp, parallel(html, css, js, fonts));
 
 exports.html = html;
 exports.css = css;
@@ -113,6 +120,8 @@ exports.js = js;
 exports.images = images;
 exports.webp = getWebp;
 exports.fonts = fonts;
+exports.clean = clean;
+exports.build = build;
 
 
 // Development
@@ -144,7 +153,8 @@ function getCss() {
 
 function startWatch() {
   watch('src/**/*.html').on('change', browserSync.reload);
+  watch('src/js/**/*.js').on('change', browserSync.reload);
   watch('src/scss/**/*.scss', getCss);
 }
 
-exports.default = parallel(getCss, getBrowserSync, startWatch);
+exports.dev = parallel(getCss, getBrowserSync, startWatch);
