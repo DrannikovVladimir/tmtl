@@ -136,11 +136,13 @@
 
 @media (max-width: 520px) {
   .promo__container {
+    padding-top: 160px;
+
     background-image: url('../img/bg-promo-girl.png'),
       url('../img/icon-bg-promo-center.svg'),
       url('../img/icon-bg-promo-compass.svg');
     background-size: 200px auto;
-    background-position: top 300px right -40px,
+    background-position: top 260px right -40px,
       top 100px right,
       top 450px left 80px;
   }
