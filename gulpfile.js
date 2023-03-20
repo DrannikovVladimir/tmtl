@@ -75,7 +75,7 @@ function css() {
 function js() {
   return src(path.src.js, { base: srcPath + "js/" })
     .pipe(plumber())
-    .pipe(concat('main.js'))
+    // .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(dest(path.build.js));
 };

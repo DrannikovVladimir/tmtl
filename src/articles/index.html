@@ -45,7 +45,49 @@
 
   <main>
 
-    <h2>Articles</h2>
+    <section class="articles">
+      <div class="articles__container">
+
+        <ul class="article__breadcrumbs breadcrumbs-list">
+          <li class="breadcrumbs-list__item">
+            <a href="../index.html" class="breadcrumbs-list__link">Главная</a>
+          </li>
+          <li class="breadcrumbs-list__item">
+            <a class="breadcrumbs-list__link">Все статьи</a>
+          </li>
+        </ul>
+
+        <h2 class="visually-hidden">Все статьи</h2>
+        <ul class="articles__catalog articles-catalog">
+          <li class="articles-catalog__item">
+            <div class="articles-catalog__image-wrapper">
+              <img src="../img/turkish-meze.jpg" width="200" alt="Турецкая еда" class="articles-catalog__image">
+            </div>
+            <div class="articles-catalog__content-wrapper">
+              <h3 class="articles-catalog__title">Как выбирать рестораны и блюда путешествуя по Турции</h3>
+              <p class="articles-catalog__text">Путешествие в Турцию - это отличная возможность попробовать местную кухню, которая славится своим разнообразием и вкусом. Вот несколько советов, которые помогут вам выбрать хороший ресторан и насладиться вкусными блюдами во время вашего путешествия...</p>
+              <div class="articles-catalog__date-wrapper">
+                <a href="restaurants-and-food-in-turkey.html" class="articles-catalog__link">читать полностью</a>
+                <time class="articles-catalog__date" datetime="2023-03-15">15.03.2023</time>
+              </div>
+            </div>
+          </li>
+          <li class="articles-catalog__item">
+            <div class="articles-catalog__image-wrapper">
+              <img src="../img/turkish-emotions.jpg" width="200" alt="" class="articles-catalog__image">
+            </div>
+            <div class="articles-catalog__content-wrapper">
+              <h3 class="articles-catalog__title">Что посетить в Турции, чтобы испытать сильные эмоции</h3>
+              <p class="articles-catalog__text">Турция - это удивительная страна с богатой историей, красивой природой и множеством достопримечательностей. Если вы хотите испытать сильные эмоции во время своего путешествия, то вот несколько мест в Турции, которые стоит посетить...</p>
+              <div class="articles-catalog__date-wrapper">
+                <a href="strong-emotions-in-turkey.html" class="articles-catalog__link">читать полностью</a>
+                <time class="articles-catalog__date" datetime="2023-03-07">07.03.2023</time>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
   </main>
 
@@ -127,7 +169,7 @@
     </div>
   </footer>
 
-  <script src="js/mobile-menu.js"></script>
+  <script src="../js/mobile-menu.js"></script>
 
 </body>
 
