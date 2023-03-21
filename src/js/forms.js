@@ -86,6 +86,7 @@ const renderSuccess = (titleModal, textModal) => {
   button.addEventListener('click', (e) => {
     e.preventDefault();
     modalFeedback.classList.add('hidden');
+    modalSubs.classList.add('hidden');
   });
 };
 
@@ -107,7 +108,7 @@ formFeedback.addEventListener('submit', async (e) => {
       renderError();
       return;
     }
-    renderSuccess();
+    renderSuccess(titleBooking, textBooking);
   } catch (error) {
     console.log(error);
     renderError();
@@ -131,8 +132,7 @@ formSubs.addEventListener('submit', async (e) => {
       renderError()
       return;
     }
-    renderSuccess();
-    modalSubs.classList.add('hidden');
+    renderSuccess(titleSub, textSub);
   } catch (error) {
     console.log(error);
     console.log(renderError());
