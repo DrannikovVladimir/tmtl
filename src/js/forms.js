@@ -6,7 +6,6 @@ const textSub = 'Спасибо, что выбрали наше турагенс
 
 const modalFeedback = document.querySelector('.modal-feedback');
 const modalSubs = document.querySelector('.modal-subs');
-
 const formFeedback = document.querySelector('.feedback-form');
 const formSubs = document.querySelector('.subs-form');
 
@@ -16,6 +15,8 @@ const dreamButton = document.querySelector('.dream__button');
 const subsButton = document.querySelector('.subs__button');
 const buttonCloseFeedback = document.querySelector('.modal__close--feedback');
 const buttonCloseSubs = document.querySelector('.modal__close--subs');
+const titleFeedback = document.querySelector('.modal__title--booking');
+const titleSubs = document.querySelector('.modal__title--subs');
 
 const maskOptions = {
   mask: '+{7}(000)000-00-00',
@@ -46,7 +47,6 @@ const setDisabledFieldsSub = (form) => {
 };
 
 const renderError = () => {
-  console.log('renderError')
   const container = document.querySelector('.modal__content--booking');
   const title = document.createElement('h2');
   const text = document.createElement('p');
@@ -56,9 +56,9 @@ const renderError = () => {
   title.textContent = 'Что то пошло не так';
   button.classList.add('subs-form__submit');
   button.textContent = 'Закрыть';
+  text.classList.add('modal__text');
   text.textContent = 'Ошибка при отправке форме. Мы уже разбираемся с этой проблемой. Пожалуйста перезагрузите страницу или попробуйте позжу.'
   
-  console.log(container, title, text, button);
   container.innerHTML = '';
   container.append(title, text, button);
 
@@ -68,24 +68,42 @@ const renderError = () => {
   });
 };
 
-const renderSuccess = (titleModal, textModal) => {
+const renderSuccessFeedback = (titleModal, textModal) => {
   const container = document.querySelector('.modal__content--booking');
-  const title = document.createElement('h2');
   const text = document.createElement('p');
   const button = document.createElement('button');
 
-  title.classList.add('modal__title');
-  title.textContent = titleModal;
+  titleFeedback.textContent = titleModal;
   button.classList.add('subs-form__submit');
   button.textContent = 'Закрыть';
+  text.classList.add('modal__text');
   text.textContent = textModal;
   
-  container.innerHTML = '';
-  container.append(title, text, button);
+  formFeedback.classList.add('hidden');
+  container.append(text, button);
 
   button.addEventListener('click', (e) => {
     e.preventDefault();
     modalFeedback.classList.add('hidden');
+  });
+};
+
+const renderSuccessSub = (titleModal, textModal) => {
+  const container = document.querySelector('.modal__content--subs');
+  const text = document.createElement('p');
+  const button = document.createElement('button');
+
+  titleSubs.textContent = titleModal;
+  button.classList.add('subs-form__submit');
+  button.textContent = 'Закрыть';
+  text.classList.add('modal__text');
+  text.textContent = textModal;
+  
+  formSubs.classList.add('hidden');
+  container.append(text, button);
+
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
     modalSubs.classList.add('hidden');
   });
 };
@@ -104,11 +122,10 @@ formFeedback.addEventListener('submit', async (e) => {
       body: data,
     });
     if (ERRORS.includes(res.status)) {
-      console.log('click')
       renderError();
       return;
     }
-    renderSuccess(titleBooking, textBooking);
+    renderSuccessFeedback(titleBooking, textBooking);
   } catch (error) {
     console.log(error);
     renderError();
@@ -132,10 +149,10 @@ formSubs.addEventListener('submit', async (e) => {
       renderError()
       return;
     }
-    renderSuccess(titleSub, textSub);
+    renderSuccessSub(titleSub, textSub);
   } catch (error) {
     console.log(error);
-    console.log(renderError());
+    renderError();
   }
 });
 

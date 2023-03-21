@@ -91,6 +91,11 @@
   background-position: center;
 }
 
+.modal__text {
+  color: $bg-color;
+  text-align: center;
+}
+
 .hidden {
   display: none;
 }
