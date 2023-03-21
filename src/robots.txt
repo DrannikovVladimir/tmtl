@@ -1,1 +1,2 @@
-https://tmtl.kz/css/.sourcemaps/sitemap.xml
+User-agent: *
+Sitemap: css/sitemap.xml

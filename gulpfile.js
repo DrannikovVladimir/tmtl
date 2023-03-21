@@ -56,7 +56,7 @@ function html() {
 function css() {
   return src("src/scss/style.scss")
     .pipe(plumber())
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(autoprefixer())
     // .pipe(cssbeautify())
@@ -68,7 +68,7 @@ function css() {
         removeAll: true
       }
     }))
-    .pipe(sourcemaps.write('.sourcemaps'))
+    // .pipe(sourcemaps.write('.sourcemaps'))
     .pipe(dest("dist/css/"));
 };
 
