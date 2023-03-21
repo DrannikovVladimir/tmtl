@@ -62,7 +62,9 @@
 }
 
 @media (max-width: 860px) {
-  .payment-wrap {  
+  .payment-wrap {
+    padding-top: 0;
+
     &::before {
       background-image: none;
     }

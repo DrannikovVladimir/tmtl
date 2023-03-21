@@ -248,6 +248,7 @@
 
   .booking__container {
     padding-top: 80px;
+    padding-bottom: 40px;
 
     &::before {
       background: none;
@@ -258,6 +259,7 @@
       left: 70%;
     }
   }
+
   .booking__image-container {
     width: auto;
     height: 450px;
@@ -276,6 +278,7 @@
     margin: 0 auto;
     margin-top: 400px;
     border-radius: 10px;
+    box-shadow: none;
   }
 }
 
@@ -327,6 +330,10 @@
     padding-bottom: 0;
     font-size: 20px;
     line-height: 24px;
+
+    &::before {
+      top: 7px;
+    }
   }
 }
 
