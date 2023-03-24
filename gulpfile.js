@@ -88,6 +88,14 @@ function getWebp() {
     .pipe(dest('dist/img/'))
 };
 
+function getWebpSrc() {
+  return src('src/img/**/*.{png,jpg}')
+    .pipe(webp({
+      quality: 85
+    }))
+    .pipe(dest('src/img/'))
+};
+
 function images() {
   return src(path.src.images, { base: srcPath + "img/" })
     .pipe(imagemin([
@@ -119,6 +127,7 @@ exports.css = css;
 exports.js = js;
 exports.images = images;
 exports.webp = getWebp;
+exports.getWebpSrc = getWebpSrc;
 exports.fonts = fonts;
 exports.clean = clean;
 exports.build = build;

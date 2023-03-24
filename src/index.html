@@ -34,6 +34,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Индивидуальный подбор тура в Турцию, ОАЭ, Египет, Черногорию, Тайланд, Гоа, Вьетнам, Доминикану, Сейшелы, Мальдивы, Грузию, Шри-Ланка и другие страны от проверенных туроператоров">
 
+  <link rel="preload" href="fonts/TTCommons-Bold.woff2" as="font" type="fonts/woff2" crossorigin>
+  <link rel="preload" href="fonts/TTCommons-Medium.woff2" as="font" type="fonts/woff2" crossorigin>
+  <link rel="preload" href="fonts/TTCommons-Regular.woff2" as="font" type="fonts/woff2" crossorigin>
+
   <link type="image/x-icon" rel="shortcut icon" href="img/favicon/favicon.ico">
   <link type="image/png" sizes="16x16" rel="icon" href="img/favicon/favicon-16x16.png">
   <link type="image/png" sizes="32x32" rel="icon" href="img/favicon/favicon-32x32.png">
@@ -140,7 +144,10 @@
           <h2 class="booking__title">Раннее бронирование</h2>
           <p class="booking__subtitle">Если вы любите планировать путешествие заранее, то вам необходимо присмотреться к раннему бронированию</p>
           <div class="booking__image-container">
-            <img src="./img/booking-image.jpg" alt="Раннее бронирование" class="booking__image">
+            <picture>
+              <source type="image/webp" srcset="img/booking-image.webp">
+              <img src="img/booking-image.jpg" width="784" height="588" alt="Раннее бронирование" class="booking__image">
+            </picture>
           </div>
           <div class="booking__content">
             <ul class="booking__list booking-list">
@@ -189,7 +196,10 @@
           <ol class="payment__list payment-list">
             <li class="payment-list__item">
               <div class="payment-list__image-wrapper">
-                <img src="img/payment-image1.png" alt="" class="payment-list__image">
+                <picture>
+                  <source type="image/webp" srcset="img/payment-image1.webp">
+                  <img src="img/payment-image1.png" alt="Договор" width="162" height="162" class="payment-list__image">
+                </picture>
               </div>
               <div class="payment-list__content-wrapper">
                 <h3 class="payment-list__title">
@@ -201,7 +211,10 @@
             </li>
             <li class="payment-list__item payment-list__item-2">
               <div class="payment-list__image-wrapper">
-                <img src="img/payment-image2.png" alt="" class="payment-list__image">
+                <picture>
+                  <source type="image/webp" srcset="img/payment-image2.webp">
+                  <img src="img/payment-image2.png" alt="Предоплата" width="162" height="162" class="payment-list__image">
+                </picture>
               </div>
               <div class="payment-list__content-wrapper">
                 <h3 class="payment-list__title">
@@ -213,7 +226,10 @@
             </li>
             <li class="payment-list__item payment-list__item-3">
               <div class="payment-list__image-wrapper">
-                <img src="img/payment-image3.png" alt="" class="payment-list__image">
+                <picture>
+                  <source type="image/webp" srcset="img/payment-image3.webp">
+                  <img src="img/payment-image3.png" alt="Покупка" width="162" height="162" class="payment-list__image">
+                </picture>
               </div>
               <div class="payment-list__content-wrapper">
                 <h3 class="payment-list__title">
@@ -225,7 +241,10 @@
             </li>
             <li class="payment-list__item payment-list__item-4">
               <div class="payment-list__image-wrapper">
-                <img src="img/payment-image3.png" alt="" class="payment-list__image">
+                <picture>
+                  <source type="image/webp" srcset="img/payment-image3.webp">
+                  <img src="img/payment-image3.png" alt="Документы" width="162" height="162" class="payment-list__image">
+                </picture>
               </div>
               <div class="payment-list__content-wrapper">
                 <h3 class="payment-list__title">
@@ -247,35 +266,50 @@
           <li class="dream-list__item">
             <div class="dream-list__image-wrapper">
               <span class="dream-list__count">1</span>
-              <img src="img/dream-img-1.jpg" alt="Мечта об отдыхе" class="dream-list__image">
+              <picture>
+                <source type="image/webp" srcset="img/dream-img-1.webp">
+                <img src="img/dream-img-1.jpg" alt="Мечта об отдыхе" width="266" height="222" class="dream-list__image">
+              </picture>
             </div>
             <p class="dream-list__text">Вы мечтаете, а мы продумываем всё за вас. Начинаем со знакомства.</p>
           </li>
           <li class="dream-list__item">
             <div class="dream-list__image-wrapper">
               <span class="dream-list__count">2</span>
-              <img src="img/dream-img-2.jpg" alt="Потребности туриста" class="dream-list__image">
+              <picture>
+                <source type="image/webp" srcset="img/dream-img-2.webp">
+                <img src="img/dream-img-2.jpg" alt="Потребности туриста" width="266" height="222" class="dream-list__image">
+              </picture>
             </div>
             <p class="dream-list__text">Вы рассказываете о себе, своем опыте путешествий и своих желаниях</p>
           </li>
           <li class="dream-list__item">
             <div class="dream-list__image-wrapper">
               <span class="dream-list__count">3</span>
-              <img src="img/dream-img-3.jpg" alt="Выбор места для путешествия" class="dream-list__image">
+              <picture>
+                <source type="image/webp" srcset="img/dream-img-3.webp">
+                <img src="img/dream-img-3.jpg" alt="Выбор места для путешествия" width="266" height="222" class="dream-list__image">
+              </picture>
             </div>
             <p class="dream-list__text">Подбираем разные варианты для вас. Выбираем один из них</p>
           </li>
           <li class="dream-list__item dream-list__item-last__child">
             <div class="dream-list__image-wrapper">
               <span class="dream-list__count">4</span>
-              <img src="img/dream-img-4.jpg" alt="Отличный отдых" class="dream-list__image">
+              <picture>
+                <source type="image/webp" srcset="img/dream-img-4.webp">
+                <img src="img/dream-img-4.jpg" alt="Отличный отдых" width="266" height="222" class="dream-list__image">
+              </picture>
             </div>
             <p class="dream-list__text">Вы отправляетесь путешествовать, а мы с вами остаемся на связи.</p>
           </li>
           <li class="dream-list__item">
             <div class="dream-list__image-wrapper">
               <span class="dream-list__count">5</span>
-              <img src="img/dream-img-5.jpg" alt="Сопровождение туристов" class="dream-list__image">
+              <picture>
+                <source type="image/webp" srcset="img/dream-img-5.webp">
+                <img src="img/dream-img-5.jpg" alt="Сопровождение туристов" width="266" height="222" class="dream-list__image">
+              </picture>
             </div>
             <p class="dream-list__text">Прилетаете счастливые с отдыха и делитесь с нами своими впечатлениями</p>
           </li>
@@ -297,11 +331,17 @@
             <ul class="hot-tours__list tours-list swiper-wrapper">
               <li class="tours-list__item swiper-slide">
                 <div class="tours-list__image-wrapper">
-                  <img src="img/hot-routs-slider-1.jpg" alt="" class="tours-list__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/hot-routs-slider-1.jpg">
+                    <img src="img/hot-routs-slider-1.jpg" alt="Горящий тур" class="tours-list__image">
+                  </picture>
                 </div>
                 <div class="tours-list__content">
                   <div class="tours-list__content-img__wrapper">
-                    <img src="img/hot-tours-true.png" alt="" class="tours-list__content-img">
+                    <picture>
+                      <source type="image/webp" srcset="img/hot-tours-true.webp">
+                      <img src="img/hot-tours-true.png" alt="Правда" width="202" height="202" class="tours-list__content-img">
+                    </picture>
                   </div>
                   <h3 class="tours-list__title">Горящих туров не существует?</h3>
                   <p class="tours-list__text">Горящие туры существовали, существуют и будут существовать. Подводя итог вышеописанной схеме, вы должны были понять, что горящие туры возникают из-за нереализованности запланированных и заранее оплаченных турпакетов. Предугадать такие случаи застоев очень тяжело, поэтому без промахов действительно туроператорам не обойтись. Они и не обходятся. Вопрос только в том, чтобы их максимально минимизировать.</p>
@@ -309,11 +349,17 @@
               </li>
               <li class="tours-list__item swiper-slide">
                 <div class="tours-list__image-wrapper">
-                  <img src="img/hot-routs-slider-1.jpg" alt="" class="tours-list__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/hot-routs-slider-1.jpg">
+                    <img src="img/hot-routs-slider-1.jpg" alt="Горящий тур" class="tours-list__image">
+                  </picture>
                 </div>
                 <div class="tours-list__content">
                   <div class="tours-list__content-img__wrapper">
-                    <img src="img/hot-tours-false.png" alt="" class="tours-list__content-img">
+                    <picture>
+                      <source type="image/webp" srcset="img/hot-tours-false.webp">
+                      <img src="img/hot-tours-false.png" alt="Миф" width="205" height="206" class="tours-list__content-img">
+                    </picture>
                   </div>
                   <h3 class="tours-list__title">Горящие туры - это маркетинговая уловка?</h3>
                   <p class="tours-list__text">Доля правды в этом есть, давайте разбираться. Нередко турагенты рекламируют клиентам якобы горящий тур с вылетом через 2 месяца и не по горящим ценам. Либо мошенники, скрывающиеся под видом агенства привлекают клиентов через чур низкими ценами. Манипуляции такого рода подлежат уголовной ответственности. Но на факт существования горящих туров это никак не влияет.</p>
@@ -321,11 +367,17 @@
               </li>
               <li class="tours-list__item swiper-slide">
                 <div class="tours-list__image-wrapper">
-                  <img src="img/hot-routs-slider-1.jpg" alt="" class="tours-list__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/hot-routs-slider-1.jpg">
+                    <img src="img/hot-routs-slider-1.jpg" alt="Горящий тур" class="tours-list__image">
+                  </picture>
                 </div>
                 <div class="tours-list__content">
                   <div class="tours-list__content-img__wrapper">
-                    <img src="img/hot-tours-false.png" alt="" class="tours-list__content-img">
+                    <picture>
+                      <source type="image/webp" srcset="img/hot-tours-false.webp">
+                      <img src="img/hot-tours-false.png" alt="Миф" width="205" height="206" class="tours-list__content-img">
+                    </picture>
                   </div>
                   <h3 class="tours-list__title">Горящий тур может появиться за месяц?</h3>
                   <p class="tours-list__text">Как правило горящий тур появляется за несколько дней до вылета, а иногда и того меньше. Поэтому у туристов нет времени даже на сбор чемодана. Если вы любите заранее тонко и тщательно продумывать свой отдых, то лучше не гоняться на горящими предложениями. Но если вы хотите отправиться на отдых немедленно и вам не придётся долго ждать, то это отличная возможность посетить другие страны по низким ценам.</p>
@@ -333,11 +385,17 @@
               </li>
               <li class="tours-list__item swiper-slide">
                 <div class="tours-list__image-wrapper">
-                  <img src="img/hot-routs-slider-1.jpg" alt="" class="tours-list__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/hot-routs-slider-1.jpg">
+                    <img src="img/hot-routs-slider-1.jpg" alt="Горящий тур" class="tours-list__image">
+                  </picture>
                 </div>
                 <div class="tours-list__content">
                   <div class="tours-list__content-img__wrapper">
-                    <img src="img/hot-tours-false.png" alt="" class="tours-list__content-img">
+                    <picture>
+                      <source type="image/webp" srcset="img/hot-tours-false.webp">
+                      <img src="img/hot-tours-false.png" alt="Миф" width="205" height="206" class="tours-list__content-img">
+                    </picture>
                   </div>
                   <h3 class="tours-list__title">Горящий туры есть по всем направлениям?</h3>
                   <p class="tours-list__text">Обычно, "горят" самые популярные направления. Чем больше самолётов в сезон летает по массовым направленям, тем больше вероятность что на какой-то рейс будет недобор пассажиров. И всё таки с мелкой периодичностью у туроператоров "горят" разные направления: от Европы, до Латинской Америки. Или по каким-либо определённым причинам, политические ситуации внутри страны, землетресения, цунами, нападение акул, резко снижается спрос. </p>
@@ -345,11 +403,17 @@
               </li>
               <li class="tours-list__item swiper-slide">
                 <div class="tours-list__image-wrapper">
-                  <img src="img/hot-routs-slider-1.jpg" alt="" class="tours-list__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/hot-routs-slider-1.jpg">
+                    <img src="img/hot-routs-slider-1.jpg" alt="Горящий тур" width="205" height="206" class="tours-list__image">
+                  </picture>
                 </div>
                 <div class="tours-list__content">
                   <div class="tours-list__content-img__wrapper">
-                    <img src="img/hot-tours-true.png" alt="" class="tours-list__content-img">
+                    <picture>
+                      <source type="image/webp" srcset="img/hot-tours-true.webp">
+                      <img src="img/hot-tours-true.png" alt="Правда" width="202" height="202" class="tours-list__content-img">
+                    </picture>
                   </div>
                   <h3 class="tours-list__title">Горящие туры есть только в безвизовые страны?</h3>
                   <p class="tours-list__text">Так и есть, тур можно поймать только на страну с безвизовым режимом. Для граждан РК, с учётом хорошей полётной программы, таковыми являются - Грузия, Турция, Мальдивы, Малайзия, ОАЭ, Оман, Сейшелы, Черногория. Страны где можно получить визу в аэропорту - Доминиканская Республика, Египет, Тайланд. На этом список не заканчивается, но вероятность поймать горящей тур очень маленькая.</p>
