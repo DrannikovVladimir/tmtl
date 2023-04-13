@@ -45,6 +45,19 @@
   }
 }
 
+.main-nav__list-link--active {
+  color: #9e9d9d;
+
+  &:hover {
+    border-bottom-color: transparent;
+  }
+
+  &:active {
+    color: #9e9d9d;
+    border-bottom-color: transparent;
+  }
+}
+
 .main-nav__button {
   display: none;
   width: 50px;
