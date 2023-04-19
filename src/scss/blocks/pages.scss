@@ -26,3 +26,26 @@
 .pages__image {
   margin-bottom: 40px;
 }
+
+@media (max-width: 1280px) {
+  .pages__container {
+    width: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .pages__container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .pages__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .pages__description {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
