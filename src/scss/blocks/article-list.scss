@@ -8,3 +8,21 @@
 .article-list__item {
   margin-bottom: 20px;
 }
+
+.article-list__item--style {
+  position: relative;
+  margin-bottom: 0;
+  padding-left: 18px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 8px;
+    height: 12px;
+    border-bottom: 2px solid $basic-color;
+    border-right: 2px solid $basic-color;
+    transform: rotate(45deg);
+  }
+}
