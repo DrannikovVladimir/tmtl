@@ -28,12 +28,12 @@
 .promo__title {
   width: 630px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-left: 230px;
   padding: 0;
   font-weight: 700;
-  font-size: 80px;
-  line-height: 90px;
+  font-size: 70px;
+  line-height: 70px;
   color: $title-color;
   text-transform: uppercase;
 }
@@ -41,11 +41,55 @@
 .promo__subtitle {
   margin: 0;
   margin-left: 230px;
+  margin-bottom: 35px;
   bottom: 0;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: $title-color;
+}
+
+.promo__button {
+  box-sizing: border-box;
+  width: 225px;
+  height: 44px;
+  margin-left: 230px;
+  padding: 13px 50px;
+  border: none;
+  border-radius: 4px;
+
+  background-color: $basic-color;
+  color: $bg-color;
+
+  transition: 0.2s linear;
+
+  &:hover {
+    background-color: $basic-color;
+  }
+
+  &:active {
+    color: $basic-color;
+  }
+}
+
+.promo__button--flight {
+  margin-left: 20px;
+  border: 2px solid $basic-color;
+  padding: 11px 48px;
+
+  background-color: rgba(255, 255, 255, 0.6);
+  color: $basic-color;
+  font-weight: 500;
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px;
+
+  &:hover {
+    background-color: $basic-color;
+    color: $bg-color;
+  }
+
+  &:active {
+    color: $bg-color;
+  }
 }
 
 .promo__tours {
@@ -69,6 +113,14 @@
   .promo__subtitle {
     margin-left: 130px;
   }
+
+  .promo__button {
+    margin-left: 130px;
+  }
+
+  .promo__button--flight {
+    margin-left: 20px;
+  }
 }
 
 @media (max-width: 1220px) {
@@ -79,11 +131,19 @@
   .promo__title {
     margin-left: 60px;
     font-size: 76px;
-    line-height: 86px;
+    line-height: 76px;
   }
 
   .promo__subtitle {
     margin-left: 60px;
+  }
+
+  .promo__button {
+    margin-left: 60px;
+  }
+
+  .promo__button--flight {
+    margin-left: 20px;
   }
 }
 
@@ -94,6 +154,14 @@
 
   .promo__subtitle {
     margin-left: 0;
+  }
+
+  .promo__button {
+    margin-left: 0;
+  }
+
+  .promo__button--flight {
+    margin-left: 20px;
   }
 }
 
@@ -126,11 +194,20 @@
   .promo__title {
     width: 320px;
     font-size: 40px;
-    line-height: 50px;
+    line-height: 40px;
   }
 
   .promo__subtitle {
     width: 280px;
+  }
+
+  .promo__button {
+    min-width: 200px;
+    padding: 13px 25px;
+  }
+
+  .promo__button--flight {
+    padding: 11px 23px;
   }
 }
 
@@ -145,5 +222,17 @@
     background-position: top 260px right -40px,
       top 100px right,
       top 450px left 80px;
+  }
+
+  .promo__button {
+    min-width: 160px;
+    padding: 12px 15px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .promo__button--flight {
+    margin-left: 10px;
+    padding: 10px 13px;
   }
 }

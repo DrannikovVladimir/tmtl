@@ -1,0 +1,78 @@
+.min-price__container {
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 60px;
+  padding-left: 40px;
+
+  text-align: center;
+}
+
+.min-price__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: $title-color;
+}
+
+#TVMinPrice9965399 .TVTableViewButtonBlock {
+  padding-top: 40px;
+  &:before {
+    height: 0 !important;
+  }
+
+  &:after {
+    height: 0 !important;
+  }
+}
+
+#TVMinPrice9965399 .TVTableViewButton {
+  min-width: 180px;
+  min-height: 40px;
+  padding: 13px 10px;
+  border: none;
+  border-radius: 5px;
+
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  background-color: $basic-color;
+  color: $bg-color !important;
+
+  transition: 0.2s linear;
+}
+
+.TVTableView .TVTableViewButtonBlock .TVTableViewButton {
+  &:before {
+    font-family: 'TT Commons', 'Tahoma', 'Optima', sans-serif !important;
+    font-size: 18px !important;
+    line-height: 28px !important;
+    font-weight: 500;
+    background-color: $basic-color !important;
+    color: $bg-color !important;
+    text-transform: none !important;
+  }  
+}
+
+@media (max-width: 1280px) {
+  .min-price__container {
+    width: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .min-price__container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .min-price__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}

@@ -79,7 +79,7 @@
 
 .booking__title {
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 0;
 
   font-weight: 700;
@@ -90,13 +90,14 @@
 }
 
 .booking__subtitle {
+  max-width: 400px;
   margin: 0 auto;
   margin-bottom: 40px;
   padding: 0;
   width: 792px;
   min-height: 40px;
 
-  color: #025472;
+  color: $title-color;
   text-align: center;
 }
 
