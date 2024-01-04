@@ -9,6 +9,25 @@
   margin-bottom: 20px;
 }
 
+.article-list__item--margin {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 24px;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 10px;
+    border-bottom: 2px solid $basic-color;
+    border-left: 2px solid $basic-color;
+    transform: rotate(-45deg);
+  }
+}
+
 .article-list__item--style {
   position: relative;
   margin-bottom: 0;
