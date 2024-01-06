@@ -1,0 +1,125 @@
+.tabs__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 15px 20px 10px;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  // box-shadow: 0 0 3px $border-color;
+}
+
+.tabs__title {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 35px;
+
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 25px;
+    height: 20px;
+    background-image: url('../../img/tabs/icon-egypt.jpg');
+    background-size: 25px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.tabs-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.tabs-nav__item {
+  margin-left: 40px;
+}
+
+.tabs-nav__button {
+  position: relative;
+
+  padding-left: 23px;
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  // font-size: 18px;
+  color: #02979a;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+
+    background-repeat: no-repeat;
+    background-size: 16px auto;
+    background-position: center;
+  }
+}
+
+.tabs-nav__button--review {
+  &::before {
+    top: 1px;
+    background-image: url('../../img/tabs/icon-review.png');
+  }
+}
+
+.tabs-nav__button--tour {
+  &::before {
+    background-image: url('../../img/tabs/icon-tour.png');
+  }
+}
+
+.tabs-nav__button--country {
+  &::before {
+    background-image: url('../../img/tabs/icon-country.png');
+  }
+}
+
+.tabs-nav__button--resort {
+  &::before {
+    background-image: url('../../img/tabs/icon-resort.png');
+  }
+}
+
+.tabs-nav__button--hotel {
+  &::before {
+    background-image: url('../../img/tabs/icon-hotel.png');
+  }
+}
+
+.tabs-nav__button--active {
+  color: rgba(2, 151, 154, 0.8);
+  opacity: 0.6;
+}
+
+.tabs-content {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.tabs-content__item {
+  display: none;
+}
+
+.tabs-content__item--active {
+  display: block;
+}
