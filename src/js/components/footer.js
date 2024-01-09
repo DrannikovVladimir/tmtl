@@ -20,13 +20,13 @@ const Footer = () => {
               <a href="/tours/tours-to-oae.html" className="footer-tours-list__link">ОАЭ</a>
             </li>
             <li className="footer-tours-list__item">
-              <a className="footer-tours-list__link">Египет</a>
+              <a href="/tours/egypt/egypt.html" className="footer-tours-list__link">Египет</a>
             </li>
             <li className="footer-tours-list__item">
               <a href="/tours/tours-to-vietnam.html" className="footer-tours-list__link">Вьетнам</a>
             </li>
             <li className="footer-tours-list__item">
-              <a href="/tours/tours-to-thailand.html" className="footer-tours-list__link">Тайланд</a>
+              <a href="/tours/thailand/thailand.html" className="footer-tours-list__link">Таиланд</a>
             </li>
             <li className="footer-tours-list__item">
               <a href="/tours/tours-to-montnegro.html" className="footer-tours-list__link">Черногория</a>
@@ -36,16 +36,16 @@ const Footer = () => {
         <li className="footer__block-list__item footer__block-list__item--menu">
           <ul className="main-nav__list main-nav__list--footer">
             <li className="main-nav__list-item">
-              <a href="../pages/countries.html" className="main-nav__list-link">Страны</a>
+              <a href="/pages/countries.html" className="main-nav__list-link">Страны</a>
             </li>
             <li className="main-nav__list-item">
-              <a href="../pages/tours.html" className="main-nav__list-link">Горящие туры</a>
+              <a href="/pages/tours.html" className="main-nav__list-link">Горящие туры</a>
             </li>
             <li className="main-nav__list-item">
-              <a href="../pages/about.html" className="main-nav__list-link">О нас</a>
+              <a href="/pages/about.html" className="main-nav__list-link">О нас</a>
             </li>
             <li className="main-nav__list-item">
-              <a href="../pages/contacts.html" className="main-nav__list-link">Контакты</a>
+              <a href="/pages/contacts.html" className="main-nav__list-link">Контакты</a>
             </li>
           </ul>
         </li>
@@ -79,6 +79,5 @@ const Footer = () => {
   );
 };
 
-const element = <Footer />
-
+const element = <Footer />;
 footerContainer.render(element);

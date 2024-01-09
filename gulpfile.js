@@ -74,15 +74,25 @@ function css() {
 };
 
 function js() {
-  return src(path.src.js, { base: srcPath + "js/**/*.js" })
+  return src('src/js/*.js')
     .pipe(plumber())
     .pipe(babel({
-      presets: ['@babel/env', '@babel/preset-react']
+      presets: ['@babel/env']
     }))
     .pipe(uglify())
-    .pipe(concat('main.js'))
     .pipe(dest("dist/js"));
 };
+
+function jsx() {
+  return src('src/js/components/**/*.js')
+  .pipe(plumber())
+  .pipe(babel({
+    presets: ['@babel/env', '@babel/preset-react']
+  }))
+  .pipe(uglify())
+  .pipe(concat('components.js'))
+  .pipe(dest("dist/js"))
+}
 
 function getWebp() {
   return src('src/img/**/*.{png,jpg}')
@@ -124,11 +134,12 @@ async function clean() {
   return await del(path.clean);
 };
 
-const build = series(clean, images, getWebp, parallel(html, css, js, fonts));
+const build = series(clean, images, getWebp, parallel(html, css, js, jsx, fonts));
 
 exports.html = html;
 exports.css = css;
 exports.js = js;
+exports.jsx = jsx;
 exports.images = images;
 exports.webp = getWebp;
 exports.getWebpSrc = getWebpSrc;
@@ -177,8 +188,7 @@ function getJsx() {
     presets: ['@babel/env', '@babel/preset-react']
   }))
   .pipe(uglify())
-  .pipe(concat('components.js'))
-  .pipe(dest("src/js"))
+  .pipe(dest("src/assets/components"))
   .pipe(browserSync.stream());
 }
 

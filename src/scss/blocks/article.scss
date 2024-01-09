@@ -27,11 +27,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 10px;
   margin-bottom: 20px;
 }
 
 .article__content-container__country {
   width: 660px;
+  padding-top: 10px;
 }
 
 .article__content--full-width {
@@ -51,7 +53,13 @@
   margin-bottom: 40px;
 }
 
+.article__min-price__title {
+  margin-bottom: 0;
+  text-align: center;
+}
+
 .article__min-price__text {
+  text-align: center;
   font-size: 14px;
   line-height: 18px;
   color: $title-color;

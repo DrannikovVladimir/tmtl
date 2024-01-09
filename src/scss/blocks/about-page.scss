@@ -4,6 +4,10 @@
   padding: 60px;
 }
 
+.about-page__min-price {
+  margin-bottom: 60px;
+}
+
 .about-page__title {
   margin: 0;
   padding: 0;
@@ -71,6 +75,10 @@
   }
 
   .about-page-list__picture {
+    margin-bottom: 20px;
+  }
+
+  .about-page__min-price {
     margin-bottom: 20px;
   }
 }

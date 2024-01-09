@@ -27,10 +27,22 @@
     left: 0;
     width: 25px;
     height: 20px;
-    background-image: url('../../img/tabs/icon-egypt.jpg');
+    
     background-size: 25px auto;
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+
+.tabs__title--egypt {
+  &::before {
+    background-image: url('../../img/tabs/icon-egypt.jpg');
+  }
+}
+
+.tabs__title--thailand {
+  &::before {
+    background-image: url('../../img/tabs/icon-thailand.jpg');
   }
 }
 

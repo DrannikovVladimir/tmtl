@@ -2,6 +2,8 @@ const egyptResortsContainer = ReactDOM.createRoot(
   document.getElementById('egypt-resorts')
 );
 
+console.log(egyptResortsContainer);
+
 const EgyptResorts = () => {
   return (
     <ul className="article__resorts resorts">
@@ -79,6 +81,7 @@ const EgyptResorts = () => {
       </li>
     </ul>
   )
-}
+};
 
-egyptResortsContainer.render(<EgyptResorts />);
+const element = <EgyptResorts />
+egyptResortsContainer.render(element);
