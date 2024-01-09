@@ -13,6 +13,7 @@ const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const del = require('del');
+const babel = require('gulp-babel');
 
 //  paths
 const srcPath = "src/";
@@ -73,11 +74,14 @@ function css() {
 };
 
 function js() {
-  return src(path.src.js, { base: srcPath + "js/" })
+  return src(path.src.js, { base: srcPath + "js/**/*.js" })
     .pipe(plumber())
-    // .pipe(concat('main.js'))
+    .pipe(babel({
+      presets: ['@babel/env', '@babel/preset-react']
+    }))
     .pipe(uglify())
-    .pipe(dest(path.build.js));
+    .pipe(concat('main.js'))
+    .pipe(dest("dist/js"));
 };
 
 function getWebp() {
@@ -155,15 +159,35 @@ function getCss() {
     .pipe(cleanCss({
       
     }))
-    // .pipe(sourcemaps.write('.sourcemaps'))
     .pipe(dest('src/css'))
     .pipe(browserSync.stream());
+}
+
+function getJs() {
+  return src('src/js/*.js')
+  .pipe(plumber())
+  .pipe(uglify())
+  .pipe(browserSync.stream());
+}
+
+function getJsx() {
+  return src('src/js/components/**/*.js')
+  .pipe(plumber())
+  .pipe(babel({
+    presets: ['@babel/env', '@babel/preset-react']
+  }))
+  .pipe(uglify())
+  .pipe(concat('components.js'))
+  .pipe(dest("src/js"))
+  .pipe(browserSync.stream());
 }
 
 function startWatch() {
   watch('src/**/*.html').on('change', browserSync.reload);
   watch('src/js/**/*.js').on('change', browserSync.reload);
   watch('src/scss/**/*.scss', getCss);
+  watch('src/js/**/*.js', getJs);
+  watch('src/js/components/**/*.js', getJsx);
 }
 
-exports.dev = parallel(getCss, getBrowserSync, startWatch);
+exports.dev = parallel(getCss, getJsx, getBrowserSync, startWatch);

@@ -19,12 +19,18 @@
 .article__content-container__min-price {
   width: 260px;
   margin-right: 20px;
-  border: 1px solid $border-color;
+  // border: 1px solid $border-color;
   border-radius: 5px;
 }
 
+.article__content-container__min-price__weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .article__content-container__country {
-  width: 740px;
+  width: 660px;
 }
 
 .article__content--full-width {

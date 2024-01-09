@@ -1,0 +1,44 @@
+.resorts {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+
+  list-style: none;
+}
+
+.resorts__item {
+  display: flex;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $border-color;
+}
+
+.resorts__item-content {
+  width: 390px;
+  padding-left: 20px;
+}
+
+.resorts__item-image {
+  width: 250px;
+  max-width: 100%;
+}
+
+.resorts__item-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+
+  font-size: 22px;
+  line-height: 32jpx;
+}
+
+.resorts__item-text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.resorts__item-link--about {
+  border-bottom: 1px solid $basic-color;
+  color: $basic-color;
+}
