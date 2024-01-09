@@ -11,6 +11,10 @@
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid $border-color;
+
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .resorts__item-content {
@@ -41,4 +45,19 @@
 .resorts__item-link--about {
   border-bottom: 1px solid $basic-color;
   color: $basic-color;
+}
+
+@media (max-width: 550px) {
+  .resorts__item {
+    flex-direction: column;
+  }
+
+  .resorts__item-link {
+    margin-bottom: 20px;
+  }
+
+  .resorts__item-content {
+    width: auto;
+    padding-left: 0;
+  }
 }

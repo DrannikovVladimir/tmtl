@@ -27,6 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .article__content-container__country {
@@ -50,6 +51,12 @@
   margin-bottom: 40px;
 }
 
+.article__min-price__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: $title-color;
+}
+
 .article__title {
   margin: 0;
   padding: 0;
@@ -59,6 +66,10 @@
   line-height: 36px;
   font-weight: 700;
   color: $title-color;
+}
+
+.article__title--center {
+  text-align: center;
 }
 
 .article__title--hot-tours {
@@ -161,19 +172,6 @@
   }
 }
 
-// .article__link--price {
-//   position: relative;
-//   display: inline-block;
-//   color: $basic-color;
-//   font-size: 18px;
-//   line-height: 24px;
-//   font-weight: 500;
-
-//   &:hover {
-//     text-decoration: underline;
-//   }
-// }
-
 .article__link--last__child {
   margin-bottom: 40px;
 }
@@ -207,17 +205,29 @@
 
 @media (max-width: 700px) {
   .article__container {
-    padding: 60px 20px;
+    padding: 20px;
+  }
+
+  .article__content-container {
+    flex-direction: column;
+  }
+
+  .article__content-container__country {
+    width: auto;
   }
 
   .article__title {
-    font-size: 30px;
-    line-height: 34px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .article__min-price__box {
+    display: none;
   }
 
   .article__subtitle {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .article__list-wrapper {

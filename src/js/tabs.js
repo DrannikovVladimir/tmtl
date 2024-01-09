@@ -2,6 +2,7 @@ const navs = document.querySelectorAll('.tabs-nav__button');
     const contents = document.querySelectorAll('.tabs-content__item');
     const minPrice = document.querySelector('.article__content-container__min-price');
     const content = document.querySelector('.article__content-container__country');
+    const weather = document.querySelector('.article__content-container__min-price__weather');
     const obj = {
       button1: 'content1',
       button2: 'content2',
@@ -19,6 +20,12 @@ const navs = document.querySelectorAll('.tabs-nav__button');
         } else {
           content.classList.remove('article__content--full-width');
           minPrice.classList.remove('visually-hidden');
+        }
+
+        if (navCurrent !== 'button1') {
+          weather.classList.add('visually-hidden');
+        } else {
+          weather.classList.remove('visually-hidden');
         }
         navs.forEach((el) => {
           el.classList.remove('tabs-nav__button--active')
