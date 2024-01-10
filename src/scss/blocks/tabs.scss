@@ -46,6 +46,12 @@
   }
 }
 
+.tabs__title--uae {
+  &::before {
+    background-image: url('../../img/tabs/icon-uae.jpg');
+  }
+}
+
 .tabs-nav {
   display: flex;
   justify-content: space-between;

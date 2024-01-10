@@ -90,8 +90,7 @@ function jsx() {
     presets: ['@babel/env', '@babel/preset-react']
   }))
   .pipe(uglify())
-  .pipe(concat('components.js'))
-  .pipe(dest("dist/js"))
+  .pipe(dest("dist/assets/components"));
 }
 
 function getWebp() {

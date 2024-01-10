@@ -4,16 +4,21 @@ const headerContainer = ReactDOM.createRoot(
 
 const Header = () => {
   const [isOpened, setIsOpened] = React.useState(false);
+  const [callbackIsOpened, setCallbackIsOpened] = React.useState(false);
   
   const mobileMenuHandler = () => {
     setIsOpened(() => !isOpened)
-  }
+  };
   
   const getClassNav = () => isOpened ? 'header__nav main-nav main-nav--show' : 'header__nav main-nav';
-  const getClassButton = () => isOpened ? 'main-nav__button main-nav__button--opened' : 'main-nav__button main-nav__button--closed'
+  const getClassButton = () => isOpened ? 'main-nav__button main-nav__button--opened' : 'main-nav__button main-nav__button--closed';
+  const callbackHandler = (e) => {
+    e.preventDefault();
+    setCallbackIsOpened(() => !callbackIsOpened);    
+  }
 
   const classNav = getClassNav();
-  const classButton = getClassButton()
+  const classButton = getClassButton();
 
   return (
     <div className="header__container">
@@ -43,6 +48,9 @@ const Header = () => {
         <li className="phones-list__item">
           <a href="tel:+7702000000000" className="phones-list__link">+7 (707) 886-36-33</a>
         </li>
+        {/* <li className="phones-list__item">
+          <a href="/pages/contacts.html" onClick={callbackHandler} rel="nofollow" className="phones-list__callback">Заказать обратный звонок</a>
+        </li> */}
       </ul>
     </div>
   )
