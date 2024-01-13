@@ -9,7 +9,11 @@ const EgyptResorts = () => {
     <ul className="article__resorts resorts">
       <li className="resorts__item">
         <a href="#" className="resorts__item-link">
-          <img src="/img/tours/egypt/sharm-el-sheikh-resort.jpg" alt="Шарм-Эль-Шейх" className="resorts__item-image" width="250" />
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/egypt/sharm-el-sheikh-resort.webp" />
+            <img src="/img/tours/egypt/sharm-el-sheikh-resort.jpg" alt="Шарм-Эль-Шейх" className="resorts__item-image" width="250" />
+          </picture>
+          
         </a>
         <div className="resorts__item-content">
           <a href="#" className="resorts__item-link">
@@ -21,7 +25,11 @@ const EgyptResorts = () => {
       </li>
       <li className="resorts__item">
         <a href="#" className="resorts__item-link">
-          <img src="/img/tours/egypt/hurgada-resort.jpg" alt="Хургада" className="resorts__item-image" width="250" />
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/egypt/hurgada-resort.webp" />
+            <img src="/img/tours/egypt/hurgada-resort.jpg" alt="Хургада" className="resorts__item-image" width="250" />
+          </picture>
+          
         </a>
         <div className="resorts__item-content">
           <a href="#" className="resorts__item-link">
@@ -33,7 +41,11 @@ const EgyptResorts = () => {
       </li>
       <li className="resorts__item">
         <a href="#" className="resorts__item-link">
-          <img src="/img/tours/egypt/marsa-alam-resort.jpg" alt="Марса Алам" className="resorts__item-image" width="250" />
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/egypt/marsa-alam-resort.webp" />
+            <img src="/img/tours/egypt/marsa-alam-resort.jpg" alt="Марса Алам" className="resorts__item-image" width="250" />
+          </picture>
+          
         </a>
         <div className="resorts__item-content">
           <a href="#" className="resorts__item-link">
@@ -45,7 +57,11 @@ const EgyptResorts = () => {
       </li>
       <li className="resorts__item">
         <a href="#" className="resorts__item-link">
-          <img src="/img/tours/egypt/dahab-resort.jpg" alt="Дахаб" className="resorts__item-image" width="250" />
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/egypt/dahab-resort.webp" />
+            <img src="/img/tours/egypt/dahab-resort.jpg" alt="Дахаб" className="resorts__item-image" width="250" />
+          </picture>
+          
         </a>
         <div className="resorts__item-content">
           <a href="#" className="resorts__item-link">
@@ -57,7 +73,11 @@ const EgyptResorts = () => {
       </li>
       <li className="resorts__item">
         <a href="#" className="resorts__item-link">
-          <img src="/img/tours/egypt/alexandria-resort.jpg" alt="Александрия" className="resorts__item-image" width="250" />
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/egypt/alexandria-resort.webp" />
+            <img src="/img/tours/egypt/alexandria-resort.jpg" alt="Александрия" className="resorts__item-image" width="250" />
+          </picture>
+          
         </a>
         <div className="resorts__item-content">
           <a href="#" className="resorts__item-link">
@@ -69,7 +89,11 @@ const EgyptResorts = () => {
       </li>
       <li className="resorts__item">
         <a href="#" className="resorts__item-link">
-          <img src="/img/tours/egypt/cairo-resort.jpg" alt="Каир" className="resorts__item-image" width="250" />
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/egypt/cairo-resort.webp" />
+            <img src="/img/tours/egypt/cairo-resort.jpg" alt="Каир" className="resorts__item-image" width="250" />
+          </picture>
+          
         </a>
         <div className="resorts__item-content">
           <a href="#" className="resorts__item-link">

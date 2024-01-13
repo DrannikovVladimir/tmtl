@@ -23,7 +23,7 @@ const Footer = () => {
               <a href="/tours/egypt/egypt.html" className="footer-tours-list__link">Египет</a>
             </li>
             <li className="footer-tours-list__item">
-              <a href="/tours/tours-to-vietnam.html" className="footer-tours-list__link">Вьетнам</a>
+              <a href="/tours/vietnam/vietnam.html" className="footer-tours-list__link">Вьетнам</a>
             </li>
             <li className="footer-tours-list__item">
               <a href="/tours/thailand/thailand.html" className="footer-tours-list__link">Таиланд</a>

@@ -7,7 +7,11 @@ const UaeResorts = () => {
     <ul className="article__resorts resorts">
       <li className="resorts__item">
         <a href="#" className="resorts__item-link">
-          <img src="/img/tours/uae/dubai.jpg" alt="Дубай" className="resorts__item-image" width="280" />
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/uae/dubai-resort.webp" />
+            <img src="/img/tours/uae/dubai-resort.jpg" alt="Дубай" className="resorts__item-image" width="280" />
+          </picture>
+          
         </a>
         <div className="resorts__item-content">
           <a href="#" className="resorts__item-link">
@@ -19,7 +23,11 @@ const UaeResorts = () => {
       </li>
       <li className="resorts__item">
         <a href="#" className="resorts__item-link">
-          <img src="/img/tours/uae/abu-dhabi.jpg" alt="Абу-Даби" className="resorts__item-image" width="280" />
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/uae/abu-dhabi-resort.webp" />
+            <img src="/img/tours/uae/abu-dhabi-resort.jpg" alt="Абу-Даби" className="resorts__item-image" width="280" />
+          </picture>
+          
         </a>
         <div className="resorts__item-content">
           <a href="#" className="resorts__item-link">
@@ -31,7 +39,11 @@ const UaeResorts = () => {
       </li>
       <li className="resorts__item">
         <a href="#" className="resorts__item-link">
-          <img src="/img/tours/uae/sharjha.jpg" alt="Шарджа" className="resorts__item-image" width="280" />
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/uae/sharjha-resort.webp" />
+            <img src="/img/tours/uae/sharjha-resort.jpg" alt="Шарджа" className="resorts__item-image" width="280" />
+          </picture>
+          
         </a>
         <div className="resorts__item-content">
           <a href="#" className="resorts__item-link">
@@ -43,7 +55,11 @@ const UaeResorts = () => {
       </li>
       <li className="resorts__item">
         <a href="#" className="resorts__item-link">
-          <img src="/img/tours/uae/ajman.jpg" alt="Аджман" className="resorts__item-image" width="280" />
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/uae/ajman-resort.webp" />
+            <img src="/img/tours/uae/ajman-resort.jpg" alt="Аджман" className="resorts__item-image" width="280" />
+          </picture>
+          
         </a>
         <div className="resorts__item-content">
           <a href="#" className="resorts__item-link">
@@ -55,7 +71,11 @@ const UaeResorts = () => {
       </li>
       <li className="resorts__item">
         <a href="#" className="resorts__item-link">
-          <img src="/img/tours/uae/fujairah.jpg" alt="Фуджейра" className="resorts__item-image" width="280" />
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/uae/fujairah-resort.webp" />
+            <img src="/img/tours/uae/fujairah-resort.jpg" alt="Фуджейра" className="resorts__item-image" width="280" />
+          </picture>
+          
         </a>
         <div className="resorts__item-content">
           <a href="#" className="resorts__item-link">
@@ -67,7 +87,11 @@ const UaeResorts = () => {
       </li>
       <li className="resorts__item">
         <a href="#" className="resorts__item-link">
-          <img src="/img/tours/uae/ras-al-khaimah.jpg" alt="Рас Аль Хайма" className="resorts__item-image" width="280" />
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/uae/ras-al-khaimah-resort.webp" />
+            <img src="/img/tours/uae/ras-al-khaimah-resort.jpg" alt="Рас Аль Хайма" className="resorts__item-image" width="280" />
+          </picture>
+          
         </a>
         <div className="resorts__item-content">
           <a href="#" className="resorts__item-link">
@@ -79,7 +103,11 @@ const UaeResorts = () => {
       </li>
       <li className="resorts__item">
         <a href="#" className="resorts__item-link">
-          <img src="/img/tours/uae/umm-el-quwain.jpg" alt="Умм Аль Кувейн" className="resorts__item-image" width="280" />
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/uae/umm-el-quwain-resort.webp" />
+            <img src="/img/tours/uae/umm-el-quwain-resort.jpg" alt="Умм Аль Кувейн" className="resorts__item-image" width="280" />
+          </picture>
+          
         </a>
         <div className="resorts__item-content">
           <a href="#" className="resorts__item-link">

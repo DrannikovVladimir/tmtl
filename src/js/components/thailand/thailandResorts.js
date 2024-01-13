@@ -9,7 +9,11 @@ const ThailandResorts = () => {
     <ul className="article__resorts resorts">
       <li className="resorts__item">
         <a href="#" className="resorts__item-link">
-          <img src="/img/tours/thailand/phuket.jpg" alt="Пхукет" className="resorts__item-image" width="280" />
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/thailand/phuket-resort.webp" />
+            <img src="/img/tours/thailand/phuket-resort.jpg" alt="Пхукет" className="resorts__item-image" width="280" />
+          </picture>
+          
         </a>
         <div className="resorts__item-content">
           <a href="#" className="resorts__item-link">
@@ -21,7 +25,11 @@ const ThailandResorts = () => {
       </li>
       <li className="resorts__item">
         <a href="#" className="resorts__item-link">
-          <img src="/img/tours/thailand/pattaya.jpg" alt="Паттайя" className="resorts__item-image" width="280" />
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/thailand/pattaya-resort.webp" />
+            <img src="/img/tours/thailand/pattaya-resort.jpg" alt="Паттайя" className="resorts__item-image" width="280" />
+          </picture>
+          
         </a>
         <div className="resorts__item-content">
           <a href="#" className="resorts__item-link">
@@ -33,7 +41,11 @@ const ThailandResorts = () => {
       </li>
       <li className="resorts__item">
         <a href="#" className="resorts__item-link">
-          <img src="/img/tours/thailand/samui.jpg" alt="острок Самуи" className="resorts__item-image" width="280" />
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/thailand/samui-resort.webp" />
+            <img src="/img/tours/thailand/samui-resort.jpg" alt="острок Самуи" className="resorts__item-image" width="280" />
+          </picture>
+          
         </a>
         <div className="resorts__item-content">
           <a href="#" className="resorts__item-link">
@@ -45,7 +57,11 @@ const ThailandResorts = () => {
       </li>
       <li className="resorts__item">
         <a href="#" className="resorts__item-link">
-          <img src="/img/tours/thailand/bangkok.jpg" alt="Бангкок" className="resorts__item-image" width="280" />
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/thailand/bangkok-resort.webp" />
+            <img src="/img/tours/thailand/bangkok-resort.jpg" alt="Бангкок" className="resorts__item-image" width="280" />
+          </picture>
+          
         </a>
         <div className="resorts__item-content">
           <a href="#" className="resorts__item-link">
@@ -57,7 +73,11 @@ const ThailandResorts = () => {
       </li>
       <li className="resorts__item">
         <a href="#" className="resorts__item-link">
-          <img src="/img/tours/thailand/ko-chang.jpg" alt="Ко Чанг" className="resorts__item-image" width="280" />
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/thailand/ko-chang-resort.webp" />
+            <img src="/img/tours/thailand/ko-chang-resort.jpg" alt="Ко Чанг" className="resorts__item-image" width="280" />
+          </picture>
+          
         </a>
         <div className="resorts__item-content">
           <a href="#" className="resorts__item-link">
@@ -69,7 +89,11 @@ const ThailandResorts = () => {
       </li>
       <li className="resorts__item">
         <a href="#" className="resorts__item-link">
-          <img src="/img/tours/thailand/krabi.jpg" alt="Краби" className="resorts__item-image" width="280" />
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/thailand/krabi-resort.webp" />
+            <img src="/img/tours/thailand/krabi-resort.jpg" alt="Краби" className="resorts__item-image" width="280" />
+          </picture>
+          
         </a>
         <div className="resorts__item-content">
           <a href="#" className="resorts__item-link">
