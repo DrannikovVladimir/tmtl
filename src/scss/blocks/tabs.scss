@@ -52,6 +52,18 @@
   }
 }
 
+.tabs__title--vietnam {
+  &::before {
+    background-image: url('../../img/tabs/icon-vietnam.jpg');
+  }
+}
+
+.tabs__title--turkey {
+  &::before {
+    background-image: url('../../img/tabs/icon-turkey.jpg');
+  }
+}
+
 .tabs-nav {
   display: flex;
   justify-content: space-between;

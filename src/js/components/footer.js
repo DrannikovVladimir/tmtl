@@ -14,7 +14,7 @@ const Footer = () => {
         <li className="footer__block-list__item footer__block-list__item--tours">
           <ul className="footer__tours footer-tours-list">
             <li className="footer-tours-list__item">
-              <a href="/tours/tours-to-turkey.html" className="footer-tours-list__link">Турция</a>
+              <a href="/tours/turkey/turkey.html" className="footer-tours-list__link">Турция</a>
             </li>
             <li className="footer-tours-list__item">
               <a href="/tours/uae/uae.html" className="footer-tours-list__link">ОАЭ</a>
