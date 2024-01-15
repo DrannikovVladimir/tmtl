@@ -14,6 +14,7 @@ const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const del = require('del');
 const babel = require('gulp-babel');
+const sitemap = require('gulp-sitemap');
 
 //  paths
 const srcPath = "src/";
@@ -57,19 +58,17 @@ function html() {
 function css() {
   return src("src/scss/style.scss")
     .pipe(plumber())
-    // .pipe(sourcemaps.init())
+    .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(autoprefixer())
     // .pipe(cssbeautify())
-    
-    // .pipe(dest(path.build.css))
     .pipe(cssnano({
       zindex: false,
       discardComments: {
         removeAll: true
       }
     }))
-    // .pipe(sourcemaps.write('.sourcemaps'))
+    .pipe(sourcemaps.write(''))
     .pipe(dest("dist/css/"));
 };
 
@@ -133,9 +132,23 @@ async function clean() {
   return await del(path.clean);
 };
 
-const build = series(clean, images, getWebp, parallel(html, css, js, jsx, fonts));
+function getSitemap() {
+  return src('dist/**/*.html', {
+    read: false
+  })
+  .pipe(sitemap({
+    siteUrl: 'https://tmtl.kz',
+    priority: function(siteUrl, loc, entry) {
+      return loc.split('/').length === 0 ? 1 : 0.8;
+    }
+  }))
+  .pipe(dest('dist/css'))
+}
+
+const build = series(clean, images, getWebp, parallel(html, css, js, jsx, fonts), getSitemap);
 
 exports.html = html;
+exports.getSitemap = getSitemap;
 exports.css = css;
 exports.js = js;
 exports.jsx = jsx;
