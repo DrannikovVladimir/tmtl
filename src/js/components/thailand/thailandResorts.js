@@ -2,8 +2,6 @@ const thailandResortsContainer = ReactDOM.createRoot(
   document.getElementById('thailand-resorts')
 );
 
-console.log(thailandResortsContainer);
-
 const ThailandResorts = () => {
   return (
     <ul className="article__resorts resorts">
@@ -88,7 +86,7 @@ const ThailandResorts = () => {
         </div>
       </li>
       <li className="resorts__item">
-        <a href="#" className="resorts__item-link">
+        <a href="/tours/thailand/krabi-resort.html" className="resorts__item-link">
           <picture>
             <source type="image/webp" srcSet="/img/tours/thailand/krabi-resort.webp" />
             <img src="/img/tours/thailand/krabi-resort.jpg" alt="Краби" className="resorts__item-image" width="280" />
@@ -96,11 +94,11 @@ const ThailandResorts = () => {
           
         </a>
         <div className="resorts__item-content">
-          <a href="#" className="resorts__item-link">
+          <a href="/tours/thailand/krabi-resort.html" className="resorts__item-link">
             <h3 className="resorts__item-title">Краби</h3>
           </a>
           <p className="resorts__item-text">Провинция на юге Таиланда, известная своими впечатляющими скалами, пещерами и белоснежными пляжами. Здесь можно заняться скалолазанием, посетить национальный парк и насладиться великолепным видом на всемирно известный залив Пханг Нга.</p>
-          <a href="#" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
+          <a href="/tours/thailand/krabi-resort.html" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
         </div>
       </li>
     </ul>
