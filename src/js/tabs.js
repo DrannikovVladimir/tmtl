@@ -14,6 +14,7 @@ const navs = document.querySelectorAll('.tabs-nav__button');
     navs.forEach((nav) => {
       nav.addEventListener('click', () => {
         const navCurrent = nav.getAttribute('data-toggle');
+        console.log(navCurrent);
         if (navCurrent === 'button2') {
           content.classList.add('article__content--full-width');
           minPrice.classList.add('visually-hidden');
