@@ -70,7 +70,7 @@ const ThailandResorts = () => {
         </div>
       </li>
       <li className="resorts__item">
-        <a href="/tours/thailand/ko-chang-resort.html" className="resorts__item-link">
+        <a href="/tours/thailand/koh-chang-resort.html" className="resorts__item-link">
           <picture>
             <source type="image/webp" srcSet="/img/tours/thailand/ko-chang-resort.webp" />
             <img src="/img/tours/thailand/ko-chang-resort.jpg" alt="Ко Чанг" className="resorts__item-image" width="280" />
@@ -78,11 +78,11 @@ const ThailandResorts = () => {
           
         </a>
         <div className="resorts__item-content">
-          <a href="/tours/thailand/ko-chang-resort.html" className="resorts__item-link">
+          <a href="/tours/thailand/koh-chang-resort.html" className="resorts__item-link">
             <h3 className="resorts__item-title">Ко Чанг</h3>
           </a>
           <p className="resorts__item-text">Второй по величине остров Таиланда, расположенный близ границы с Камбоджей. Известен своими великолепными пляжами, густыми джунглями и богатым подводным миром. Здесь можно заняться дайвингом, посетить водопады и насладиться красотой природы.</p>
-          <a href="/tours/thailand/ko-chang-resort.html" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
+          <a href="/tours/thailand/koh-chang-resort.html" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
         </div>
       </li>
       <li className="resorts__item">

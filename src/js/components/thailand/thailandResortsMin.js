@@ -44,7 +44,7 @@ const ThailandResortsMin = () => {
           </a>
         </li>
         <li className="resorts__item resorts__item--list-min">
-          <a href="/tours/thailand/ko-chang-resort.html" className="resorts__item-link resorts__item-link--list-min">
+          <a href="/tours/thailand/koh-chang-resort.html" className="resorts__item-link resorts__item-link--list-min">
             <picture>
               <source type="image/webp" srcSet="/img/tours/thailand/ko-chang-resort.webp" />
               <img src="/img/tours/thailand/ko-chang-resort.jpg" alt="Ко Чанг" className="resorts__item-image resorts__item-image--list-min" width="280" />
