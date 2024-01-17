@@ -1,7 +1,6 @@
 .resorts {
   margin: 0;
   padding: 0;
-  padding-left: 11px;
   padding-top: 10px;
 
   list-style: none;
@@ -10,6 +9,7 @@
 .resorts--list-min {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 10px;
 }
 
 .resorts__item {
