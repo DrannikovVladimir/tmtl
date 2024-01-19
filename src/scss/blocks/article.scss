@@ -21,6 +21,7 @@
   margin-right: 20px;
   padding-left: 10px;
   padding-top: 10px;
+  padding-bottom: 10px;
   border: 1px solid $border-color;
   border-radius: 5px;
 }
@@ -30,7 +31,6 @@
   justify-content: center;
   align-items: center;
   margin-left: 10px;
-  margin-bottom: 20px;
 }
 
 .article__content-container__country {
@@ -246,6 +246,11 @@
 
   .article__content-container__country {
     width: auto;
+  }
+
+  .article__content-container__min-price {
+    width: auto;
+    margin-right: 0;
   }
 
   .article__title {
