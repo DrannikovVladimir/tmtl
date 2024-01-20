@@ -74,7 +74,7 @@ const Footer = () => {
           </ul>
         </li>
       </ul>
-      <p className="footer__copy">&#169; Time to travel, 2023</p>
+      <p className="footer__copy">&#169; «Time to Travel», 2023</p>
     </div>
   );
 };
