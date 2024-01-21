@@ -31,16 +31,16 @@ const Header = () => {
         </button>
         <ul className="main-nav__list">
           <li className="main-nav__list-item">
-            <a href="/pages/countries.html" className="main-nav__list-link">Страны</a>
+            <a href="/country/index.html" className="main-nav__list-link">Страны</a>
           </li>
           <li className="main-nav__list-item">
-            <a href="/pages/tours.html" className="main-nav__list-link">Горящие туры</a>
+            <a href="/tours/index.html" className="main-nav__list-link">Горящие туры</a>
           </li>
           <li className="main-nav__list-item">
-            <a href="/pages/about.html" className="main-nav__list-link">О нас</a>
+            <a href="/info/about/index.html" className="main-nav__list-link">О нас</a>
           </li>
           <li className="main-nav__list-item">
-            <a href="/pages/contacts.html" className="main-nav__list-link">Контакты</a>
+            <a href="/info/contacts/index.html" className="main-nav__list-link">Контакты</a>
           </li>
         </ul>
       </nav>

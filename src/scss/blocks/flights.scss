@@ -1,0 +1,13 @@
+.flights {
+  display: flex;
+  min-width: 200px;
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+
+  list-style: none;
+}
+
+.flights__item {
+  margin-right: 7px;
+}

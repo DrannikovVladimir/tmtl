@@ -64,6 +64,36 @@
   }
 }
 
+.tabs__title--china {
+  &::before {
+    background-image: url('../../img/tabs/icon-china.jpg');
+  }
+}
+
+.tabs__title--georgia {
+  &::before {
+    background-image: url('../../img/tabs/icon-georgia.jpg');
+  }
+}
+
+.tabs__title--india {
+  &::before {
+    background-image: url('../../img/tabs/icon-india.jpg');
+  }
+}
+
+.tabs__title--sri-lanka {
+  &::before {
+    background-image: url('../../img/tabs/icon-sri-lanka.jpg');
+  }
+}
+
+.tabs__title--maldives {
+  &::before {
+    background-image: url('../../img/tabs/icon-maldives.jpg');
+  }
+}
+
 .tabs-nav {
   display: flex;
   justify-content: space-between;
@@ -91,7 +121,7 @@
     content: '';
 
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     width: 16px;
     height: 16px;
@@ -108,7 +138,6 @@
 
 .tabs-nav__button--review {
   &::before {
-    top: 1px;
     background-image: url('../../img/tabs/icon-review.png');
   }
 }
