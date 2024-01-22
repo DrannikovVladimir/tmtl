@@ -1,11 +1,31 @@
 .flights {
+  position: relative;
+
   display: flex;
+  justify-content: flex-start;
   min-width: 200px;
   margin: 0;
-  padding: 0;
   margin-right: auto;
+  padding: 0;
+  padding-left: 22px;
 
   list-style: none;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+
+    background-image: url('/img/icon-airbus.png');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+  }
 }
 
 .flights__item {

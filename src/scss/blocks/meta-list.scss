@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   padding: 0;
 
   list-style: none;
@@ -34,12 +34,6 @@
 .meta-list__text {
   font-size: 16px;
   font-weight: 700;
-}
-
-@media (max-width: 630px) {
-  .meta-list {
-    margin-bottom: 20px;
-  }
 }
 
 @media (max-width: 460px) {
