@@ -20,7 +20,7 @@ const ThailandResortsMin = () => {
           <a href="/country/thailand/pattaya/index.html" className="resorts__item-link resorts__item-link--list-min">
             <picture>
               <source type="image/webp" srcSet="/img/tours/thailand/pattaya-resort.webp" />
-              <img src="/img/tours/thailand/pattaya-resort.jpg" alt="Паттайя" className="resorts__item-image resorts__item-image--list-min" width="280" />
+              <img src="/img/tours/thailand/pattaya-resort.jpg" alt="Паттайя" className="resorts__item-image resorts__item-image--list-min" width="140" />
             </picture>
             <h3 className="resorts__item-title resorts__item-title--list-min">Паттайя</h3>
           </a>
@@ -29,7 +29,7 @@ const ThailandResortsMin = () => {
           <a href="/country/thailand/samui/index.html" className="resorts__item-link resorts__item-link--list-min">
             <picture>
               <source type="image/webp" srcSet="/img/tours/thailand/samui-resort.webp" />
-              <img src="/img/tours/thailand/samui-resort.jpg" alt="острок Самуи" className="resorts__item-image resorts__item-image--list-min" width="280" />
+              <img src="/img/tours/thailand/samui-resort.jpg" alt="острок Самуи" className="resorts__item-image resorts__item-image--list-min" width="140" />
             </picture>
             <h3 className="resorts__item-title resorts__item-title--list-min">Самуи</h3>
           </a>
@@ -38,7 +38,7 @@ const ThailandResortsMin = () => {
           <a href="/country/thailand/bangkok/index.html" className="resorts__item-link resorts__item-link--list-min">
             <picture>
               <source type="image/webp" srcSet="/img/tours/thailand/bangkok-resort.webp" />
-              <img src="/img/tours/thailand/bangkok-resort.jpg" alt="Бангкок" className="resorts__item-image resorts__item-image--list-min" width="280" />
+              <img src="/img/tours/thailand/bangkok-resort.jpg" alt="Бангкок" className="resorts__item-image resorts__item-image--list-min" width="140" />
             </picture>
             <h3 className="resorts__item-title resorts__item-title--list-min">Бангкок</h3>
           </a>
@@ -47,7 +47,7 @@ const ThailandResortsMin = () => {
           <a href="/country/thailand/koh-chang/index.html" className="resorts__item-link resorts__item-link--list-min">
             <picture>
               <source type="image/webp" srcSet="/img/tours/thailand/ko-chang-resort.webp" />
-              <img src="/img/tours/thailand/ko-chang-resort.jpg" alt="Ко Чанг" className="resorts__item-image resorts__item-image--list-min" width="280" />
+              <img src="/img/tours/thailand/ko-chang-resort.jpg" alt="Ко Чанг" className="resorts__item-image resorts__item-image--list-min" width="140" />
             </picture>          
             <h3 className="resorts__item-title resorts__item-title--list-min">Ко Чанг</h3>
           </a>        
@@ -56,7 +56,7 @@ const ThailandResortsMin = () => {
           <a href="/country/thailand/krabi/index.html" className="resorts__item-link resorts__item-link--list-min">
             <picture>
               <source type="image/webp" srcSet="/img/tours/thailand/krabi-resort.webp" />
-              <img src="/img/tours/thailand/krabi-resort.jpg" alt="Краби" className="resorts__item-image resorts__item-image--list-min" width="280" />
+              <img src="/img/tours/thailand/krabi-resort.jpg" alt="Краби" className="resorts__item-image resorts__item-image--list-min" width="140" />
             </picture>
             <h3 className="resorts__item-title resorts__item-title--list-min">Краби</h3>
           </a>
