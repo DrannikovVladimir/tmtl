@@ -1,0 +1,14 @@
+.link--not-active {
+  color: $title-color;
+  opacity: 0.4;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .display-none {
+    display: none;
+  }
+}

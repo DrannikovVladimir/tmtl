@@ -31,3 +31,9 @@
 .flights__item {
   margin-right: 7px;
 }
+
+@media (max-width: 720px) {
+  .flights {
+    display: none;
+  }
+}
