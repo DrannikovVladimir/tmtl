@@ -2,35 +2,107 @@ const headerContainer = ReactDOM.createRoot(
   document.getElementById('header')
 );
 
-// const Modal = ({isOpened, setIsOpened}) => {
-//   const buttonCloseHandler = () => {
-//     setIsOpened(() => !isOpened);
-//   }
+const Modal = ({isOpened, setIsOpened}) => {
+  const [phoneValue, setPhoneValue] = React.useState('');
+  const [feedback, setFeedback] = React.useState(false);
+  const [error, setError] = React.useState(false);
 
-//   return (
-//     <div className="modal__wrapper">
-//       <div className="modal__content modal__content--booking">
-//         <h2 className="modal__title modal__title--booking">Успейте приобрести выгодное предложение по лучшей цене!</h2>
-//         <button onClick={buttonCloseHandler} className="modal__close modal__close--feedback">
-//           <span className="visually-hidden">Закрыть</span>
-//         </button>
-//         <form action="post" className="feedback-form">
-//           <ul className="feedback-form__list">
-//             <li className="feedback-form__list-item">
-//               <input type="text" id="name" name="name" className="feedback-form__input" placeholder="Имя" required />
-//               <label htmlFor="name" className="visually-hidden">Имя</label>
-//             </li>
-//             <li className="feedback-form__list-item">
-//               <input type="tel" id="phone" name="phone" className="feedback-form__input" required />
-//               <label htmlFor="phone" className="visually-hidden">Телефон</label>
-//             </li>
-//           </ul>
-//           <button className="feedback-form__submit" type="submit">Хочу подобрать тур</button>
-//         </form>
-//       </div>
-//     </div>
-//   );
-// }
+  const phoneValueHandler = ({ target }) => {
+    setPhoneValue(() => target.value);
+  }
+  const buttonCloseHandler = () => {
+    setIsOpened(() => !isOpened);
+    setFeedback(() => false);
+    setError(() => false);
+  }
+
+  const callbackFormHandler = async (e) => {
+    e.preventDefault();
+    const phone = JSON.stringify({ phone: phoneValue });
+    try {
+      await fetch('/api/phone', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: phone,
+      });
+      setFeedback(() => !feedback);
+    } catch (error) {
+      console.log(error);
+      setError(() => true);
+    }
+  } 
+
+  return (
+    <section className="modal">
+      <div className="modal__wrapper">
+        <div className="modal__content">
+          
+          <button onClick={buttonCloseHandler} className="modal__close">
+            <span className="visually-hidden">Закрыть</span>
+          </button>
+          {feedback 
+            ? (
+                <>
+                  <h2 className="modal__title modal__title--feedback">Спасибо что решили доверить нам свой отдых, мы вам сейчас перезвоним!</h2>
+                  <p className="modal__text">А пока можете почитать о популярных направлениях, курортах и отелях, а также посмотреть туры</p>
+                  <ul className="pages__list countries countries--feedback">
+                    <li className="countries__item countries__item--feedback">
+                      <a href="/country/thailand/index.html" className="countries__item-link countries__item-link--feedback">
+                        <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--thailand">Таиланд</h3>
+                      </a>
+                    </li>
+                    <li className="countries__item countries__item--feedback">
+                      <a href="/country/uae/index.html" className="countries__item-link countries__item-link--feedback">
+                        <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--uae">ОАЭ</h3>
+                      </a>
+                    </li>
+                    <li className="countries__item countries__item--feedback">
+                      <a href="/country/vietnam/index.html" className="countries__item-link countries__item-link--feedback">
+                        <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--vietnam">Вьетнам</h3>
+                      </a>
+                    </li>
+                    <li className="countries__item countries__item--feedback">
+                      <a href="/country/egypt/index.html" className="countries__item-link countries__item-link--feedback">
+                        <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--egypt">Египет</h3>
+                      </a>
+                    </li>
+                    <li className="countries__item countries__item--feedback">
+                      <a href="/country/turkey/index.html" className="countries__item-link countries__item-link--feedback">
+                        <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--turkey">Турция</h3>
+                      </a>
+                    </li>
+                  </ul>
+                </>
+              )
+            : (          
+                <>
+                  <h2 className="modal__title">Оставьте ваш телефон и мы обязательно вам перезвоним!</h2>
+                  <form action="post" id="callback-form" onSubmit={callbackFormHandler} className="feedback-form">
+                    <ul className="feedback-form__list">
+                      <li className="feedback-form__list-item">
+                        <input
+                          type="tel"
+                          id="phone"
+                          name="phone"
+                          className="feedback-form__input"
+                          required
+                          value={phoneValue}
+                          onChange={phoneValueHandler}
+                        />
+                        <label htmlFor="phone" className="visually-hidden">Телефон</label>
+                      </li>
+                    </ul>
+                    <button className="feedback-form__submit" type="submit">Перезвоните мне</button>
+                  </form>
+                </>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
 
 const Header = () => {
   const [isOpened, setIsOpened] = React.useState(false);
@@ -77,14 +149,14 @@ const Header = () => {
         </nav>
         <ul className="header__phones phones-list">
           <li className="phones-list__item">
-            <a href="tel:+7702000000000" className="phones-list__link">+7 (707) 886-36-33</a>
+            <a href="tel:+77078863633" className="phones-list__link">+7 (707) 886-36-33</a>
           </li>
-          {/* <li className="phones-list__item">
+          <li className="phones-list__item">
             <a href="/pages/contacts.html" onClick={callbackHandler} rel="nofollow" className="phones-list__callback">Заказать обратный звонок</a>
-          </li> */}
+          </li>
         </ul>
       </div>
-      {/* {modalIsOpened ? <Modal isOpened={modalIsOpened} setIsOpened={setModalIsOpened} /> : false} */}
+      {modalIsOpened ? <Modal isOpened={modalIsOpened} setIsOpened={setModalIsOpened} /> : false}
     </>
   )
 };

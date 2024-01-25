@@ -8,7 +8,7 @@
   width: 100%;
   height: 100%;
 
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
 
   z-index: 100;
 }
@@ -19,49 +19,17 @@
   left: 50%;
   transform: translateX(-50%);
 
-  width: 400px;
+  width: 380px;
   min-height: 250px;
-  padding: 40px 20px;
+  padding: 30px 20px;
   border-radius: 10px;
 
-  background-color: $accent-color;
+  background-color: $accent-color-dark;
   overflow: hidden;
-
-  &::before {
-    content: '';
-
-    position: absolute;
-    bottom: -155%;
-    left: -300px;
-    right: -250px;
-
-    width: 1000px;
-    height: 1000px;
-    border-radius: 50%;
-
-    background-color: #FAEF1B;
-
-    z-index: -1
-  }
 }
 
 .modal__wrapper--subs {
-  width: 400px;
-
-  &::before {
-    position: absolute;
-    bottom: -220%;
-    left: -200px;
-    right: -200px;
-
-    width: 800px;
-    height: 800px;
-    border-radius: 50%;
-
-    background-color: #FAEF1B;
-
-    z-index: -1
-  }
+  width: 380px;
 }
 
 .modal__title {
@@ -69,31 +37,41 @@
   padding: 0;
   margin-bottom: 20px;
 
-  font-size: 26px;
-  line-height: 28px;
+  font-size: 22px;
+  line-height: 26px;
   font-weight: 700;
   color: $bg-color;
   text-align: center;
 }
 
+.modal__title--feedback {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.modal__text {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+
+  color: $bg-color;
+}
+
 .modal__close {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 20px;
-  height: 20px;
+  top: 6px;
+  right: 6px;
+  width: 15px;
+  height: 15px;
   border: none;
 
   background-color: transparent;
   background-image: url('../img/icon-close.png');
   background-repeat: no-repeat;
-  background-size: 35px 35px;
+  background-size: 18px 18px;
   background-position: center;
-}
-
-.modal__text {
-  color: $text-color;
-  text-align: center;
 }
 
 .hidden {

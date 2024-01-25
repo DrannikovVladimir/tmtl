@@ -8,6 +8,14 @@
   box-shadow: 0 0 3px $border-color;
 }
 
+.countries--feedback {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  padding: 0;
+  box-shadow:  none;
+}
+
 .countries__item {
   display: flex;
   align-items: center;
@@ -17,6 +25,10 @@
   &:last-child {
     border-bottom: none;
   }
+}
+
+.countries__item--feedback {
+  border-bottom: none;
 }
 
 .countries__item-title {
@@ -32,9 +44,18 @@
   }
 }
 
+.countries__item-title--feedback {
+  color: $bg-color;
+}
+
 .countries__item-link {
   min-width: 200px;
   margin-right: 220px;
+}
+
+.countries__item-link--feedback {
+  min-width: auto;
+  margin-right: 30px;
 }
 
 .countries-list__links {
