@@ -38,7 +38,7 @@ const TurkeyResortsMin = () => {
             <source type="image/webp" srcSet="/img/tours/turkey/alanya-resort.webp" />
             <img src="/img/tours/turkey/alanya-resort.jpg" alt="Аланья" className="resorts__item-image resorts__item-image--list-min" width="280" />
           </picture>
-          <h3 className="resorts__item-title resorts__item-title--list-min">Аланья</h3>
+          <h3 className="resorts__item-title resorts__item-title--list-min">Алания</h3>
         </a>
       </li>
       <li className="resorts__item resorts__item--list-min">

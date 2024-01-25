@@ -2,7 +2,7 @@ const ERRORS = [400, 401, 402, 403, 404, 500];
 const titleBooking = 'Ваша заявка успешно отправлена';
 const titleSub = 'Ваша заявка успешно отправлена';
 const textBooking = 'Спасибо, что выбрали наше турагентство. Мы свяжемся с вами в течении часа и поможем выбрать лучшее предложения для вашего отдыха.';
-const textSub = 'Спасибо, что выбрали наше турагенство. Ваша подписка успешно оформлена.';
+const textSub = 'Спасибо, что выбрали наше турагентство. Ваша подписка успешно оформлена.';
 
 const modalFeedback = document.querySelector('.modal-feedback');
 const modalSubs = document.querySelector('.modal-subs');

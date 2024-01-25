@@ -63,7 +63,7 @@ const TurkeyResorts = () => {
         </a>
         <div className="resorts__item-content">
           <a href="/country/turkey/alanya/index.html" className="resorts__item-link">
-            <h3 className="resorts__item-title">Аланья</h3>
+            <h3 className="resorts__item-title">Алания</h3>
           </a>
           <p className="resorts__item-text">Здесь находится знаменитый пляж “Клеопатра”. Множество отелей на любой вкус, также много предложений для аренды аппартаментов. Аланья может похвастаться потрясающими пляжами с золотым мелким песком и лазурным морем.</p>
           <a href="/country/turkey/alanya/index.html" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
