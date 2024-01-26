@@ -2,12 +2,48 @@ const headerContainer = ReactDOM.createRoot(
   document.getElementById('header')
 );
 
+const getLastLetter = (str) => {
+  return str[str.length - 1];
+};
+
 const Modal = ({isOpened, setIsOpened}) => {
   const [phoneValue, setPhoneValue] = React.useState('');
   const [feedback, setFeedback] = React.useState(false);
   const [error, setError] = React.useState(false);
 
   const phoneValueHandler = ({ target }) => {
+    const lastLetter = getLastLetter(target.value);
+    if (target.value.length < phoneValue.length) {
+      setPhoneValue(() => target.value);
+      return;
+    }
+    if(target.value.length < 2 && target.value === '+') {
+      setPhoneValue(() => `${target.value}7 (`);
+      return;
+    }
+    if (target.value.length < 2 && target.value === '7') {
+      setPhoneValue(() => `+7 (`);
+      return;
+    }
+    if (target.value.length < 2 && target.value === '8') {
+      setPhoneValue(() => `+7 (`)
+      return;
+    }
+    if (target.value.length === 8) {
+      setPhoneValue(() => `${phoneValue}) ${lastLetter}`)
+      return;
+    }
+    if (target.value.length === 13) {
+      setPhoneValue(() => `${phoneValue}-${lastLetter}`)
+      return;
+    }
+    if (target.value.length === 16) {
+      setPhoneValue(() => `${phoneValue}-${lastLetter}`)
+      return;
+    }
+    if (target.value.length >= 19) {
+      return;
+    }
     setPhoneValue(() => target.value);
   }
   const buttonCloseHandler = () => {
@@ -88,6 +124,7 @@ const Modal = ({isOpened, setIsOpened}) => {
                           name="phone"
                           className="feedback-form__input"
                           required
+                          placeholder="+7(___)___-__-__"
                           value={phoneValue}
                           onChange={phoneValueHandler}
                         />
