@@ -141,9 +141,74 @@ const Modal = ({isOpened, setIsOpened}) => {
   );
 }
 
+const HeaderAddress = () => {
+  const [mapIsOpened, setMapIsOpened] = React.useState(false);
+
+  const mapClickHandler = (e) => {
+    e.preventDefault();
+    setMapIsOpened(() => !mapIsOpened);
+  };
+
+  return (
+    <>
+      <address className="header__address__container">
+        <p className="header__address__street">Мустафина 81/3, офис 206</p>
+        <p className="header__address__city">г. Караганда</p>            
+        <a href="/info/contacts/index.html" onClick={mapClickHandler} className="header__address__link phones-list__callback">Схема проезда к офису</a>
+      </address>
+      {mapIsOpened
+        ? (<section className="modal modal--map">
+            <div className="modal__wrapper modal__wrapper--map">
+              <div className="modal__content">
+                <h2 className="modal__title--map">Турагентство «Time to Travel»</h2>
+                <p className="modal__text--map">г. Караганда, ул. Мустафина 81/3, офис 206</p>
+                <p className="modal__text--map">пн-пт 10:00-19:00</p>
+                <button onClick={mapClickHandler} className="modal__close modal__close--map">
+                  <span className="visually-hidden">Закрыть</span>
+        
+                </button>
+                <div style={{ position:'relative', overflow: 'hidden' }}>
+                  <a href="https://yandex.kz/maps/ru/org/time_to_travel/196365210130/?lang=ru&utm_medium=mapframe&utm_source=maps" style={{ color: '#eee', fontSize: '12px', position: 'absolute', top: '0px'}}>Time to travel</a>
+                  <a href="https://yandex.kz/maps/ru/164/karaganda/category/travel_agency/184106432/?lang=ru&utm_medium=mapframe&utm_source=maps" style={{color:'#eee', fontSize: '12px', position: 'absolute', top: '14px'}}>Турагентство в Караганде</a>
+                  <iframe src="https://yandex.kz/map-widget/v1/?ll=73.112339%2C49.813474&mode=search&oid=196365210130&ol=biz&z=16.99" width={680} height={400} frameBorder={0} allowFullScreen={true} style={{position: 'relative'}}></iframe>
+                </div>
+              </div>
+            </div>
+          </section>)
+        : null
+      }
+    </>
+  )
+}
+
+const HeaderPhones = () => {
+  const [modalIsOpened, setModalIsOpened] = React.useState(false);
+  
+  const callbackHandler = (e) => {
+    e.preventDefault();
+    setModalIsOpened(() => !modalIsOpened);    
+  }
+  
+  return (
+    <>
+      <ul className="header__phones phones-list">
+        <li className="phones-list__item">
+          <p href="tel:+77078863633" className="phones-list__time">Работаем с 10:00 до 19:00</p>
+        </li>
+        <li className="phones-list__item">
+          <a href="tel:+77078863633" className="phones-list__link">+7 (707) 886-36-33</a>
+        </li>
+        <li className="phones-list__item">
+          <a href="/pages/contacts.html" onClick={callbackHandler} className="phones-list__callback">Заказать обратный звонок</a>
+        </li>
+      </ul>
+      {modalIsOpened ? <Modal isOpened={modalIsOpened} setIsOpened={setModalIsOpened} /> : false}
+    </>
+  );
+}
+
 const Header = () => {
   const [isOpened, setIsOpened] = React.useState(false);
-  const [modalIsOpened, setModalIsOpened] = React.useState(false);
   
   const mobileMenuHandler = () => {
     setIsOpened(() => !isOpened)
@@ -151,10 +216,6 @@ const Header = () => {
   
   const getClassNav = () => isOpened ? 'header__nav main-nav main-nav--show' : 'header__nav main-nav';
   const getClassButton = () => isOpened ? 'main-nav__button main-nav__button--opened' : 'main-nav__button main-nav__button--closed';
-  const callbackHandler = (e) => {
-    e.preventDefault();
-    setModalIsOpened(() => !modalIsOpened);    
-  }
 
   const classNav = getClassNav();
   const classButton = getClassButton();
@@ -184,16 +245,12 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <ul className="header__phones phones-list">
-          <li className="phones-list__item">
-            <a href="tel:+77078863633" className="phones-list__link">+7 (707) 886-36-33</a>
-          </li>
-          <li className="phones-list__item">
-            <a href="/pages/contacts.html" onClick={callbackHandler} rel="nofollow" className="phones-list__callback">Заказать обратный звонок</a>
-          </li>
-        </ul>
+        <div className="header__address">
+          <HeaderAddress />
+        </div>
+        <HeaderPhones />
       </div>
-      {modalIsOpened ? <Modal isOpened={modalIsOpened} setIsOpened={setModalIsOpened} /> : false}
+      
     </>
   )
 };

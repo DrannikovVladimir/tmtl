@@ -32,7 +32,7 @@
   margin-left: 230px;
   padding: 0;
   font-weight: 700;
-  font-size: 70px;
+  font-size: 65px;
   line-height: 70px;
   color: $title-color;
   text-transform: uppercase;
@@ -110,24 +110,6 @@
   border-radius: 5px;
 }
 
-// @keyframes shift {
-//   0% {
-//     margin-top: 0px;
-//   }
-//   25% {
-//     margin-top: 3px;
-//   }
-//   50% {
-//     margin-top: 0px;
-//   }
-//   75% {
-//     margin-top: -3px;
-//   }
-//   100% {
-//     margin-top: 0px;
-//   }
-// }
-
 @media (max-width: 1440px) {
   .promo__container {
     width: auto;
@@ -159,8 +141,6 @@
   
   .promo__title {
     margin-left: 60px;
-    font-size: 76px;
-    line-height: 76px;
   }
 
   .promo__subtitle {
@@ -231,12 +211,15 @@
   }
 
   .promo__button {
-    min-width: 200px;
-    padding: 13px 25px;
+    min-width: 160px;
+    padding: 12px 15px;
+    font-size: 14px;
+    line-height: 14px;
   }
 
   .promo__button--flight {
-    padding: 11px 23px;
+    margin-left: 10px;
+    padding: 10px 13px;
   }
 }
 
@@ -253,15 +236,5 @@
       top 450px left 80px;
   }
 
-  .promo__button {
-    min-width: 160px;
-    padding: 12px 15px;
-    font-size: 14px;
-    line-height: 14px;
-  }
-
-  .promo__button--flight {
-    margin-left: 10px;
-    padding: 10px 13px;
-  }
+  
 }

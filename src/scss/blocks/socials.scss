@@ -9,6 +9,11 @@
   list-style: none;
 }
 
+.socials--footer {
+  width: 160px;
+  padding-left: 35px;
+}
+
 .socials__item {
   position: relative;
 
@@ -26,5 +31,10 @@
 
     z-index: -1;
   }
+}
+
+.socials__item--footer {
+  width: 35px;
+  height: 35px;
 }
 

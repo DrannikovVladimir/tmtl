@@ -28,6 +28,13 @@
   overflow: hidden;
 }
 
+.modal__wrapper--map {
+  width: 720px;
+
+  background-color: $bg-color;
+  color: $title-color;
+}
+
 .modal__wrapper--subs {
   width: 380px;
 }
@@ -42,6 +49,15 @@
   font-weight: 700;
   color: $bg-color;
   text-align: center;
+}
+
+.modal__title--map {
+  margin-bottom: 0;
+
+  font-size: 18px;
+  line-height: 20px;
+
+  color: $title-color;
 }
 
 .modal__title--feedback {
@@ -59,6 +75,12 @@
   color: $bg-color;
 }
 
+.modal__text--map {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: $text-color;
+}
+
 .modal__close {
   position: absolute;
   top: 6px;
@@ -68,10 +90,14 @@
   border: none;
 
   background-color: transparent;
-  background-image: url('../img/icon-close.png');
+  background-image: url('/img/icon-close.png');
   background-repeat: no-repeat;
   background-size: 18px 18px;
   background-position: center;
+}
+
+.modal__close--map {
+  background-image: url('/img/icon-close-black.png');
 }
 
 .hidden {
