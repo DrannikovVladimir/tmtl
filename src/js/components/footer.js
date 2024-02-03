@@ -15,7 +15,7 @@ const HeaderAddress = () => {
       <address className="header__address__container">
         <p className="header__address__street">Мустафина 81/3, офис 206</p>
         <p className="header__address__city">г. Караганда</p>            
-        <a href="/info/contacts/index.html" onClick={mapClickHandler} className="header__address__link phones-list__callback">Схема проезда к офису</a>
+        <a href="/info/contacts/index.html" onClick={mapClickHandler} className="phones-list__callback">Схема проезда к офису</a>
       </address>
       {mapIsOpened
         ? (<section className="modal modal--map">
@@ -187,7 +187,7 @@ const HeaderPhones = () => {
   
   return (
     <>
-      <ul className="header__phones phones-list">
+      <ul className="phones-list  phones-list--footer">
         <li className="phones-list__item">
           <p href="tel:+77078863633" className="phones-list__time">Работаем с 10:00 до 19:00</p>
         </li>

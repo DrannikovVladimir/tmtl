@@ -66,30 +66,16 @@
   border-bottom: 1px dashed $basic-color;
 }
 
+@media (max-width: 700px) {
+  .phones-list {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 @media (max-width: 550px) {
   .phones-list__link {
     font-size: 18px;
     line-height: 24px;
-  }
-}
-
-@media (max-width: 460px) {
-  .phones-list__time {
-    display: none;
-  }
-
-  .phones-list__callback {
-    display: none;
-  }
-
-  .phones-list {
-    padding-top: 10px;
-    padding-left: 30px;
-  
-    &::before {
-      top: 11px;
-      width: 24px;
-      height: 24px;
-    }
   }
 }

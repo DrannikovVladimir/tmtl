@@ -4,7 +4,7 @@
 
   background-image: url('../img/icon-bg-booking.svg');
   background-repeat: no-repeat;
-  background-size: auto, cover;
+  background-size: cover;
   background-position: top center;
 }
 
@@ -65,6 +65,7 @@
     padding-left: 20px;
     padding-top: 100px;
     padding-right: 20px;
+    padding-bottom: 60px;
   }
 
   .footer__block-list {
@@ -77,10 +78,7 @@
   }
 
   .footer__block-list__item--logo {
-    order: 1;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    display: none;
   }
 
   .footer__block-list__item--tours {
@@ -94,13 +92,13 @@
   }
 
   .footer__block-list__item--contacts {
-    order: 5;
+    order: 1;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .footer__address {

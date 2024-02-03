@@ -69,8 +69,9 @@ const TurkeyResorts = () => {
           <a href="/country/turkey/alanya/index.html" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
         </div>
       </li>
+      {/* /country/turkey/belek/index.html */}
       <li className="resorts__item">
-        <a href="/country/turkey/belek/index.html" className="resorts__item-link">
+        <a href="#" className="resorts__item-link">
           <picture>
             <source type="image/webp" srcSet="/img/tours/turkey/belek-resort.webp" />
             <img src="/img/tours/turkey/belek-resort.jpg" alt="Белек" className="resorts__item-image" width="280" />
@@ -78,15 +79,16 @@ const TurkeyResorts = () => {
           
         </a>
         <div className="resorts__item-content">
-          <a href="/country/turkey/belek/index.html" className="resorts__item-link">
+          <a href="#" className="resorts__item-link">
             <h3 className="resorts__item-title">Белек</h3>
           </a>
           <p className="resorts__item-text">Широкая песчаная береговая линия, кристально чистая вода и множество элитных отелей. Самый фешенебельный курорт турции. Отлично подходит для отдыха с детьми. Плавная береговая линия без резких спусков, что подходит всем гостям.</p>
-          <a href="/country/turkey/belek/index.html" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
+          <a href="#" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
         </div>
       </li>
+      {/* /country/turkey/side/index.html */}
       <li className="resorts__item">
-        <a href="/country/turkey/side/index.html" className="resorts__item-link">
+        <a href="#" className="resorts__item-link">
           <picture>
             <source type="image/webp" srcSet="/img/tours/turkey/side-resort.webp" />
             <img src="/img/tours/turkey/side-resort.jpg" alt="Сиде" className="resorts__item-image" width="280" />
@@ -94,11 +96,11 @@ const TurkeyResorts = () => {
           
         </a>
         <div className="resorts__item-content">
-          <a href="/country/turkey/side/index.html" className="resorts__item-link">
+          <a href="#" className="resorts__item-link">
             <h3 className="resorts__item-title">Сиде</h3>
           </a>
           <p className="resorts__item-text">Расположен на полуострове, окруженном морем с трех сторон, основан греками. В его историческом центре находятся древние руины римских городов, которые стали частью городского пейзажа. Пляжи Сиде удостоен голубого флага за чистоту.</p>
-          <a href="/country/turkey/side/index.html" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
+          <a href="#" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
         </div>
       </li>
     </ul>

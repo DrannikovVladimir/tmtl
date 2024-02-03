@@ -38,3 +38,10 @@
   height: 35px;
 }
 
+@media (max-width: 550px) {
+  .socials--footer {
+    width: 140px;
+    padding-left: 15px;
+  }
+}
+
