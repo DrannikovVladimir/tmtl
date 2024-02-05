@@ -193,7 +193,7 @@ const HeaderPhones = () => {
     <>
       <ul className="header__phones phones-list">
         <li className="phones-list__item">
-          <p href="tel:+77078863633" className="phones-list__time">Работаем с 10:00 до 19:00</p>
+          <p className="phones-list__time">Работаем с 10:00 до 19:00</p>
         </li>
         <li className="phones-list__item">
           <a href="tel:+77078863633" className="phones-list__link">+7 (707) 886-36-33</a>
@@ -222,6 +222,22 @@ const Header = () => {
 
   return (
     <>
+      <section className="credit">
+        <a href="/info/credit/index.html">
+          <div className="credit__container">
+            <p className="credit__subtitle">
+              Отдыхайте сейчас платите 
+              <span className="credit__subtitle__text--accent"> потом</span>
+            </p>
+            <h2 className="credit__title">
+              Туры в рассрочку 
+              <span className="credit__title__text--small"> до</span>
+              <span className="credit__title__text--accent"> 3 000 000</span>
+              <span className="credit__title__text--small"> тг.</span>
+            </h2>
+          </div>
+        </a>
+      </section>
       <div className="header__container">
         <a href="/index.html" className="header__logo">
           <img src="/img/Logo.png" width="50" height="50" alt="Логотип" className="header__logo-image" />

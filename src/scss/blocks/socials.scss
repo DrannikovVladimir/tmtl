@@ -10,8 +10,8 @@
 }
 
 .socials--footer {
-  width: 160px;
-  padding-left: 35px;
+  width: 120px;
+  margin-bottom: 20px;
 }
 
 .socials__item {
@@ -36,12 +36,5 @@
 .socials__item--footer {
   width: 35px;
   height: 35px;
-}
-
-@media (max-width: 550px) {
-  .socials--footer {
-    width: 140px;
-    padding-left: 15px;
-  }
 }
 

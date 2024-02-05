@@ -1,5 +1,5 @@
 .promo {
-  margin-top: -110px;
+  margin-top: -103px;
   background-image: url('../img/icon-bg-promo-right.svg'),
     url('../img/icon-bg-promo-left.svg');
   background-repeat: no-repeat;
@@ -31,7 +31,7 @@
   margin-bottom: 10px;
   margin-left: 230px;
   padding: 0;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 65px;
   line-height: 70px;
   color: $title-color;
@@ -174,6 +174,12 @@
   }
 }
 
+@media (max-width: 930px) {
+  .promo {
+    margin-top: -88px;
+  }
+}
+
 @media (max-width: 800px) {
   .promo__container {  
     background-image: url('../img/bg-promo-girl.webp'),
@@ -220,6 +226,12 @@
   .promo__button--flight {
     margin-left: 10px;
     padding: 10px 13px;
+  }
+}
+
+@media (max-width: 550px) {
+  .promo {
+    margin-top: -80px;
   }
 }
 

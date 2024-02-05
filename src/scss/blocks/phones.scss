@@ -43,9 +43,9 @@
   line-height: 22px;
 }
 
-.phones-list__link--footer {
+.footer .phones-list__link {
   display: block;
-  margin-bottom: 20px;
+  color: $bg-color;
 }
 
 .phones-list__time {
@@ -56,6 +56,10 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
+}
+
+.footer .phones-list__time {
+  color: $bg-color;
 }
 
 .phones-list__callback {

@@ -2,6 +2,31 @@ const footerContainer = ReactDOM.createRoot(
   document.getElementById('footer')
 );
 
+const Socials = () => {
+  return (
+    <ul className="footer__socials socials socials--footer">
+      <li className="socials__item socials__item--footer">
+        <a href="https://www.instagram.com/timetotravel_krg/" target="_blank" className="socials__link socials__link--footer">
+          <img src="/img/icon-instagram.svg" alt="Instagram" className="socials__icon" />
+          <span className="visually-hidden">Instagram</span>
+        </a>
+      </li>
+      <li className="socials__item socials__item--footer">
+        <a href="https://t.me/hottours_krg" target="_blank" className="socials__link socials__link--footer">
+          <img src="/img/icon-telegram-social.svg" alt="Telegram" className="socials__icon" />
+          <span className="visually-hidden">Telegram</span>
+        </a>
+      </li>
+      <li className="socials__item socials__item--footer">
+        <a href="https://wa.me/77078863633" target="_blank" className="socials__link socials__link--footer">
+          <img src="/img/icon-whatsup.svg" alt="Whatsup" className="socials__link" />
+          <span className="visually-hidden">Whatsup</span>
+        </a>
+      </li>
+    </ul>
+  );
+};
+
 const HeaderAddress = () => {
   const [mapIsOpened, setMapIsOpened] = React.useState(false);
 
@@ -189,10 +214,10 @@ const HeaderPhones = () => {
     <>
       <ul className="phones-list  phones-list--footer">
         <li className="phones-list__item">
-          <p href="tel:+77078863633" className="phones-list__time">Работаем с 10:00 до 19:00</p>
+          <p className="phones-list__time" href="tel:+77078863633">Работаем с 10:00 до 19:00</p>
         </li>
         <li className="phones-list__item">
-          <a href="tel:+77078863633" className="phones-list__link">+7 (707) 886-36-33</a>
+          <a className="phones-list__link" href="tel:+77078863633">+7 (707) 886-36-33</a>
         </li>
         <li className="phones-list__item">
           <a href="/pages/contacts.html" onClick={callbackHandler} className="phones-list__callback">Заказать обратный звонок</a>
@@ -211,74 +236,58 @@ const Footer = () => {
           <a href="/index.html" className="footer__logo">
             <img src="/img/Logo.png" width="50" height="50" alt="Логотип" className="footer__logo-image" />
           </a>
+          <Socials />
+          <p className="footer__copy">&#169; «Time to Travel», 2024</p>
+          
         </li>
         <li className="footer__block-list__item footer__block-list__item--tours">
-          <ul className="footer__tours footer-tours-list">
-            <li className="footer-tours-list__item">
-              <a href="/country/turkey/index.html" className="footer-tours-list__link">Турция</a>
+          <h3 className="footer__block-list__item-title">Популярные направления</h3>
+          <ul className="footer__list footer-list">
+            <li className="footer-list__item">
+              <a href="/country/turkey/index.html" className="footer-list__link">Турция</a>
             </li>
-            <li className="footer-tours-list__item">
-              <a href="/country/uae/index.html" className="footer-tours-list__link">ОАЭ</a>
+            <li className="footer-list__item">
+              <a href="/country/uae/index.html" className="footer-list__link">ОАЭ</a>
             </li>
-            <li className="footer-tours-list__item">
-              <a href="/country/egypt/index.html" className="footer-tours-list__link">Египет</a>
+            <li className="footer-list__item">
+              <a href="/country/egypt/index.html" className="footer-list__link">Египет</a>
             </li>
-            <li className="footer-tours-list__item">
-              <a href="/country/vietnam/index.html" className="footer-tours-list__link">Вьетнам</a>
+            <li className="footer-list__item">
+              <a href="/country/vietnam/index.html" className="footer-list__link">Вьетнам</a>
             </li>
-            <li className="footer-tours-list__item">
-              <a href="/country/thailand/index.html" className="footer-tours-list__link">Таиланд</a>
-            </li>
-            <li className="footer-tours-list__item">
-              <a href="/country/montnegro/index.html" className="footer-tours-list__link">Черногория</a>
+            <li className="footer-list__item">
+              <a href="/country/thailand/index.html" className="footer-list__link">Таиланд</a>
             </li>
           </ul>
         </li>
         <li className="footer__block-list__item footer__block-list__item--menu">
-          <ul className="main-nav__list main-nav__list--footer">
-            <li className="main-nav__list-item">
-              <a href="/country/index.html" className="main-nav__list-link">Страны</a>
+          <h3 className="footer__block-list__item-title">Полезные ссылки</h3>
+          <ul className="footer__list footer-list">
+            <li className="footer-list__item">
+              <a href="/info/credit/index.html" className="footer-list__link">Рассрочка</a>
             </li>
-            <li className="main-nav__list-item">
-              <a href="/tours/index.html" className="main-nav__list-link">Горящие туры</a>
+            <li className="footer-list__item">
+              <a href="/country/index.html" className="footer-list__link">Страны</a>
             </li>
-            <li className="main-nav__list-item">
-              <a href="/info/about/index.html" className="main-nav__list-link">О нас</a>
+            <li className="footer-list__item">
+              <a href="/tours/index.html" className="footer-list__link">Горящие туры</a>
             </li>
-            <li className="main-nav__list-item">
-              <a href="/info/contacts/index.html" className="main-nav__list-link">Контакты</a>
+            <li className="footer-list__item">
+              <a href="/info/about/index.html" className="footer-list__link">О нас</a>
+            </li>
+            <li className="footer-list__item">
+              <a href="/info/contacts/index.html" className="footer-list__link">Контакты</a>
             </li>
           </ul>
         </li>
         <li className="footer__block-list__item footer__block-list__item--contacts">
-          <ul className="footer__socials socials socials--footer">
-            <li className="socials__item socials__item--footer">
-              <a href="https://www.instagram.com/timetotravel_krg/" target="_blank" className="socials__link socials__link--footer">
-                <img src="/img/icon-instagram.svg" alt="Instagram" className="socials__icon" />
-                <span className="visually-hidden">Instagram</span>
-              </a>
-            </li>
-            <li className="socials__item socials__item--footer">
-              <a href="https://t.me/hottours_krg" target="_blank" className="socials__link socials__link--footer">
-                <img src="/img/icon-telegram-social.svg" alt="Telegram" className="socials__icon" />
-                <span className="visually-hidden">Telegram</span>
-              </a>
-            </li>
-            <li className="socials__item socials__item--footer">
-              <a href="https://wa.me/77078863633" target="_blank" className="socials__link socials__link--footer">
-                <img src="/img/icon-whatsup.svg" alt="Whatsup" className="socials__link" />
-                <span className="visually-hidden">Whatsup</span>
-              </a>
-            </li>
-          </ul>
-          <br />
+          <h3 className="footer__block-list__item-title">Наши контакты</h3>
           <HeaderAddress />
           <br />
           <HeaderPhones />
           
         </li>
       </ul>
-      <p className="footer__copy">&#169; «Time to Travel», 2024</p>
     </div>
   );
 };
