@@ -1,0 +1,40 @@
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features-list__item {
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.features-list__image-container {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-list__title {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.features-list__text {
+  margin: 0;
+  padding: 0;
+
+}
+
+@media (max-width: 550px) {
+  .features-list__item {
+    width: auto;
+  }
+}
