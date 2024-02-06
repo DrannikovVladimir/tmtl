@@ -241,7 +241,7 @@ const Footer = () => {
           
         </li>
         <li className="footer__block-list__item footer__block-list__item--tours">
-          <h3 className="footer__block-list__item-title">Популярные направления</h3>
+          <h3 className="footer__block-list__item-title">Популярные страны</h3>
           <ul className="footer__list footer-list">
             <li className="footer-list__item">
               <a href="/country/turkey/index.html" className="footer-list__link">Турция</a>
@@ -262,22 +262,26 @@ const Footer = () => {
         </li>
         <li className="footer__block-list__item footer__block-list__item--menu">
           <h3 className="footer__block-list__item-title">Полезные ссылки</h3>
-          <ul className="footer__list footer-list">
+          <ul itemScope itemType="http://schema.org/SiteNavigationElement" className="footer__list footer-list">
             <li className="footer-list__item">
-              <a href="/info/credit/index.html" className="footer-list__link">Рассрочка</a>
+              <a itemProp="url" href="/info/credit/index.html" className="footer-list__link">Рассрочка</a>
             </li>
             <li className="footer-list__item">
-              <a href="/country/index.html" className="footer-list__link">Страны</a>
+              <a itemProp="url" href="/country/index.html" className="footer-list__link">Страны</a>
             </li>
             <li className="footer-list__item">
-              <a href="/tours/index.html" className="footer-list__link">Горящие туры</a>
+              <a itemProp="url" href="/tours/index.html" className="footer-list__link">Горящие туры</a>
             </li>
             <li className="footer-list__item">
-              <a href="/info/about/index.html" className="footer-list__link">О нас</a>
+              <a itemProp="url" href="/articles/articles.html" className="footer-list__link">Статьи</a>
             </li>
             <li className="footer-list__item">
-              <a href="/info/contacts/index.html" className="footer-list__link">Контакты</a>
+              <a itemProp="url" href="/info/about/index.html" className="footer-list__link">О нас</a>
             </li>
+            <li className="footer-list__item">
+              <a itemProp="url" href="/info/contacts/index.html" className="footer-list__link">Контакты</a>
+            </li>
+            
           </ul>
         </li>
         <li className="footer__block-list__item footer__block-list__item--contacts">

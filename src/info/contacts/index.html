@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+<head itemscope itemtype="http://schema.org/WPHeader">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YVZ5KS8WK9"></script>
   <script>
@@ -13,7 +13,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Местоположение, карта, адреса, телефоны, социальные сети">
+  <meta itemprop="description" name="description" content="Адрес, телефон, схема проезда, местопложение, социальные сети. Турагентство «Time to Travel» Караганда работает с 10 до 19, с понедельника по пятницу.">
 
   <link type="image/x-icon" rel="shortcut icon" href="/img/favicon/favicon.ico">
   <link type="image/png" sizes="16x16" rel="icon" href="/img/favicon/favicon-16x16.png">
@@ -31,7 +31,7 @@
   <link sizes="144x144" rel="apple-touch-icon" href="/img/favicon/apple-touch-icon-144x144.png">
   <link sizes="152x152" rel="apple-touch-icon" href="/img/favicon/apple-touch-icon-152x152.png">
   <link sizes="180x180" rel="apple-touch-icon" href="/img/favicon/apple-touch-icon-180x180.png">
-  <link rel="canonical" href="https://tmtl.kz/info/contacts/">
+  <link rel="canonical" href="https://tmtl.kz/info/about/">
 
   <link color="#e52037" rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg">
 
@@ -43,7 +43,7 @@
   <meta name="application-name" content="Time to travel">
   <meta name="theme-color" content="#ffffff">
 
-  <title>Туристическое агентство «Time to Travel» | Контакты</title>
+  <title itemprop="headline">Контакты Турагентства «Time to Travel» в городе Караганда</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -66,29 +66,45 @@
         <h1 class="visually-hidden">Контакты</h1>
 
         <div class="contacts-page__wrapper">
-          <div class="contacts-page__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1287.5596155001704!2d73.0918878525498!3d49.80262607429987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42434701021dea9b%3A0xa596729e0440e103!2sTime%20to%20travel!5e0!3m2!1sru!2skz!4v1681447728134!5m2!1sru!2skz" width="600" height="400" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          <div class="contacts-page__info">
-            <p class="contacts-page__text">
-              <span class="contacts-page__name">Телефон:</span>
-              <a href="tel:+77078863633">+7 (707) 886-36-33</a>
-            </p>
-            <p class="contacts-page__text">
-              <span class="contacts-page__name">Email:</span>
-              <a href="mailto:info@tmtl.kz">info@tmtl.kz</a>
-            </p>
-            <p class="contacts-page__text">
-              <span class="contacts-page__name">Адрес:</span>
-              <span class="contacts-page__text-address">г.Караганда, ул.&#160;Мустафина&#160;81/3, офис&#160;206</span>
-            </p>
+          <div class="contacts-page__info" itemscope itemtype="https://schema.org/Organization">
+            <div class="contacts-page__info-box">
+              <span class="contacts-page__title" itemprop="name">Туристическое агентство «Time&nbsp;to&nbsp;Travel»</span>
+              <link itemprop="url" href="https://tmtl.kz">
+              <p class="contacts-page__text" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="streetAddress" class="contacts-page__street">Мустафина 81/3, офис 206</span>   
+                <span itemprop="addressLocality" class="contacts-page__city">Караганда,</span>
+                <span itemprop="addressCountry" class="contacts-page__country"> Казахстан</span>
+              </p>
+              <p class="contacts-page__text">
+                <time itemprop="openingHours"class="contacts-page__time" datetime="Mo-Fr, 10:00−19:00">Пн-Пт, 10:00 – 19:00</time>
+              </p>  
+            </div>                      
+            <div class="contacts-page__info-box">
+              <p class="contacts-page__text">
+                <span class="contacts-page__name">Телефон:</span>
+                <a itemprop="telephone" href="tel:+77078863633" class="contacts-page__link">+7 (707) 886-36-33</a>
+              </p>
+              <p class="contacts-page__text">
+                <span class="contacts-page__name">Email:</span>
+                <a itemprop="email" href="mailto:info@tmtl.kz" class="contacts-page__link">info@tmtl.kz</a>
+              </p>
+              <p class="contacts-page__text">
+                <span class="contacts-page__name">Instagram:</span>
+                <a itemprop="instagram" href="https://www.instagram.com/timetotravel_krg/" target="_blank" class="contacts-page__link">timetotravel_krg</a>
+              </p>
+              <p class="contacts-page__text">
+                <span class="contacts-page__name">Telegram:</span>
+                <a itemprop="instagram" href="https://t.me/hottours_krg" target="_blank" class="contacts-page__link">hottours_krg</a>
+              </p>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="article__link-wrapper">
-          <a href="/index.html" class="article__link">На главную</a>
-        </div>
-
+    <section class="contacts-page__map">
+      <div class="contacts-page__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1287.5596155001704!2d73.0918878525498!3d49.80262607429987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42434701021dea9b%3A0xa596729e0440e103!2sTime%20to%20travel!5e0!3m2!1sru!2skz!4v1681447728134!5m2!1sru!2skz" width="100%" height="400" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
 

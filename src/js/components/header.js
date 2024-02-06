@@ -254,6 +254,9 @@ const Header = () => {
               <a href="/tours/index.html" className="main-nav__list-link">Горящие туры</a>
             </li>
             <li className="main-nav__list-item">
+              <a href="/articles/articles.html" className="main-nav__list-link">Статьи</a>
+            </li>
+            <li className="main-nav__list-item">
               <a href="/info/about/index.html" className="main-nav__list-link">О нас</a>
             </li>
             <li className="main-nav__list-item">
