@@ -8,7 +8,7 @@
 
   list-style: none;
 
-  z-index: 10000;
+  z-index: 1000;
 }
 
 .main-nav__list--footer {
@@ -67,6 +67,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 10000;
 }
 
 .main-nav__button--closed {
@@ -107,7 +108,7 @@
 
   .main-nav--show > .main-nav__list {
     position: absolute;
-    top: 80px;
+    top: 0;
     left: 0;
     right: 0;
 
@@ -131,6 +132,12 @@
 
   .main-nav__button {
     display: block;
+  }
+
+  .main-nav--show > .main-nav__button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
   }
 }
 

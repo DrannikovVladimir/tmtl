@@ -58,23 +58,6 @@
 
     z-index: 10;
   }
-
-  &::after {
-    content: '';
-
-    position: absolute;
-    bottom: 50px;
-    left: -70px;
-    width: 180px;
-    height: 126px;
-
-    background-image: url('../img/bg-booking-shell.webp');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    z-index: 10;
-  }
 }
 
 .booking__title {
@@ -254,11 +237,6 @@
     &::before {
       background: none;
     }
-
-    &::after {
-      bottom: 30px;
-      left: 70%;
-    }
   }
 
   .booking__image-container {
@@ -306,20 +284,12 @@
     padding-bottom: 40px;
   }
 
-  .booking__container {
-    &::after {
-      bottom: 20px;
-      background-size: 100px auto;
-    }
-  }
-
   .booking__title {
     font-size: 36px;
     line-height: 42px;
   }
 
   .booking__content {
-    margin-top: 300px;
     min-height: 300px;
   }
 
@@ -340,6 +310,6 @@
 
 @media (max-width: 460px) {
   .booking__content {
-    margin-top: 200px;
+    margin-top: 350px;
   }
 }
