@@ -207,6 +207,27 @@ const HeaderPhones = () => {
   );
 }
 
+const Credit = () => {
+  return (
+    <section className="credit">
+      <a href="/info/credit/index.html">
+        <div className="credit__container">
+          <p className="credit__subtitle">
+            Отдыхайте сейчас платите 
+            <span className="credit__subtitle__text--accent"> потом</span>
+          </p>
+          <h2 className="credit__title">
+            Туры в рассрочку 
+            <span className="credit__title__text--small"> до</span>
+            <span className="credit__title__text--accent"> 3 000 000</span>
+            <span className="credit__title__text--small"> тг.</span>
+          </h2>
+        </div>
+      </a>
+    </section>
+  );
+}
+
 const Header = () => {
   const [isOpened, setIsOpened] = React.useState(false);
   
@@ -222,22 +243,7 @@ const Header = () => {
 
   return (
     <>
-      <section className="credit">
-        <a href="/info/credit/index.html">
-          <div className="credit__container">
-            <p className="credit__subtitle">
-              Отдыхайте сейчас платите 
-              <span className="credit__subtitle__text--accent"> потом</span>
-            </p>
-            <h2 className="credit__title">
-              Туры в рассрочку 
-              <span className="credit__title__text--small"> до</span>
-              <span className="credit__title__text--accent"> 3 000 000</span>
-              <span className="credit__title__text--small"> тг.</span>
-            </h2>
-          </div>
-        </a>
-      </section>
+      <Credit />
       <div className="header__container">
         <a href="/index.html" className="header__logo">
           <img src="/img/Logo.png" width="50" height="50" alt="Логотип" className="header__logo-image" />
@@ -246,21 +252,21 @@ const Header = () => {
           <button type="button" className={classButton} onClick={mobileMenuHandler}>
             <span className="visually-hidden">Мобильное меню</span>
           </button>
-          <ul className="main-nav__list">
+          <ul className="main-nav__list"itemscope itemtype="http://schema.org/SiteNavigationElement">
             <li className="main-nav__list-item">
-              <a href="/country/index.html" className="main-nav__list-link">Страны</a>
+              <a itemprop="url" href="/country/index.html" className="main-nav__list-link">Страны</a>
             </li>
             <li className="main-nav__list-item">
-              <a href="/tours/index.html" className="main-nav__list-link">Горящие туры</a>
+              <a itemprop="url" href="/tours/index.html" className="main-nav__list-link">Горящие туры</a>
             </li>
             <li className="main-nav__list-item">
-              <a href="/articles/articles.html" className="main-nav__list-link">Статьи</a>
+              <a itemprop="url" href="/articles/articles.html" className="main-nav__list-link">Статьи</a>
             </li>
             <li className="main-nav__list-item">
-              <a href="/info/about/index.html" className="main-nav__list-link">О нас</a>
+              <a itemprop="url" href="/info/about/index.html" className="main-nav__list-link">О нас</a>
             </li>
             <li className="main-nav__list-item">
-              <a href="/info/contacts/index.html" className="main-nav__list-link">Контакты</a>
+              <a itemprop="url" href="/info/contacts/index.html" className="main-nav__list-link">Контакты</a>
             </li>
           </ul>
         </nav>

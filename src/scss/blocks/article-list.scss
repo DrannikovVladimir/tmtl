@@ -6,9 +6,13 @@
 }
 
 .article-list__item {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   text-align: left;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .article-list__item--margin {
@@ -45,5 +49,19 @@
     border-bottom: 2px solid $basic-color;
     border-right: 2px solid $basic-color;
     transform: rotate(45deg);
+  }
+}
+
+.article-num-list {
+  margin-bottom: 40px;
+  padding: 0;
+  padding-left: 20px;
+}
+
+.article-num-list__link {
+  color: #02979a;
+
+  &:hover {
+    text-decoration: underline;
   }
 }

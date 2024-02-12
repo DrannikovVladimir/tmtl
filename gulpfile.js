@@ -206,7 +206,6 @@ function getJsx() {
 
 function startWatch() {
   watch('src/**/*.html').on('change', browserSync.reload);
-  watch('src/js/**/*.js').on('change', browserSync.reload);
   watch('src/scss/**/*.scss', getCss);
   watch('src/js/**/*.js', getJs);
   watch('src/js/components/**/*.js', getJsx);
