@@ -252,21 +252,21 @@ const Header = () => {
           <button type="button" className={classButton} onClick={mobileMenuHandler}>
             <span className="visually-hidden">Мобильное меню</span>
           </button>
-          <ul className="main-nav__list"itemscope itemtype="http://schema.org/SiteNavigationElement">
+          <ul className="main-nav__list" itemScope itemType="http://schema.org/SiteNavigationElement">
             <li className="main-nav__list-item">
-              <a itemprop="url" href="/country/index.html" className="main-nav__list-link">Страны</a>
+              <a itemProp="url" href="/country/index.html" className="main-nav__list-link">Страны</a>
             </li>
             <li className="main-nav__list-item">
-              <a itemprop="url" href="/tours/index.html" className="main-nav__list-link">Горящие туры</a>
+              <a itemProp="url" href="/tours/index.html" className="main-nav__list-link">Горящие туры</a>
             </li>
             <li className="main-nav__list-item">
-              <a itemprop="url" href="/articles/articles.html" className="main-nav__list-link">Статьи</a>
+              <a itemProp="url" href="/articles/articles.html" className="main-nav__list-link">Статьи</a>
             </li>
             <li className="main-nav__list-item">
-              <a itemprop="url" href="/info/about/index.html" className="main-nav__list-link">О нас</a>
+              <a itemProp="url" href="/info/about/index.html" className="main-nav__list-link">О нас</a>
             </li>
             <li className="main-nav__list-item">
-              <a itemprop="url" href="/info/contacts/index.html" className="main-nav__list-link">Контакты</a>
+              <a itemProp="url" href="/info/contacts/index.html" className="main-nav__list-link">Контакты</a>
             </li>
           </ul>
         </nav>
