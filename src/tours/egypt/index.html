@@ -56,18 +56,30 @@
 
     <section class="article">
       <div class="article__container">
-        <ul class="article__breadcrumbs breadcrumbs-list">
-          <li class="breadcrumbs-list__item">
-            <a href="/index.html" class="breadcrumbs-list__link">Главная</a>
+        <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="article__breadcrumbs breadcrumbs-list">
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs-list__item">
+            <a itemprop="item" href="/index.html" class="breadcrumbs-list__link">
+              <span itemprop="name">Главная</span>
+            </a>
+            <meta itemprop="position" content="1" />
           </li>
-          <li class="breadcrumbs-list__item">
-            <a href="/country/index.html" class="breadcrumbs-list__link">Страны</a>
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs-list__item">
+            <a itemprop="item" href="/country/index.html" class="breadcrumbs-list__link">
+              <span itemprop="name">Страны</span>
+            </a>
+            <meta itemprop="position" content="2" />
           </li>
-          <li class="breadcrumbs-list__item">
-            <a href="/country/egypt/index.html" class="breadcrumbs-list__link">Египет</a>
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs-list__item">
+            <a itemprop="item" href="/country/egypt/index.html" class="breadcrumbs-list__link">
+              <span itemprop="name">Египет</span>
+            </a>
+            <meta itemprop="position" content="3" />
           </li>
-          <li class="breadcrumbs-list__item">
-            <a class="breadcrumbs-list__link breadcrumbs-list__item--active">Туры в Египет</a>
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs-list__item">
+            <a itemprop="item" class="breadcrumbs-list__link breadcrumbs-list__item--active">
+              <span itemprop="name">Туры в Египет</span>
+            </a>
+            <meta itemprop="position" content="4" />
           </li>
         </ul>
 
