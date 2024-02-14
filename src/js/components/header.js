@@ -253,11 +253,14 @@ const Header = () => {
             <span className="visually-hidden">Мобильное меню</span>
           </button>
           <ul className="main-nav__list" itemScope itemType="http://schema.org/SiteNavigationElement">
+          <li className="main-nav__list-item">
+              <a itemProp="url" href="/tours/index.html" className="main-nav__list-link">Туры</a>
+            </li>
             <li className="main-nav__list-item">
               <a itemProp="url" href="/country/index.html" className="main-nav__list-link">Страны</a>
             </li>
             <li className="main-nav__list-item">
-              <a itemProp="url" href="/tours/index.html" className="main-nav__list-link">Горящие туры</a>
+              <a itemProp="url" href="/hottours/index.html" className="main-nav__list-link">Горящие туры</a>
             </li>
             <li className="main-nav__list-item">
               <a itemProp="url" href="/articles/articles.html" className="main-nav__list-link">Статьи</a>

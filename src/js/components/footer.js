@@ -258,11 +258,20 @@ const Footer = () => {
             <li className="footer-list__item">
               <a href="/country/thailand/index.html" className="footer-list__link">Таиланд</a>
             </li>
+            <li className="footer-list__item">
+              <a href="/country/india/index.html" className="footer-list__link">Индия (Гоа)</a>
+            </li>
+            <li className="footer-list__item">
+              <a href="/country/china/hainan/index.html" className="footer-list__link">Китай (о.Хайнань)</a>
+            </li>
           </ul>
         </li>
         <li className="footer__block-list__item footer__block-list__item--menu">
           <h3 className="footer__block-list__item-title">Полезные ссылки</h3>
           <ul itemScope itemType="http://schema.org/SiteNavigationElement" className="footer__list footer-list">
+            <li className="footer-list__item">
+              <a itemProp="url" href="/tours/index.html" className="footer-list__link">Туры</a>
+            </li>
             <li className="footer-list__item">
               <a itemProp="url" href="/info/credit/index.html" className="footer-list__link">Рассрочка</a>
             </li>
@@ -270,7 +279,7 @@ const Footer = () => {
               <a itemProp="url" href="/country/index.html" className="footer-list__link">Страны</a>
             </li>
             <li className="footer-list__item">
-              <a itemProp="url" href="/tours/index.html" className="footer-list__link">Горящие туры</a>
+              <a itemProp="url" href="/hottours/index.html" className="footer-list__link">Горящие туры</a>
             </li>
             <li className="footer-list__item">
               <a itemProp="url" href="/articles/articles.html" className="footer-list__link">Статьи</a>
