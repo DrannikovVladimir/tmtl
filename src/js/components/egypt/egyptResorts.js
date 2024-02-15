@@ -24,7 +24,7 @@ const EgyptResorts = () => {
         </div>
       </li>
       <li className="resorts__item">
-        <a href="#" className="resorts__item-link">
+        <a href="/country/egypt/hurghada/index.html" className="resorts__item-link">
           <picture>
             <source type="image/webp" srcSet="/img/tours/egypt/hurgada-resort.webp" />
             <img src="/img/tours/egypt/hurgada-resort.jpg" alt="Хургада" className="resorts__item-image" width="250" />
@@ -32,11 +32,11 @@ const EgyptResorts = () => {
           
         </a>
         <div className="resorts__item-content">
-          <a href="#" className="resorts__item-link">
+          <a href="/country/egypt/hurghada/index.html" className="resorts__item-link">
             <h3 className="resorts__item-title">Хургада</h3>
           </a>
           <p className="resorts__item-text">Хургада - отличный курорт на берегу Красного моря и представляет собой одно из главных туристических направлений Египта. Он славится своими великолепными песчаными пляжами, живописными коралловыми островами и удивительным разнообразием растительного и животного мира. </p>
-          <a href="#" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
+          <a href="/country/egypt/hurghada/index.html" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
         </div>
       </li>
       <li className="resorts__item">

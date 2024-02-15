@@ -15,7 +15,7 @@ const EgyptResortsMin = () => {
         </a>
       </li>
       <li className="resorts__item resorts__item--list-min">
-        <a href="#" className="resorts__item-link resorts__item-link--list-min">
+        <a href="/country/egypt/hurghada/index.html" className="resorts__item-link resorts__item-link--list-min">
           <picture>
             <source type="image/webp" srcSet="/img/tours/egypt/hurgada-resort.webp" />
             <img src="/img/tours/egypt/hurgada-resort.jpg" alt="Хургада" className="resorts__item-image resorts__item-image resorts__item-image--list-min" width="250" />
