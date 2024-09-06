@@ -164,10 +164,10 @@ exports.build = build;
 
 function getBrowserSync() {
   browserSync.init({
-    server: {
-      baseDir: 'src/',
-      notify: false,
-    }
+    proxy: "localhost:3000", // Адрес вашего Express-сервера
+    port: 3001, // Порт для Browsersync
+    notify: false,
+    files: ['src/**/*.html', 'src/css/**/*.css', 'src/js/**/*.js'] // Файлы для отслеживания
   });
 };
 
@@ -206,9 +206,9 @@ function getJsx() {
 
 function startWatch() {
   watch('src/**/*.html').on('change', browserSync.reload);
-  watch('src/scss/**/*.scss', getCss);
-  watch('src/js/**/*.js', getJs);
-  watch('src/js/components/**/*.js', getJsx);
+  watch('src/scss/**/*.scss', series(getCss, browserSync.reload));
+  watch('src/js/**/*.js', series(getJs, browserSync.reload));
+  watch('src/js/components/**/*.js', series(getJsx, browserSync.reload));
 }
 
-exports.dev = parallel(getCss, getJsx, getBrowserSync, startWatch);
+exports.dev = parallel(getCss, getJs, getJsx, getBrowserSync, startWatch);
