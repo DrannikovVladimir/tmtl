@@ -156,6 +156,7 @@
   padding: 13px;
   border: 2px solid $accent-color;
   border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 @media (max-width: 1280px) {
@@ -174,7 +175,7 @@
 
 @media (max-width: 780px) {
   .subs {
-    min-height: 645px;
+    min-height: 245px;
     background-image: none;
 
     &::before {
@@ -208,7 +209,7 @@
   }
 
   .form-subs__input {
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.4);
   }
 }
 
@@ -245,14 +246,18 @@
     font-size: 18px;
     line-height: 24px;
   }
-}
 
-@media (max-width: 480px) {
   .form-subs__wrapper {
     flex-direction: column;
   }
 
   .form-subs__input {
+    width: 100%;
+    margin-right: 0;
     margin-bottom: 10px;
+  }
+
+  .subs__button {
+    width: 100%;
   }
 }
