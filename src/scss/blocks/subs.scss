@@ -3,10 +3,10 @@
   min-height: 445px;
   margin-bottom: 80px;
 
-  background-image: url('../img/hot-tours-bg-crab.webp');
+  background-image: url('/img/hot-tours-bg-crab.webp');
   background-repeat: no-repeat;
-  background-size: 255px auto;
-  background-position: top 54px right 5%;
+  background-size: 155px auto;
+  background-position: top 110px right 5%;
 
   &::before {
     content: '';
@@ -45,7 +45,7 @@
   position: relative;
   min-height: 445px;
 
-  background-image: url('../img/subs-bg.webp');
+  background-image: url('/img/subs-bg.webp');
   background-repeat: no-repeat;
   background-size: 1440px 445px;
   background-position: bottom, center;
@@ -57,7 +57,7 @@
   position: relative;
   min-height: 255px;
 
-  background-image: url('../img/subs-bg.webp');
+  background-image: url('/img/subs-bg.webp');
   background-repeat: no-repeat;
   background-size: 840px auto;
   background-position: bottom, center;
@@ -98,21 +98,11 @@
   margin-bottom: 30px;
   padding: 0;
 
-  font-size: 22px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 26px;
   font-weight: 500;
   color: $bg-color;
-}
-
-.subs__subtitle {
-  margin: 0;
-  margin-bottom: 30px;
-  padding: 0;
-
-  font-size: 22px;
-  line-height: 28px;
-  font-weight: 500;
-  color: $bg-color;
+  text-shadow: 1px 1px $title-color ;
 }
 
 .subs__telegram {
@@ -120,7 +110,7 @@
   padding-left: 30px;
   border: 2px solid #ffffff;
   border-radius: 4px;
-  background-image: url("../../img/icon-telegram.svg");
+  background-image: url("/img/icon-telegram.svg");
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: left 5px center;
@@ -135,9 +125,9 @@
 }
 
 .subs__button {
-  min-width: 225px;
+  min-width: 245px;
   min-height: 44px;
-  padding: 13px 50px;
+  padding: 13px 30px;
   border: none;
   border-radius: 4px;
 
@@ -155,9 +145,30 @@
   }
 }
 
+.form-subs__wrapper {
+  display: flex;
+}
+
+.form-subs__input {
+  width: 100%;
+  min-width: 240px;
+  margin-right: 10px;
+  padding: 13px;
+  border: 2px solid $accent-color;
+  border-radius: 4px;
+}
+
 @media (max-width: 1280px) {
   .subs__container {
     width: auto;
+    padding-top: 240px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .subs {
+    margin-bottom: 20px;
+    min-height: 345px;
   }
 }
 
@@ -172,13 +183,17 @@
   }
 
   .subs__container {
-    padding-top: 80px;
+    display: flex;
+
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .subs__inner-wrapper {
-    min-height: 645px;
+    min-height: 585px;
 
-    background-image: url('../img/subs-bg-mobile.webp');
+    background-image: url('/img/subs-bg-mobile.webp');
     background-size: contain;
   }
 
@@ -189,6 +204,11 @@
 
   .subs__subtitle {
     color: $title-color;
+    text-shadow: none;
+  }
+
+  .form-subs__input {
+    background-color: transparent;
   }
 }
 
@@ -196,6 +216,16 @@
   .subs__container {
     padding-right: 20px;
     padding-left: 20px;
+  }
+
+  .form-subs__input {
+    border-color: $basic-color;
+  }
+}
+
+@media (max-width: 640px) {
+  .subs__inner-wrapper {
+    min-height: 455px;
   }
 }
 
@@ -209,5 +239,20 @@
     min-height: 120px;
     justify-content: space-between;
     flex-direction: column;
+  }
+
+  .subs__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-subs__wrapper {
+    flex-direction: column;
+  }
+
+  .form-subs__input {
+    margin-bottom: 10px;
   }
 }
