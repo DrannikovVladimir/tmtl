@@ -6,11 +6,13 @@ const Subscribe = () => {
   const [email, setEmail] = React.useState('');
   const [message, setMessage] = React.useState('');
   const [isLoading, setIsLoading] = React.useState(false);
+  const [isSuccess, setIsSuccess] = React.useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
     setMessage('');
+    setIsSuccess(false);
 
     try {
       const response = await fetch('/api/sub', {
@@ -26,6 +28,7 @@ const Subscribe = () => {
       if (response.ok) {
         setMessage(data.message);
         setEmail('');
+        setIsSuccess(true);
       } else {
         setMessage(data.message || 'Произошла ошибка при отправке.');
       }
@@ -41,9 +44,16 @@ const Subscribe = () => {
       <div className="subs__inner-wrapper">
         <div className="subs__container">
           <div className="subs__content">
-            <h2 className="visually-hidden">Горящие туры, лучшие предложения, новости</h2>
+            <h2 className="visually-hidden">Подписка на актуальные новости, горящие туры и эксключивные предложения</h2>
             <p className="subs__subtitle">
-              {successMessage || 'Хотите узнавать первым о горящих турах, лучших предложениях, актуальных новостях из мира туризма. Тогда подписывайтесь на нашу рассылку!'}
+              {isSuccess ? (
+                message
+              ) : (
+                <>
+                  Хотите получить эксклюзивный <strong>"Путеводитель по популярным курортам"</strong>?{' '}
+                  Подпишитесь на рассылку и мы пришлём его в течении 2 минут!
+                </>
+              )}
             </p>
             
             <form className="subs__form form-subs" onSubmit={handleSubmit}>
@@ -53,17 +63,20 @@ const Subscribe = () => {
                   type="email" 
                   className="form-subs__input" 
                   name="emailInput" 
-                  id="email" 
+                  id="emailInput" 
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
                 />
                 <button type="submit" className="subs__button" disabled={isLoading}>
-                  {isLoading ? 'Отправка...' : 'Подписаться на рассылку'}
+                  <span className="visually-hidden">{isLoading ? 'Отправка...' : 'Подписаться на рассылку'}</span>
+                  <span aria-hidden="true">
+                    {isLoading ? 'Отправка...' : 'Подписаться на рассылку'}
+                  </span>
                 </button>
               </div>
             </form>
-            {errorMessage && <p className="subs__error-message">{errorMessage}</p>}
+            {!isSuccess && message && <p className="subs__error-message">{message}</p>}
           </div>
         </div>
       </div>
@@ -71,5 +84,4 @@ const Subscribe = () => {
   );
 };
 
-const element = <Subscribe />
-subscribeContainer.render(element);
+subscribeContainer.render(<Subscribe />);
