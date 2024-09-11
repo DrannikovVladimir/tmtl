@@ -34,7 +34,6 @@
     "panini": "^1.7.2",
     "sass": "^1.69.5"
   },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DrannikovVladimir/tmtl.git"
