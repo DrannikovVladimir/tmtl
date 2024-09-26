@@ -164,11 +164,10 @@ exports.build = build;
 
 function getBrowserSync() {
   browserSync.init({
-    proxy: "localhost:3000", // Адрес вашего Express-сервера
-    port: 3001, // Порт для Browsersync
-    notify: false,
-    files: ['src/**/*.html', 'src/css/**/*.css', 'src/js/**/*.js'] // Файлы для отслеживания
-  });
+    server: {
+        baseDir: "./src"
+    }
+});
 };
 
 function getCss() {
