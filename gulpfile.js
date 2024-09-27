@@ -5,7 +5,6 @@ const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 // const cssbeautify = require('gulp-cssbeautify');
 const cssnano = require('gulp-cssnano');
-// const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
 const cleanCss = require('gulp-clean-css');
 const concat = require('gulp-concat');
@@ -138,11 +137,12 @@ function getSitemap() {
   })
   .pipe(sitemap({
     siteUrl: 'https://tmtl.kz',
+    changefreq: 'monthly',
     priority: function(siteUrl, loc, entry) {
-      return loc.split('/').length === 0 ? 1 : 0.8;
+      return loc === 'index.html' ? 1.0 : 0.8;
     }
   }))
-  .pipe(dest('dist/css'))
+  .pipe(dest('dist'));
 }
 
 const build = series(clean, images, getWebp, parallel(html, css, js, jsx, fonts), getSitemap);
