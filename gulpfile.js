@@ -14,6 +14,9 @@ const webp = require('gulp-webp');
 const del = require('del');
 const babel = require('gulp-babel');
 const sitemap = require('gulp-sitemap');
+const replace = require('gulp-replace');
+const htmlmin = require('gulp-htmlmin');
+const cache = require('gulp-cache');
 
 //  paths
 const srcPath = "src/";
@@ -51,6 +54,11 @@ const path = {
 function html() {
   return src(path.src.html, { base: srcPath })
     .pipe(plumber())
+    .pipe(replace(
+      /<script src="https:\/\/unpkg\.com\/react@18\/umd\/react\.development\.js" crossorigin><\/script>\s*<script src="https:\/\/unpkg\.com\/react-dom@18\/umd\/react-dom\.development\.js" crossorigin><\/script>/g,
+      '<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>\n<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>'
+    ))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(dest(path.build.html));
 };
 
@@ -60,12 +68,25 @@ function css() {
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(autoprefixer())
-    // .pipe(cssbeautify())
     .pipe(cssnano({
       zindex: false,
       discardComments: {
         removeAll: true
       }
+    }))
+    .pipe(cleanCss({ // Добавляем шаг минификации
+      level: {
+        1: {
+          specialComments: 0,
+        },
+        2: {
+          removeDuplicateRules: true,
+          removeEmpty: true,
+          mergeMedia: true,
+          removeUnusedAtRules: true,
+          restructureRules: true,
+        },
+      },
     }))
     .pipe(sourcemaps.write(''))
     .pipe(dest("dist/css/"));
@@ -109,16 +130,16 @@ function getWebpSrc() {
 
 function images() {
   return src(path.src.images, { base: srcPath + "img/" })
-    .pipe(imagemin([
-      imagemin.mozjpeg({quality: 80, progressive: true}),
-      imagemin.optipng({optimizationLevel: 3}),
+    .pipe(cache(imagemin([
+      imagemin.mozjpeg({quality: 75, progressive: true}),
+      imagemin.optipng({optimizationLevel: 5}),
       imagemin.svgo({
         plugins: [
           {removeViewBox: true},
           {cleanupIDs: false}
         ]
       })
-    ]))
+    ])))
     .pipe(dest(path.build.images));
 };
 
