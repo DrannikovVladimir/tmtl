@@ -64,9 +64,14 @@ function html() {
 
 function css() {
   return src("src/scss/style.scss")
-    .pipe(plumber())
+    .pipe(plumber({
+      errorHandler: function(err) {
+        console.log('Error in css task:', err);
+        this.emit('end');
+      }
+    }))
     .pipe(sourcemaps.init())
-    .pipe(sass())
+    .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(cssnano({
       zindex: false,
@@ -193,14 +198,10 @@ function getBrowserSync() {
 
 function getCss() {
   return src('src/scss/style.scss')
-    // .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 10 versions'],
       grid: true,
-    }))
-    .pipe(cleanCss({
-      
     }))
     .pipe(dest('src/css'))
     .pipe(browserSync.stream());
@@ -226,9 +227,9 @@ function getJsx() {
 
 function startWatch() {
   watch('src/**/*.html').on('change', browserSync.reload);
-  watch('src/scss/**/*.scss', series(getCss, browserSync.reload));
-  watch('src/js/**/*.js', series(getJs, browserSync.reload));
-  watch('src/js/components/**/*.js', series(getJsx, browserSync.reload));
+  watch('src/scss/**/*.scss', series(getCss));
+  watch('src/js/**/*.js', series(getJs));
+  watch('src/js/components/**/*.js', series(getJsx));
 }
 
 exports.dev = parallel(getCss, getJs, getJsx, getBrowserSync, startWatch);

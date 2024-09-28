@@ -64,11 +64,11 @@
   transition: 0.2s linear;
 
   &:hover {
-    background-color: $basic-color;
+    background-color: $basic-color-hover;
   }
 
   &:active {
-    color: $basic-color;
+    background-color: $basic-color-active;
   }
 }
 
@@ -83,12 +83,14 @@
   text-shadow: rgba(0, 0, 0, 0.2) 1px 1px;
 
   &:hover {
-    border-color: lighten($color: $basic-color, $amount: 10);
     background-color: $bg-color;
+    border-color: $basic-color-hover;
+    color: $basic-color-hover; 
   }
 
   &:active {
-    color: $bg-color;
+    border-color: $basic-color-active;
+    color: $basic-color-active;
   }
 }
 
