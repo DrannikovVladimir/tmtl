@@ -5,18 +5,13 @@ const textBooking = 'Спасибо, что выбрали наше тураге
 const textSub = 'Спасибо, что выбрали наше турагентство. Ваша подписка успешно оформлена.';
 
 const modalFeedback = document.querySelector('.modal-feedback');
-const modalSubs = document.querySelector('.modal-subs');
 const formFeedback = document.querySelector('.feedback-form');
-const formSubs = document.querySelector('.subs-form');
 
 const phoneElement = document.getElementById('phone');
 const bookingButton = document.querySelector('.booking__button');
 const dreamButton = document.querySelector('.dream__button');
-const subsButton = document.querySelector('.subs__button');
 const buttonCloseFeedback = document.querySelector('.modal__close--feedback');
-const buttonCloseSubs = document.querySelector('.modal__close--subs');
 const titleFeedback = document.querySelector('.modal__title--booking');
-const titleSubs = document.querySelector('.modal__title--subs');
 
 const maskOptions = {
   mask: '+{7}(000)000-00-00',
@@ -88,26 +83,6 @@ const renderSuccessFeedback = (titleModal, textModal) => {
   });
 };
 
-const renderSuccessSub = (titleModal, textModal) => {
-  const container = document.querySelector('.modal__content--subs');
-  const text = document.createElement('p');
-  const button = document.createElement('button');
-
-  titleSubs.textContent = titleModal;
-  button.classList.add('subs-form__submit');
-  button.textContent = 'Закрыть';
-  text.classList.add('modal__text');
-  text.textContent = textModal;
-  
-  formSubs.classList.add('hidden');
-  container.append(text, button);
-
-  button.addEventListener('click', (e) => {
-    e.preventDefault();
-    modalSubs.classList.add('hidden');
-  });
-};
-
 formFeedback.addEventListener('submit', async (e) => {
   e.preventDefault();
   const data = serializeData(e.target);
@@ -132,43 +107,9 @@ formFeedback.addEventListener('submit', async (e) => {
   }
 });
 
-formSubs.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const data = serializeData(e.target);
-  setDisabledFieldsSub(e.target);
-
-  try {
-    const res = await fetch('/api/sub', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: data,
-    });
-    if (ERRORS.includes(res.status)) {
-      renderError()
-      return;
-    }
-    renderSuccessSub(titleSub, textSub);
-  } catch (error) {
-    console.log(error);
-    renderError();
-  }
-});
-
 buttonCloseFeedback.addEventListener('click', (e) => {
   e.preventDefault();
   modalFeedback.classList.add('hidden');
-});
-
-buttonCloseSubs.addEventListener('click', (e) => {
-  e.preventDefault();
-  modalSubs.classList.add('hidden');
-});
-
-subsButton.addEventListener('click', (e) => {
-  e.preventDefault();
-  modalSubs.classList.remove('hidden');
 });
 
 bookingButton.addEventListener('click', (e) => {

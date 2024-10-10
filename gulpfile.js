@@ -193,7 +193,7 @@ function getBrowserSync() {
     server: {
         baseDir: "./src"
     }
-});
+  });
 };
 
 function getCss() {
