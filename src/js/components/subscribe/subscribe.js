@@ -67,6 +67,7 @@ const Subscribe = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
+                  disabled={isLoading}
                 />
                 <button type="submit" className="subs__button" disabled={isLoading}>
                   <span className="visually-hidden">{isLoading ? 'Отправка...' : 'Подписаться на рассылку'}</span>

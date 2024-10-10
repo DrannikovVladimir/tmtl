@@ -8,138 +8,193 @@ const getLastLetter = (str) => {
 
 const Modal = ({isOpened, setIsOpened}) => {
   const [phoneValue, setPhoneValue] = React.useState('');
-  const [feedback, setFeedback] = React.useState(false);
-  const [error, setError] = React.useState(false);
+  const [status, setStatus] = React.useState('idle'); // 'idle', 'submitting', 'success', 'error'
+  const [errorMessage, setErrorMessage] = React.useState('');
+  const phoneInputRef = React.useRef(null);
+  const maskRef = React.useRef(null);
 
-  const phoneValueHandler = ({ target }) => {
-    const lastLetter = getLastLetter(target.value);
-    if (target.value.length < phoneValue.length) {
-      setPhoneValue(() => target.value);
-      return;
+  const initializeMask = React.useCallback(() => {
+    console.log("Initializing mask, phoneInputRef:", phoneInputRef.current);
+    if (phoneInputRef.current) {
+      if (maskRef.current) {
+        console.log("Destroying existing mask");
+        maskRef.current.destroy();
+      }
+      console.log("Creating new mask");
+      maskRef.current = IMask(phoneInputRef.current, {
+        mask: '+{7}(000)000-00-00',
+        lazy: false,
+      });
+
+      maskRef.current.on('accept', () => {
+        console.log("Mask accepted value:", maskRef.current.value);
+        setPhoneValue(maskRef.current.value);
+      });
+    } else {
+      console.warn("Phone input element not found in DOM");
     }
-    if(target.value.length < 2 && target.value === '+') {
-      setPhoneValue(() => `${target.value}7 (`);
-      return;
+  }, []);
+
+  React.useEffect(() => {
+    console.log("Effect running, status:", status);
+    const timer = setTimeout(() => {
+      initializeMask();
+    }, 0);
+
+    return () => {
+      clearTimeout(timer);
+      if (maskRef.current) {
+        console.log("Cleaning up mask");
+        maskRef.current.destroy();
+      }
+    };
+  }, [initializeMask, status]);
+
+  const resetForm = () => {
+    setPhoneValue('');
+    setStatus('idle');
+    setErrorMessage('');
+    if (maskRef.current) {
+      maskRef.current.value = '';
     }
-    if (target.value.length < 2 && target.value === '7') {
-      setPhoneValue(() => `+7 (`);
-      return;
-    }
-    if (target.value.length < 2 && target.value === '8') {
-      setPhoneValue(() => `+7 (`)
-      return;
-    }
-    if (target.value.length === 8) {
-      setPhoneValue(() => `${phoneValue}) ${lastLetter}`)
-      return;
-    }
-    if (target.value.length === 13) {
-      setPhoneValue(() => `${phoneValue}-${lastLetter}`)
-      return;
-    }
-    if (target.value.length === 16) {
-      setPhoneValue(() => `${phoneValue}-${lastLetter}`)
-      return;
-    }
-    if (target.value.length >= 19) {
-      return;
-    }
-    setPhoneValue(() => target.value);
-  }
+    initializeMask();
+  };
+
   const buttonCloseHandler = () => {
-    setIsOpened(() => !isOpened);
-    setFeedback(() => false);
-    setError(() => false);
-  }
+    setIsOpened(false);
+    resetForm();
+  };
 
   const callbackFormHandler = async (e) => {
     e.preventDefault();
+    setStatus('submitting');
+    setErrorMessage('');
+
+    if (phoneValue.replace(/\D/g, '').length !== 11) {
+      setStatus('error');
+      setErrorMessage('Пожалуйста, введите корректный номер телефона');
+      return;
+    }
+
     const phone = JSON.stringify({ phone: phoneValue });
+    
     try {
-      await fetch('/api/phone', {
+      const response = await fetch('/api/phone', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
         body: phone,
       });
-      setFeedback(() => !feedback);
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      setStatus('success');
     } catch (error) {
-      console.log(error);
-      setError(() => true);
+      console.error('Error:', error);
+      setStatus('error');
+      if (error.message.includes('Failed to fetch')) {
+        setErrorMessage('Не удалось связаться с сервером. Пожалуйста, проверьте ваше интернет-соединение и попробуйте снова.');
+      } else if (error.message.includes('HTTP error')) {
+        setErrorMessage('Произошла ошибка при обработке вашего запроса. Пожалуйста, попробуйте позже.');
+      } else {
+        setErrorMessage('Произошла неизвестная ошибка. Пожалуйста, попробуйте позже или свяжитесь с нами по телефону.');
+      }
     }
-  } 
+  };
+
+  const renderContent = () => {
+    switch (status) {
+      case 'success':
+        return (
+          <>
+            <h2 className="modal__title modal__title--feedback">Спасибо что решили доверить нам свой отдых, мы вам сейчас перезвоним!</h2>
+            <p className="modal__text">А пока можете почитать о популярных направлениях, курортах и отелях, а также посмотреть туры</p>
+            <ul className="pages__list countries countries--feedback">
+              <li className="countries__item countries__item--feedback">
+                <a href="/country/thailand/index.html" className="countries__item-link countries__item-link--feedback">
+                  <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--thailand">Таиланд</h3>
+                </a>
+              </li>
+              <li className="countries__item countries__item--feedback">
+                <a href="/country/uae/index.html" className="countries__item-link countries__item-link--feedback">
+                  <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--uae">ОАЭ</h3>
+                </a>
+              </li>
+              <li className="countries__item countries__item--feedback">
+                <a href="/country/vietnam/index.html" className="countries__item-link countries__item-link--feedback">
+                  <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--vietnam">Вьетнам</h3>
+                </a>
+              </li>
+              <li className="countries__item countries__item--feedback">
+                <a href="/country/egypt/index.html" className="countries__item-link countries__item-link--feedback">
+                  <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--egypt">Египет</h3>
+                </a>
+              </li>
+              <li className="countries__item countries__item--feedback">
+                <a href="/country/turkey/index.html" className="countries__item-link countries__item-link--feedback">
+                  <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--turkey">Турция</h3>
+                </a>
+              </li>
+            </ul>
+          </>
+        );
+      case 'error':
+        return (
+          <>
+            <h2 className="modal__title modal__title--error">Произошла ошибка</h2>
+            <p className="modal__text modal__text--error">{errorMessage}</p>
+            <button className="feedback-form__submit" onClick={resetForm}>Попробовать снова</button>
+          </>
+        );
+        default:
+          return (
+            <>
+              <h2 className="modal__title">Оставьте ваш телефон и мы обязательно вам перезвоним!</h2>
+              <form onSubmit={callbackFormHandler} className="feedback-form">
+                <ul className="feedback-form__list">
+                  <li className="feedback-form__list-item">
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      className="feedback-form__input"
+                      required
+                      ref={phoneInputRef}
+                      disabled={status === 'submitting'}
+                      onFocus={() => {
+                        console.log("Input focused, re-initializing mask");
+                        initializeMask();
+                      }}
+                    />
+                    <label htmlFor="phone" className="visually-hidden">Телефон</label>
+                  </li>
+                </ul>
+                <button className="feedback-form__submit" type="submit" disabled={status === 'submitting'}>
+                  {status === 'submitting' ? 'Отправка...' : 'Перезвоните мне'}
+                </button>
+              </form>
+            </>
+          );
+    }
+  };
 
   return (
     <section className="modal">
       <div className="modal__wrapper">
         <div className="modal__content">
-          
           <button onClick={buttonCloseHandler} className="modal__close">
             <span className="visually-hidden">Закрыть</span>
           </button>
-          {feedback 
-            ? (
-                <>
-                  <h2 className="modal__title modal__title--feedback">Спасибо что решили доверить нам свой отдых, мы вам сейчас перезвоним!</h2>
-                  <p className="modal__text">А пока можете почитать о популярных направлениях, курортах и отелях, а также посмотреть туры</p>
-                  <ul className="pages__list countries countries--feedback">
-                    <li className="countries__item countries__item--feedback">
-                      <a href="/country/thailand/index.html" className="countries__item-link countries__item-link--feedback">
-                        <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--thailand">Таиланд</h3>
-                      </a>
-                    </li>
-                    <li className="countries__item countries__item--feedback">
-                      <a href="/country/uae/index.html" className="countries__item-link countries__item-link--feedback">
-                        <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--uae">ОАЭ</h3>
-                      </a>
-                    </li>
-                    <li className="countries__item countries__item--feedback">
-                      <a href="/country/vietnam/index.html" className="countries__item-link countries__item-link--feedback">
-                        <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--vietnam">Вьетнам</h3>
-                      </a>
-                    </li>
-                    <li className="countries__item countries__item--feedback">
-                      <a href="/country/egypt/index.html" className="countries__item-link countries__item-link--feedback">
-                        <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--egypt">Египет</h3>
-                      </a>
-                    </li>
-                    <li className="countries__item countries__item--feedback">
-                      <a href="/country/turkey/index.html" className="countries__item-link countries__item-link--feedback">
-                        <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--turkey">Турция</h3>
-                      </a>
-                    </li>
-                  </ul>
-                </>
-              )
-            : (          
-                <>
-                  <h2 className="modal__title">Оставьте ваш телефон и мы обязательно вам перезвоним!</h2>
-                  <form action="post" id="callback-form" onSubmit={callbackFormHandler} className="feedback-form">
-                    <ul className="feedback-form__list">
-                      <li className="feedback-form__list-item">
-                        <input
-                          type="tel"
-                          id="phone"
-                          name="phone"
-                          className="feedback-form__input"
-                          required
-                          placeholder="+7(___)___-__-__"
-                          value={phoneValue}
-                          onChange={phoneValueHandler}
-                        />
-                        <label htmlFor="phone" className="visually-hidden">Телефон</label>
-                      </li>
-                    </ul>
-                    <button className="feedback-form__submit" type="submit">Перезвоните мне</button>
-                  </form>
-                </>
-          )}
+          {renderContent()}
         </div>
       </div>
     </section>
   );
-}
+};
 
 const HeaderAddress = () => {
   const [mapIsOpened, setMapIsOpened] = React.useState(false);
