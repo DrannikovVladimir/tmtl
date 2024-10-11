@@ -3755,6 +3755,16 @@ input[type=radio].visually-hidden {
   color: #555757;
 }
 
+.about-page__title--h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #555757;
+}
+
 .about-page-list {
   margin: 0;
   padding: 0;
@@ -3804,6 +3814,10 @@ input[type=radio].visually-hidden {
   .about-page__title {
     font-size: 36px;
     line-height: 42px;
+  }
+  .about-page__title--h2 {
+    font-size: 28px;
+    line-height: 36px;
   }
 }
 @media (max-width: 600px) {
