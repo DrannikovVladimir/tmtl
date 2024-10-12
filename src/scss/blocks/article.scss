@@ -160,6 +160,32 @@
   margin-bottom: 0;
 }
 
+.article__title--h3 {
+  position: relative;
+
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-left: 40px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 26px;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url("/img/icon-plane.png");
+    background-repeat: no-repeat;
+    background-size: 30px auto;
+    background-position: center;
+  }
+}
+
 .article__subtitle {
   margin: 0;
   padding: 0;
@@ -396,5 +422,17 @@
 
   .article__list-wrapper {
     flex-direction: column;
+  }
+
+  .article__table-th {
+    font-size: 12px;
+  }
+
+  .article__table-td {
+    font-size: 12px;
+  }
+
+  .article__table-td--year {
+    display: none;
   }
 }
