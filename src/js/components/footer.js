@@ -270,7 +270,7 @@ const Footer = () => {
           <h3 className="footer__block-list__item-title">Полезные ссылки</h3>
           <ul itemScope itemType="http://schema.org/SiteNavigationElement" className="footer__list footer-list">
             <li className="footer-list__item">
-              <a itemProp="url" href="/tours/index.html" className="footer-list__link">Туры</a>
+              <a itemProp="url" href="/tours/index.html" className="footer-list__link">Поиск тура</a>
             </li>
             <li className="footer-list__item">
               <a itemProp="url" href="/info/credit/index.html" className="footer-list__link">Рассрочка</a>

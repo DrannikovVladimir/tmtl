@@ -309,7 +309,7 @@ const Header = () => {
           </button>
           <ul className="main-nav__list" itemScope itemType="http://schema.org/SiteNavigationElement">
           <li className="main-nav__list-item">
-              <a itemProp="url" href="/tours/index.html" className="main-nav__list-link">Туры</a>
+              <a itemProp="url" href="/tours/index.html" className="main-nav__list-link">Поиск тура</a>
             </li>
             <li className="main-nav__list-item">
               <a itemProp="url" href="/country/index.html" className="main-nav__list-link">Страны</a>
