@@ -3408,6 +3408,9 @@ input[type=radio].visually-hidden {
   .article__table-td--year {
     display: none;
   }
+  .article__table-th--features {
+    display: none;
+  }
 }
 .article-list {
   margin: 0;
@@ -4591,6 +4594,7 @@ input[type=radio].visually-hidden {
           justify-content: flex-start;
   margin: 0;
   padding: 0;
+  padding-bottom: 20px;
   list-style: none;
 }
 
