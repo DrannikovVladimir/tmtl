@@ -40,7 +40,7 @@ const HeaderAddress = () => {
       <address className="header__address__container">
         <p className="header__address__street">Мустафина 81/3, офис 206</p>
         <p className="header__address__city">г. Караганда</p>            
-        <a href="/info/contacts/index.html" onClick={mapClickHandler} className="phones-list__callback">Схема проезда к офису</a>
+        <a href="/info/contacts/" onClick={mapClickHandler} className="phones-list__callback">Схема проезда к офису</a>
       </address>
       {mapIsOpened
         ? (<section className="modal modal--map">
@@ -146,27 +146,27 @@ const ModalPhones = ({isOpened, setIsOpened}) => {
                   <p className="modal__text">А пока можете почитать о популярных направлениях, курортах и отелях, а также посмотреть туры</p>
                   <ul className="pages__list countries countries--feedback">
                     <li className="countries__item countries__item--feedback">
-                      <a href="/country/thailand/index.html" className="countries__item-link countries__item-link--feedback">
+                      <a href="/country/thailand/" className="countries__item-link countries__item-link--feedback">
                         <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--thailand">Таиланд</h3>
                       </a>
                     </li>
                     <li className="countries__item countries__item--feedback">
-                      <a href="/country/uae/index.html" className="countries__item-link countries__item-link--feedback">
+                      <a href="/country/uae/" className="countries__item-link countries__item-link--feedback">
                         <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--uae">ОАЭ</h3>
                       </a>
                     </li>
                     <li className="countries__item countries__item--feedback">
-                      <a href="/country/vietnam/index.html" className="countries__item-link countries__item-link--feedback">
+                      <a href="/country/vietnam/" className="countries__item-link countries__item-link--feedback">
                         <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--vietnam">Вьетнам</h3>
                       </a>
                     </li>
                     <li className="countries__item countries__item--feedback">
-                      <a href="/country/egypt/index.html" className="countries__item-link countries__item-link--feedback">
+                      <a href="/country/egypt/" className="countries__item-link countries__item-link--feedback">
                         <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--egypt">Египет</h3>
                       </a>
                     </li>
                     <li className="countries__item countries__item--feedback">
-                      <a href="/country/turkey/index.html" className="countries__item-link countries__item-link--feedback">
+                      <a href="/country/turkey/" className="countries__item-link countries__item-link--feedback">
                         <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--turkey">Турция</h3>
                       </a>
                     </li>
@@ -233,7 +233,7 @@ const Footer = () => {
     <div className="footer__container">
       <ul className="footer__block-list">
         <li className="footer__block-list__item footer__block-list__item--logo">
-          <a href="/index.html" className="footer__logo">
+          <a href="/" className="footer__logo">
             <img src="/img/Logo.png" width="50" height="50" alt="Логотип" className="footer__logo-image" />
           </a>
           <Socials />
@@ -244,25 +244,25 @@ const Footer = () => {
           <h3 className="footer__block-list__item-title">Популярные страны</h3>
           <ul className="footer__list footer-list">
             <li className="footer-list__item">
-              <a href="/country/turkey/index.html" className="footer-list__link">Турция</a>
+              <a href="/country/turkey/" className="footer-list__link">Турция</a>
             </li>
             <li className="footer-list__item">
-              <a href="/country/uae/index.html" className="footer-list__link">ОАЭ</a>
+              <a href="/country/uae/" className="footer-list__link">ОАЭ</a>
             </li>
             <li className="footer-list__item">
-              <a href="/country/egypt/index.html" className="footer-list__link">Египет</a>
+              <a href="/country/egypt/" className="footer-list__link">Египет</a>
             </li>
             <li className="footer-list__item">
-              <a href="/country/vietnam/index.html" className="footer-list__link">Вьетнам</a>
+              <a href="/country/vietnam/" className="footer-list__link">Вьетнам</a>
             </li>
             <li className="footer-list__item">
-              <a href="/country/thailand/index.html" className="footer-list__link">Таиланд</a>
+              <a href="/country/thailand/" className="footer-list__link">Таиланд</a>
             </li>
             <li className="footer-list__item">
-              <a href="/country/india/index.html" className="footer-list__link">Индия (Гоа)</a>
+              <a href="/country/india/" className="footer-list__link">Индия (Гоа)</a>
             </li>
             <li className="footer-list__item">
-              <a href="/country/china/hainan/index.html" className="footer-list__link">Китай (о.Хайнань)</a>
+              <a href="/country/china/hainan/" className="footer-list__link">Китай (о.Хайнань)</a>
             </li>
           </ul>
         </li>
@@ -270,25 +270,25 @@ const Footer = () => {
           <h3 className="footer__block-list__item-title">Полезные ссылки</h3>
           <ul itemScope itemType="http://schema.org/SiteNavigationElement" className="footer__list footer-list">
             <li className="footer-list__item">
-              <a itemProp="url" href="/tours/index.html" className="footer-list__link">Поиск тура</a>
+              <a itemProp="url" href="/tours/" className="footer-list__link">Поиск тура</a>
             </li>
             <li className="footer-list__item">
-              <a itemProp="url" href="/info/credit/index.html" className="footer-list__link">Рассрочка</a>
+              <a itemProp="url" href="/info/credit/" className="footer-list__link">Рассрочка</a>
             </li>
             <li className="footer-list__item">
-              <a itemProp="url" href="/country/index.html" className="footer-list__link">Страны</a>
+              <a itemProp="url" href="/country/" className="footer-list__link">Страны</a>
             </li>
             <li className="footer-list__item">
-              <a itemProp="url" href="/hottours/index.html" className="footer-list__link">Горящие туры</a>
+              <a itemProp="url" href="/hottours/" className="footer-list__link">Горящие туры</a>
             </li>
             <li className="footer-list__item">
               <a itemProp="url" href="/articles/articles.html" className="footer-list__link">Статьи</a>
             </li>
             <li className="footer-list__item">
-              <a itemProp="url" href="/info/about/index.html" className="footer-list__link">О нас</a>
+              <a itemProp="url" href="/info/about/" className="footer-list__link">О нас</a>
             </li>
             <li className="footer-list__item">
-              <a itemProp="url" href="/info/contacts/index.html" className="footer-list__link">Контакты</a>
+              <a itemProp="url" href="/info/contacts/" className="footer-list__link">Контакты</a>
             </li>
             
           </ul>

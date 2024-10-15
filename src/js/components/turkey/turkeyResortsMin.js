@@ -6,7 +6,7 @@ const TurkeyResortsMin = () => {
   return (
     <ul className="article__resorts resorts resorts--list-min">
       <li className="resorts__item resorts__item--list-min">
-        <a href="/country/turkey/antalya/index.html" className="resorts__item-link resorts__item-link--list-min">
+        <a href="/country/turkey/antalya/" className="resorts__item-link resorts__item-link--list-min">
           <picture>
             <source type="image/webp" srcSet="/img/tours/turkey/antalya-resort.webp" />
             <img src="/img/tours/turkey/antalya-resort.jpg" alt="Анталья" className="resorts__item-image resorts__item-image--list-min" width="280" />
@@ -15,7 +15,7 @@ const TurkeyResortsMin = () => {
         </a>
       </li>
       <li className="resorts__item resorts__item--list-min">
-        <a href="/country/turkey/kemer/index.html" className="resorts__item-link resorts__item-link--list-min">
+        <a href="/country/turkey/kemer/" className="resorts__item-link resorts__item-link--list-min">
           <picture>
             <source type="image/webp" srcSet="/img/tours/turkey/kemer-resort.webp" />
             <img src="/img/tours/turkey/kemer-resort.jpg" alt="Кемер" className="resorts__item-image resorts__item-image--list-min" width="280" />
@@ -24,7 +24,7 @@ const TurkeyResortsMin = () => {
         </a>
       </li>
       <li className="resorts__item resorts__item--list-min">
-        <a href="/country/turkey/bodrum/index.html" className="resorts__item-link resorts__item-link--list-min">
+        <a href="/country/turkey/bodrum/" className="resorts__item-link resorts__item-link--list-min">
           <picture>
             <source type="image/webp" srcSet="/img/tours/turkey/bodrum-resort.webp" />
             <img src="/img/tours/turkey/bodrum-resort.jpg" alt="Бодрум" className="resorts__item-image resorts__item-image--list-min" width="280" />
@@ -33,7 +33,7 @@ const TurkeyResortsMin = () => {
         </a>
       </li>
       <li className="resorts__item resorts__item--list-min">
-        <a href="/country/turkey/alanya/index.html" className="resorts__item-link resorts__item-link--list-min">
+        <a href="/country/turkey/alanya/" className="resorts__item-link resorts__item-link--list-min">
           <picture>
             <source type="image/webp" srcSet="/img/tours/turkey/alanya-resort.webp" />
             <img src="/img/tours/turkey/alanya-resort.jpg" alt="Аланья" className="resorts__item-image resorts__item-image--list-min" width="280" />
@@ -41,7 +41,7 @@ const TurkeyResortsMin = () => {
           <h3 className="resorts__item-title resorts__item-title--list-min">Алания</h3>
         </a>
       </li>
-      {/* /country/turkey/belek/index.html */}
+      {/* /country/turkey/belek/ */}
       <li className="resorts__item resorts__item--list-min">
         <a href="#" className="resorts__item-link resorts__item-link--list-min"> 
           <picture>
@@ -51,7 +51,7 @@ const TurkeyResortsMin = () => {
           <h3 className="resorts__item-title resorts__item-title--list-min">Белек</h3>
         </a>
       </li>
-      {/* /country/turkey/side/index.html */}
+      {/* /country/turkey/side/ */}
       <li className="resorts__item resorts__item--list-min">
         <a href="#" className="resorts__item-link resorts__item-link--list-min">
           <picture>

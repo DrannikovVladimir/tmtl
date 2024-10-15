@@ -8,7 +8,7 @@ const EgyptResorts = () => {
   return (
     <ul className="article__resorts resorts">
       <li className="resorts__item">
-        <a href="/country/egypt/sharm-el-sheikh/index.html" className="resorts__item-link">
+        <a href="/country/egypt/sharm-el-sheikh/" className="resorts__item-link">
           <picture>
             <source type="image/webp" srcSet="/img/tours/egypt/sharm-el-sheikh-resort.webp" />
             <img src="/img/tours/egypt/sharm-el-sheikh-resort.jpg" alt="Шарм-Эль-Шейх" className="resorts__item-image" width="250" />
@@ -16,15 +16,15 @@ const EgyptResorts = () => {
           
         </a>
         <div className="resorts__item-content">
-          <a href="/country/egypt/sharm-el-sheikh/index.html" className="resorts__item-link">
+          <a href="/country/egypt/sharm-el-sheikh/" className="resorts__item-link">
             <h3 className="resorts__item-title">Шарм-Эль-Шейх</h3>
           </a>
           <p className="resorts__item-text">Шарм-эль-Шейх представляет собой курорт европейского стиля с превосходно развитой туристической инфраструктурой, отельными комплексами и уютными гостиницами. Здесь можно обнаружить как небольшие комфортабельные отели с изысканным современным дизайном, так и большие гостиницы, с полным спекторм услуг.</p>
-          <a href="/country/egypt/sharm-el-sheikh/index.html" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
+          <a href="/country/egypt/sharm-el-sheikh/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
         </div>
       </li>
       <li className="resorts__item">
-        <a href="/country/egypt/hurghada/index.html" className="resorts__item-link">
+        <a href="/country/egypt/hurghada/" className="resorts__item-link">
           <picture>
             <source type="image/webp" srcSet="/img/tours/egypt/hurgada-resort.webp" />
             <img src="/img/tours/egypt/hurgada-resort.jpg" alt="Хургада" className="resorts__item-image" width="250" />
@@ -32,11 +32,11 @@ const EgyptResorts = () => {
           
         </a>
         <div className="resorts__item-content">
-          <a href="/country/egypt/hurghada/index.html" className="resorts__item-link">
+          <a href="/country/egypt/hurghada/" className="resorts__item-link">
             <h3 className="resorts__item-title">Хургада</h3>
           </a>
           <p className="resorts__item-text">Хургада - отличный курорт на берегу Красного моря и представляет собой одно из главных туристических направлений Египта. Он славится своими великолепными песчаными пляжами, живописными коралловыми островами и удивительным разнообразием растительного и животного мира. </p>
-          <a href="/country/egypt/hurghada/index.html" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
+          <a href="/country/egypt/hurghada/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
         </div>
       </li>
       <li className="resorts__item">

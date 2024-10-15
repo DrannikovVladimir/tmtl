@@ -115,27 +115,27 @@ const Modal = ({isOpened, setIsOpened}) => {
             <p className="modal__text">А пока можете почитать о популярных направлениях, курортах и отелях, а также посмотреть туры</p>
             <ul className="pages__list countries countries--feedback">
               <li className="countries__item countries__item--feedback">
-                <a href="/country/thailand/index.html" className="countries__item-link countries__item-link--feedback">
+                <a href="/country/thailand/" className="countries__item-link countries__item-link--feedback">
                   <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--thailand">Таиланд</h3>
                 </a>
               </li>
               <li className="countries__item countries__item--feedback">
-                <a href="/country/uae/index.html" className="countries__item-link countries__item-link--feedback">
+                <a href="/country/uae/" className="countries__item-link countries__item-link--feedback">
                   <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--uae">ОАЭ</h3>
                 </a>
               </li>
               <li className="countries__item countries__item--feedback">
-                <a href="/country/vietnam/index.html" className="countries__item-link countries__item-link--feedback">
+                <a href="/country/vietnam/" className="countries__item-link countries__item-link--feedback">
                   <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--vietnam">Вьетнам</h3>
                 </a>
               </li>
               <li className="countries__item countries__item--feedback">
-                <a href="/country/egypt/index.html" className="countries__item-link countries__item-link--feedback">
+                <a href="/country/egypt/" className="countries__item-link countries__item-link--feedback">
                   <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--egypt">Египет</h3>
                 </a>
               </li>
               <li className="countries__item countries__item--feedback">
-                <a href="/country/turkey/index.html" className="countries__item-link countries__item-link--feedback">
+                <a href="/country/turkey/" className="countries__item-link countries__item-link--feedback">
                   <h3 className="countries__item-title countries__item-title--feedback tabs__title tabs__title--turkey">Турция</h3>
                 </a>
               </li>
@@ -209,7 +209,7 @@ const HeaderAddress = () => {
       <address className="header__address__container">
         <p className="header__address__street">Мустафина 81/3, офис 206</p>
         <p className="header__address__city">г. Караганда</p>            
-        <a href="/info/contacts/index.html" onClick={mapClickHandler} className="header__address__link phones-list__callback">Схема проезда к офису</a>
+        <a href="/info/contacts/" onClick={mapClickHandler} className="header__address__link phones-list__callback">Схема проезда к офису</a>
       </address>
       {mapIsOpened
         ? (<section className="modal modal--map">
@@ -265,7 +265,7 @@ const HeaderPhones = () => {
 const Credit = () => {
   return (
     <section className="credit">
-      <a href="/info/credit/index.html">
+      <a href="/info/credit/">
         <div className="credit__container">
           <p className="credit__subtitle">
             Отдыхайте сейчас платите 
@@ -300,7 +300,7 @@ const Header = () => {
     <>
       <Credit />
       <div className="header__container">
-        <a href="/index.html" className="header__logo">
+        <a href="/" className="header__logo">
           <img src="/img/Logo.png" width="50" height="50" alt="Логотип" className="header__logo-image" />
         </a>
         <nav className={classNav}>
@@ -309,22 +309,22 @@ const Header = () => {
           </button>
           <ul className="main-nav__list" itemScope itemType="http://schema.org/SiteNavigationElement">
           <li className="main-nav__list-item">
-              <a itemProp="url" href="/tours/index.html" className="main-nav__list-link">Поиск тура</a>
+              <a itemProp="url" href="/tours/" className="main-nav__list-link">Поиск тура</a>
             </li>
             <li className="main-nav__list-item">
-              <a itemProp="url" href="/country/index.html" className="main-nav__list-link">Страны</a>
+              <a itemProp="url" href="/country/" className="main-nav__list-link">Страны</a>
             </li>
             <li className="main-nav__list-item">
-              <a itemProp="url" href="/hottours/index.html" className="main-nav__list-link">Горящие туры</a>
+              <a itemProp="url" href="/hottours/" className="main-nav__list-link">Горящие туры</a>
             </li>
             <li className="main-nav__list-item">
               <a itemProp="url" href="/articles/articles.html" className="main-nav__list-link">Статьи</a>
             </li>
             <li className="main-nav__list-item">
-              <a itemProp="url" href="/info/about/index.html" className="main-nav__list-link">О нас</a>
+              <a itemProp="url" href="/info/about/" className="main-nav__list-link">О нас</a>
             </li>
             <li className="main-nav__list-item">
-              <a itemProp="url" href="/info/contacts/index.html" className="main-nav__list-link">Контакты</a>
+              <a itemProp="url" href="/info/contacts/" className="main-nav__list-link">Контакты</a>
             </li>
           </ul>
         </nav>
