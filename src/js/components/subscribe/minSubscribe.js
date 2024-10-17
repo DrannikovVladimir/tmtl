@@ -40,7 +40,7 @@ const SubscribeMin = () => {
   };
 
   return (
-    <section className="subs-min">
+    <section id="subs" className="subs-min">
       <div className="subs-min__inner-wrapper">
         <div className="subs-min__container">
           <div className="subs-min__content">
