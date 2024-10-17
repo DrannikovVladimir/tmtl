@@ -40,7 +40,7 @@ const Subscribe = () => {
   };
 
   return (
-    <section className="subs">
+    <section id="subs" className="subs">
       <div className="subs__inner-wrapper">
         <div className="subs__container">
           <div className="subs__content">
