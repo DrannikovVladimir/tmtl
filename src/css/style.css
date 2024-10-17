@@ -918,12 +918,8 @@ input[type=radio].visually-hidden {
     line-height: 40px;
   }
   .promo__title--accent {
-<<<<<<< HEAD
     font-size: 70px;
-=======
     margin-left: -5px;
-    font-size: 67px;
->>>>>>> abbf215e61a3cd7a7dbd45f63d732cf801aa6445
     line-height: 80px;
   }
   .promo__subtitle {
