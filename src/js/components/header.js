@@ -318,7 +318,7 @@ const Header = () => {
               <a itemProp="url" href="/hottours/" className="main-nav__list-link">Горящие туры</a>
             </li>
             <li className="main-nav__list-item">
-              <a itemProp="url" href="/articles/articles.html" className="main-nav__list-link">Статьи</a>
+              <a itemProp="url" href="/articles/" className="main-nav__list-link">Статьи</a>
             </li>
             <li className="main-nav__list-item">
               <a itemProp="url" href="/info/about/" className="main-nav__list-link">О нас</a>

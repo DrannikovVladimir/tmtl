@@ -282,7 +282,7 @@ const Footer = () => {
               <a itemProp="url" href="/hottours/" className="footer-list__link">Горящие туры</a>
             </li>
             <li className="footer-list__item">
-              <a itemProp="url" href="/articles/articles.html" className="footer-list__link">Статьи</a>
+              <a itemProp="url" href="/articles/" className="footer-list__link">Статьи</a>
             </li>
             <li className="footer-list__item">
               <a itemProp="url" href="/info/about/" className="footer-list__link">О нас</a>
