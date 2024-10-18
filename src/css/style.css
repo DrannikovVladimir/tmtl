@@ -3037,6 +3037,7 @@ input[type=radio].visually-hidden {
 .article__content-container__min-price {
   width: 280px;
   margin-right: 20px;
+  margin-bottom: 40px;
   padding-left: 10px;
   padding-top: 20px;
   padding-right: 10px;
