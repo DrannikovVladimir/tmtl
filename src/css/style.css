@@ -3423,6 +3423,9 @@ input[type=radio].visually-hidden {
   .article__table-th--features {
     display: none;
   }
+  .article__table-td--regions {
+    display: none;
+  }
 }
 .article-list {
   margin: 0;
