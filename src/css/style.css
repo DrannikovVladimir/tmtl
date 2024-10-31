@@ -3498,6 +3498,10 @@ input[type=radio].visually-hidden {
   text-decoration: underline;
 }
 
+.article-num-list--no-margin {
+  margin-bottom: 0;
+}
+
 .articles {
   background-image: url("../img/icon-dream-bg-left.svg"), url("../img/icon-bg-promo-left.svg");
   background-repeat: no-repeat;
