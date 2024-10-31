@@ -71,7 +71,7 @@ const TurkeyResorts = () => {
       </li>
       {/* /country/turkey/belek/ */}
       <li className="resorts__item">
-        <a href="#" className="resorts__item-link">
+        <a href="/country/turkey/belek/" className="resorts__item-link">
           <picture>
             <source type="image/webp" srcSet="/img/tours/turkey/belek-resort.webp" />
             <img src="/img/tours/turkey/belek-resort.jpg" alt="Белек" className="resorts__item-image" width="280" />
@@ -79,11 +79,11 @@ const TurkeyResorts = () => {
           
         </a>
         <div className="resorts__item-content">
-          <a href="#" className="resorts__item-link">
+          <a href="/country/turkey/belek/" className="resorts__item-link">
             <h3 className="resorts__item-title">Белек</h3>
           </a>
           <p className="resorts__item-text">Широкая песчаная береговая линия, кристально чистая вода и множество элитных отелей. Самый фешенебельный курорт турции. Отлично подходит для отдыха с детьми. Плавная береговая линия без резких спусков, что подходит всем гостям.</p>
-          <a href="#" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
+          <a href="/country/turkey/belek/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
         </div>
       </li>
       {/* /country/turkey/side/ */}
