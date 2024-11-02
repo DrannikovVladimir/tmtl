@@ -50,9 +50,8 @@ const TurkeyResortsMin = () => {
           <h3 className="resorts__item-title resorts__item-title--list-min">Белек</h3>
         </a>
       </li>
-      {/* /country/turkey/side/ */}
       <li className="resorts__item resorts__item--list-min">
-        <a href="#" className="resorts__item-link resorts__item-link--list-min">
+        <a href="/country/turkey/side/" className="resorts__item-link resorts__item-link--list-min">
           <picture>
             <source type="image/webp" srcSet="/img/tours/turkey/side-resort.webp" />
             <img src="/img/tours/turkey/side-resort.jpg" alt="Сиде" className="resorts__item-image resorts__item-image--list-min" width="280" />
