@@ -101,6 +101,22 @@ const TurkeyResorts = () => {
           <a href="/country/turkey/side/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
         </div>
       </li>
+      <li className="resorts__item">
+        <a href="/country/turkey/stambul/" className="resorts__item-link">
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/turkey/stambul-resort.webp" />
+            <img src="/img/tours/turkey/stambul-resort.jpg" alt="Стамбул" className="resorts__item-image" width="280" />
+          </picture>
+          
+        </a>
+        <div className="resorts__item-content">
+          <a href="/country/turkey/stambul/" className="resorts__item-link">
+            <h3 className="resorts__item-title">Стамбул</h3>
+          </a>
+          <p className="resorts__item-text">Расположен на двух континентах, разделенных проливом Босфор, основан греками как Византий. В его историческом центре находятся величественные памятники четырех империй, которые стали символами города. Стамбул внесен в список Всемирного наследия ЮНЕСКО.</p>
+          <a href="/country/turkey/stambul/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
+        </div>
+      </li>
     </ul>
   )
 };

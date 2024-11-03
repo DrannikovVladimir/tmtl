@@ -4170,9 +4170,6 @@ input[type=radio].visually-hidden {
   margin-right: 18px;
   padding-bottom: 0;
 }
-.resorts__item--list-min:nth-child(2n) {
-  margin-right: 0;
-}
 
 .resorts__item-content {
   width: 390px;
@@ -4225,11 +4222,6 @@ input[type=radio].visually-hidden {
   color: #f75301;
 }
 
-@media (max-width: 700px) {
-  .resorts__item--list-min:nth-child(2n) {
-    margin-right: 18px;
-  }
-}
 @media (max-width: 550px) {
   .resorts__item {
     -webkit-box-orient: vertical;

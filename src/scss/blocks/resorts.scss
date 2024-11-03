@@ -28,10 +28,6 @@
   margin-bottom: 0;
   margin-right: 18px;
   padding-bottom: 0;
-
-  &:nth-child(2n) {
-    margin-right: 0;
-  }
 }
 
 .resorts__item-content {
@@ -85,14 +81,6 @@
 .resorts__item-link--about {
   border-bottom: 1px solid $basic-color;
   color: $basic-color;
-}
-
-@media (max-width: 700px) {
-  .resorts__item--list-min {
-    &:nth-child(2n) {
-      margin-right: 18px;
-    }
-  }
 }
 
 @media (max-width: 550px) {

@@ -241,28 +241,28 @@ const Footer = () => {
           
         </li>
         <li className="footer__block-list__item footer__block-list__item--tours">
-          <h3 className="footer__block-list__item-title">Популярные страны</h3>
+          <h3 className="footer__block-list__item-title">Популярные путевки</h3>
           <ul className="footer__list footer-list">
             <li className="footer-list__item">
-              <a href="/country/turkey/" className="footer-list__link">Турция</a>
+              <a href="/tours/turkey/" className="footer-list__link">Туры в Турцию</a>
             </li>
             <li className="footer-list__item">
-              <a href="/country/uae/" className="footer-list__link">ОАЭ</a>
+              <a href="/tours/uae/" className="footer-list__link">Туры в ОАЭ</a>
             </li>
             <li className="footer-list__item">
-              <a href="/country/egypt/" className="footer-list__link">Египет</a>
+              <a href="/tours/egypt/" className="footer-list__link">Туры в Египет</a>
             </li>
             <li className="footer-list__item">
-              <a href="/country/vietnam/" className="footer-list__link">Вьетнам</a>
+              <a href="/tours/vietnam/" className="footer-list__link">Туры во Вьетнам</a>
             </li>
             <li className="footer-list__item">
-              <a href="/country/thailand/" className="footer-list__link">Таиланд</a>
+              <a href="/tours/thailand/" className="footer-list__link">Туры в Таиланд</a>
             </li>
             <li className="footer-list__item">
-              <a href="/country/india/" className="footer-list__link">Индия (Гоа)</a>
+              <a href="/tours/india/" className="footer-list__link">Туры на Гоа</a>
             </li>
             <li className="footer-list__item">
-              <a href="/country/china/hainan/" className="footer-list__link">Китай (о.Хайнань)</a>
+              <a href="/tours/china/" className="footer-list__link">Туры на Хайнань</a>
             </li>
           </ul>
         </li>
