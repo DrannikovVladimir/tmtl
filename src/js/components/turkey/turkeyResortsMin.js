@@ -68,6 +68,15 @@ const TurkeyResortsMin = () => {
           <h3 className="resorts__item-title resorts__item-title--list-min">Стамбул</h3>
         </a>
       </li>
+      <li className="resorts__item resorts__item--list-min">
+        <a href="/country/turkey/cappadocia/" className="resorts__item-link resorts__item-link--list-min">
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/turkey/cappadocia1.webp" />
+            <img src="/img/tours/turkey/cappadocia1.jpg" alt="Стамбул" className="resorts__item-image resorts__item-image--list-min" width="280" />
+          </picture>
+          <h3 className="resorts__item-title resorts__item-title--list-min">Каппадокия</h3>
+        </a>
+      </li>
     </ul>
   )
 };

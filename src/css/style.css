@@ -3510,6 +3510,21 @@ input[type=radio].visually-hidden {
   margin-bottom: 0;
 }
 
+.article-num-list__sublist {
+  margin: 0;
+}
+
+.article-num-list__subitem {
+  font-size: 16px;
+}
+
+.article-num-list__sublink {
+  color: #666;
+}
+.article-num-list__sublink:hover {
+  text-decoration: underline;
+}
+
 .articles {
   background-image: url("../img/icon-dream-bg-left.svg"), url("../img/icon-bg-promo-left.svg");
   background-repeat: no-repeat;

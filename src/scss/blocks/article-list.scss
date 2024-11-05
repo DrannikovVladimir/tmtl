@@ -76,3 +76,18 @@
 .article-num-list--no-margin {
   margin-bottom: 0;
 }
+
+.article-num-list__sublist {
+  margin: 0;
+}
+.article-num-list__subitem {
+  font-size: 16px;
+}
+
+.article-num-list__sublink {
+  color: #666;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -117,6 +117,22 @@ const TurkeyResorts = () => {
           <a href="/country/turkey/stambul/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
         </div>
       </li>
+      <li className="resorts__item">
+        <a href="/country/turkey/cappadocia/" className="resorts__item-link">
+          <picture>
+            <source type="image/webp" srcSet="/img/tours/turkey/cappadocia1.webp" />
+            <img src="/img/tours/turkey/cappadocia1.jpg" alt="Стамбул" className="resorts__item-image" width="280" />
+          </picture>
+          
+        </a>
+        <div className="resorts__item-content">
+          <a href="/country/turkey/cappadocia/" className="resorts__item-link">
+            <h3 className="resorts__item-title">Каппадокия</h3>
+          </a>
+          <p className="resorts__item-text"></p>
+          <a href="/country/turkey/cappadocia/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
+        </div>
+      </li>
     </ul>
   )
 };
