@@ -39,8 +39,9 @@ const EgyptResorts = () => {
           <a href="/country/egypt/hurghada/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
         </div>
       </li>
+
       <li className="resorts__item">
-        <a href="#" className="resorts__item-link">
+        <a href="/country/egypt/marsa-alam/" className="resorts__item-link">
           <picture>
             <source type="image/webp" srcSet="/img/tours/egypt/marsa-alam-resort.webp" />
             <img src="/img/tours/egypt/marsa-alam-resort.jpg" alt="Марса Алам" className="resorts__item-image" width="250" />
@@ -48,15 +49,16 @@ const EgyptResorts = () => {
           
         </a>
         <div className="resorts__item-content">
-          <a href="#" className="resorts__item-link">
+          <a href="/country/egypt/marsa-alam/" className="resorts__item-link">
             <h3 className="resorts__item-title">Марса Алам</h3>
           </a>
           <p className="resorts__item-text">Марса Алам находится на расстоянии 300 км к югу от Хургады. Этот быстро развивающийся курорт открыт для приема не только стандартных туристов, но и энтузиастов подводного плавания со всего мира.</p>
-          <a href="#" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
+          <a href="/country/egypt/marsa-alam/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
         </div>
       </li>
+
       <li className="resorts__item">
-        <a href="#" className="resorts__item-link">
+        <a href="/country/egypt/dahab/" className="resorts__item-link">
           <picture>
             <source type="image/webp" srcSet="/img/tours/egypt/dahab-resort.webp" />
             <img src="/img/tours/egypt/dahab-resort.jpg" alt="Дахаб" className="resorts__item-image" width="250" />
@@ -64,15 +66,16 @@ const EgyptResorts = () => {
           
         </a>
         <div className="resorts__item-content">
-          <a href="#" className="resorts__item-link">
+          <a href="/country/egypt/dahab/" className="resorts__item-link">
             <h3 className="resorts__item-title">Дахаб</h3>
           </a>
           <p className="resorts__item-text">Дахаб - это идеальное место для любителей подводных экскурсий, рыбалки и виндсерфинга. Вы получите возможность наблюдать за удивительным подводным миром в живописной Голубой Бухте или таинственном Каньоне - местах, которые особенно любят опытные дайверы.</p>
-          <a href="#" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
+          <a href="/country/egypt/dahab/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
         </div>
       </li>
+
       <li className="resorts__item">
-        <a href="#" className="resorts__item-link">
+        <a href="/country/egypt/alexandria/" className="resorts__item-link">
           <picture>
             <source type="image/webp" srcSet="/img/tours/egypt/alexandria-resort.webp" />
             <img src="/img/tours/egypt/alexandria-resort.jpg" alt="Александрия" className="resorts__item-image" width="250" />
@@ -80,15 +83,16 @@ const EgyptResorts = () => {
           
         </a>
         <div className="resorts__item-content">
-          <a href="#" className="resorts__item-link">
+          <a href="/country/egypt/alexandria/" className="resorts__item-link">
             <h3 className="resorts__item-title">Александрия</h3>
           </a>
           <p className="resorts__item-text">Александр Македонский основал Александрию в первой половине IV века до н.э. на берегу Средиземного моря. На протяжении многих веков, она была ключевым торговым центром для множества империй.</p>
-          <a href="#" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
+          <a href="/country/egypt/alexandria/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
         </div>
       </li>
+
       <li className="resorts__item">
-        <a href="#" className="resorts__item-link">
+        <a href="/country/egypt/cairo/" className="resorts__item-link">
           <picture>
             <source type="image/webp" srcSet="/img/tours/egypt/cairo-resort.webp" />
             <img src="/img/tours/egypt/cairo-resort.jpg" alt="Каир" className="resorts__item-image" width="250" />
@@ -96,11 +100,11 @@ const EgyptResorts = () => {
           
         </a>
         <div className="resorts__item-content">
-          <a href="#" className="resorts__item-link">
+          <a href="/country/egypt/cairo/" className="resorts__item-link">
             <h3 className="resorts__item-title">Каир</h3>
           </a>
           <p className="resorts__item-text">Каир, известный как город тысячи минаретов, заслуживает этого названия, так как в его пределах расположено множество великолепных мечетей, которые являются архитектурным достоянием всего мира.</p>
-          <a href="#" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
+          <a href="/country/egypt/cairo/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
         </div>
       </li>
     </ul>
