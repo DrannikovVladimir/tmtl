@@ -94,6 +94,12 @@
   }
 }
 
+.tabs__title--qatar {
+  &::before {
+    background-image: url('../../img/tabs/icon-qatar.jpg');
+  }
+}
+
 .tabs-nav {
   display: flex;
   justify-content: space-between;
