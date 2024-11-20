@@ -129,7 +129,7 @@ const TurkeyResorts = () => {
           <a href="/country/turkey/cappadocia/" className="resorts__item-link">
             <h3 className="resorts__item-title">Каппадокия</h3>
           </a>
-          <p className="resorts__item-text"></p>
+          <p className="resorts__item-text">Каппадокия – удивительный регион в центральной части Турции. Природа словно создала здесь музей под открытым небом, где главными экспонатами стали причудливые скальные образования. Визитной карточкой Каппадокии стали полеты на воздушных шарах над ландшафтом региона.</p>
           <a href="/country/turkey/cappadocia/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
         </div>
       </li>
