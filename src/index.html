@@ -12,7 +12,7 @@
   </script>
 
   <!-- Yandex.Metrika counter -->
-  <script type="text/javascript" >
+  <script async  type="text/javascript" >
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
     m[i].l=1*new Date();
     for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -162,11 +162,43 @@
                 "name": "Онлайн подбор тура",
                 "description": "Бесплатный онлайн поиск туров 24/7"
               }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Онлайн поиск 24/7",
+                "description": "Сравнивайте предложения всех туроператоров в реальном времени"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Экономия времени",
+                "description": "Бронируйте туры за 15 минут не выходя из дома"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Удобная оплата",
+                "description": "Оплачивайте картой или оформляйте рассрочку онлайн"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Поддержка онлайн",
+                "description": "Получайте консультации в WhatsApp или Telegram"
+              }
             }
           ]
         }
       ]
-     }
+    }
   </script>
 </head>
 
@@ -179,11 +211,11 @@
         <h1 class="promo__title">Подбор тура <span class="promo__title--accent">онлайн</span></h1>
         <p class="promo__subtitle">Путёвки по всем направлениям. Вылеты из Астаны, Караганды, Алматы и других городов Казахстана.</p>
         <a href="#min-price" class="promo__button">
-          <img class="promo__button-arrow" src="img/arrow-down.png" alt="Стрелка вниз" width="12">
+          <img class="promo__button-arrow" src="img/arrow-down.png" alt="Перейти к разделу минимальных цен на туры" width="12">
           Минимальные цены
         </a>
         <a href="https://t.me/hottours_krg" target="_blank" class="promo__button promo__button--flight">
-          <img class="promo__button-telegram" src="img/icon-telegram.svg" alt="telegram" width="17">
+          <img class="promo__button-telegram" src="img/icon-telegram.svg" alt="Подписаться на горящие туры в Telegram" width="17">
           Горящие туры
         </a>
         <div class="promo__tours">
@@ -194,10 +226,52 @@
 
     <div id="subscribe-container"></div>
 
-    <section id="min-price" class="min-price"></section>
+    <section id="min-price" class="min-price">
       <div class="min-price__container">
         <h2 class="booking__title">Минимальные цены на туры</h2>
+        <p class="advantages__subtitle">Актуальные цены на отдых с вылетом из Караганды и других городов</p>
         <div class="tv-min-price tv-moduleid-9965399"></div>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="advantages__container">
+        <h2 class="advantages__title">Умный подбор туров в Караганде</h2>
+        <p class="advantages__subtitle">Бронируйте путешествия онлайн через единственное турагентство с собственным поисковым сервисом</p>
+    
+        <ul class="advantages__list advantages-list">
+          <li class="advantages-list__item">
+            <a href="/info/how-to-find-tour-online/">
+              <img src="img/icon-search-24-7.png" alt="Онлайн поиск туров из Караганды круглосуточно" width="64" height="64" class="advantages-list__icon">
+              <h3 class="advantages-list__title">Онлайн поиск 24/7</h3>
+              <p class="advantages-list__text">Сравнивайте предложения всех туроператоров в реальном времени</p>
+            </a>
+          </li>
+    
+          <li class="advantages-list__item">
+            <a href="/info/time-saving/">
+              <img src="img/icon-time-save.png" alt="Быстрое бронирование путевок онлайн за 15 минут" width="64" height="64" class="advantages-list__icon">
+              <h3 class="advantages-list__title">Экономия времени</h3>
+              <p class="advantages-list__text">Бронируйте туры за 15 минут не выходя из дома</p>
+            </a>
+          </li>
+    
+          <li class="advantages-list__item">
+            <a href="/info/payment-options/">
+              <img src="img/icon-credit-card.png" alt="Удобная оплата туров картой и в рассрочку" width="64" height="64" class="advantages-list__icon">
+              <h3 class="advantages-list__title">Удобная оплата</h3>
+              <p class="advantages-list__text">Оплачивайте картой или оформляйте рассрочку онлайн</p>
+            </a>
+          </li>
+    
+          <li class="advantages-list__item">
+            <a href="/info/online-support/">
+              <img src="img/icon-support-online.png" alt="Поддержка туристов в WhatsApp и Telegram 24/7" width="64" height="64" class="advantages-list__icon">
+              <h3 class="advantages-list__title">Поддержка онлайн</h3>
+              <p class="advantages-list__text">Получайте консультации в WhatsApp или Telegram</p>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -208,8 +282,8 @@
           <p class="booking__subtitle">Если вы любите планировать путешествие заранее, то вам необходимо присмотреться к раннему бронированию</p>
           <div class="booking__image-container">
             <picture>
-              <source type="image/webp" srcset="img/booking-image.webp">
-              <img src="img/booking-image.jpg" width="784" height="588" alt="Раннее бронирование" class="booking__image">
+              <source type="image/webp" srcset="img/booking-image.webp" loading="lazy">
+              <img src="img/booking-image.jpg" width="784" height="588" alt="Раннее бронирование туров со скидкой до 30% на сезон 2025" class="booking__image">
             </picture>
           </div>
           <div class="booking__content">
@@ -254,14 +328,14 @@
     <div class="payment-wrap">
       <section class="payment">
         <div class="payment__container">
-          <h2 class="payment__title">Покупка тура онлайн</h2>
-          <p class="payment__subtitle">Покупка тура онлайн имеет свои особенности, давайте в них разберёмся</p>
+          <h2 class="payment__title">Купить тур онлайн</h2>
+          <p class="payment__subtitle">Надежное бронирование туров онлайн с поддержкой менеджера 24/7</p>
           <ol class="payment__list payment-list">
             <li class="payment-list__item">
               <div class="payment-list__image-wrapper">
                 <picture>
-                  <source type="image/webp" srcset="img/payment-image1.webp">
-                  <img src="img/payment-image1.png" alt="Договор" width="162" height="162" class="payment-list__image">
+                  <source type="image/webp" srcset="img/payment-image1.webp" loading="lazy">
+                  <img src="img/payment-image1.png" alt="Электронное подписание договора на тур с ЭЦП" width="162" height="162" class="payment-list__image">
                 </picture>
               </div>
               <div class="payment-list__content-wrapper">
@@ -275,8 +349,8 @@
             <li class="payment-list__item payment-list__item-2">
               <div class="payment-list__image-wrapper">
                 <picture>
-                  <source type="image/webp" srcset="img/payment-image2.webp">
-                  <img src="img/payment-image2.png" alt="Предоплата" width="162" height="162" class="payment-list__image">
+                  <source type="image/webp" srcset="img/payment-image2.webp" loading="lazy">
+                  <img src="img/payment-image2.png" alt="Удобная предоплата тура онлайн картой" width="162" height="162" class="payment-list__image">
                 </picture>
               </div>
               <div class="payment-list__content-wrapper">
@@ -290,8 +364,8 @@
             <li class="payment-list__item payment-list__item-3">
               <div class="payment-list__image-wrapper">
                 <picture>
-                  <source type="image/webp" srcset="img/payment-image3.webp">
-                  <img src="img/payment-image3.png" alt="Покупка" width="162" height="162" class="payment-list__image">
+                  <source type="image/webp" srcset="img/payment-image3.webp" loading="lazy">
+                  <img src="img/payment-image3.png" alt="Безопасная оплата полной стоимости тура" width="162" height="162" class="payment-list__image">
                 </picture>
               </div>
               <div class="payment-list__content-wrapper">
@@ -305,8 +379,8 @@
             <li class="payment-list__item payment-list__item-4">
               <div class="payment-list__image-wrapper">
                 <picture>
-                  <source type="image/webp" srcset="img/payment-image4.webp">
-                  <img src="img/payment-image4.png" alt="Документы" width="162" height="162" class="payment-list__image">
+                  <source type="image/webp" srcset="img/payment-image4.webp" loading="lazy">
+                  <img src="img/payment-image4.png" alt="Получение документов для путешествия онлайн" width="162" height="162" class="payment-list__image">
                 </picture>
               </div>
               <div class="payment-list__content-wrapper">
@@ -322,26 +396,17 @@
       </section>
     </div>
 
-    <section id="calendar" class="calendar">
-      <div class="calendar__container">
-        <h2 class="booking__title">Календарь минимальных цен</h2>
-        <div class="calendar__box">
-          <div class="tv-calendar tv-moduleid-9965402"></div>
-          <div class="tv-calendar tv-moduleid-9965403"></div>
-        </div>
-      </div>
-    </section>
-
     <section class="dream">
       <div class="dream__container">
         <h2 class="dream__title">Осуществите вашу мечту</h2>
+        <p class="payment__subtitle">Профессиональное сопровождение вашего путешествия на всех этапах</p>
         <ol class="dream__list dream-list">
           <li class="dream-list__item">
             <div class="dream-list__image-wrapper">
               <span class="dream-list__count">1</span>
               <picture>
-                <source type="image/webp" srcset="img/dream-img-1.webp">
-                <img src="img/dream-img-1.jpg" alt="Мечта об отдыхе" width="266" height="222" class="dream-list__image">
+                <source type="image/webp" srcset="img/dream-img-1.webp" loading="lazy">
+                <img src="img/dream-img-1.jpg" alt="Персональный подбор тура под ваши пожелания" width="266" height="222" class="dream-list__image">
               </picture>
             </div>
             <p class="dream-list__text">Вы мечтаете, а мы продумываем всё за вас. Начинаем со знакомства.</p>
@@ -350,8 +415,8 @@
             <div class="dream-list__image-wrapper">
               <span class="dream-list__count">2</span>
               <picture>
-                <source type="image/webp" srcset="img/dream-img-2.webp">
-                <img src="img/dream-img-2.jpg" alt="Потребности туриста" width="266" height="222" class="dream-list__image">
+                <source type="image/webp" srcset="img/dream-img-2.webp" loading="lazy">
+                <img src="img/dream-img-2.jpg" alt="Индивидуальный подход к планированию отдыха" width="266" height="222" class="dream-list__image">
               </picture>
             </div>
             <p class="dream-list__text">Вы рассказываете о себе, своем опыте путешествий и своих желаниях</p>
@@ -360,8 +425,8 @@
             <div class="dream-list__image-wrapper">
               <span class="dream-list__count">3</span>
               <picture>
-                <source type="image/webp" srcset="img/dream-img-3.webp">
-                <img src="img/dream-img-3.jpg" alt="Выбор места для путешествия" width="266" height="222" class="dream-list__image">
+                <source type="image/webp" srcset="img/dream-img-3.webp" loading="lazy">
+                <img src="img/dream-img-3.jpg" alt="Выбор лучшего варианта путешествия" width="266" height="222" class="dream-list__image">
               </picture>
             </div>
             <p class="dream-list__text">Подбираем разные варианты для вас. Выбираем один из них</p>
@@ -370,8 +435,8 @@
             <div class="dream-list__image-wrapper">
               <span class="dream-list__count">4</span>
               <picture>
-                <source type="image/webp" srcset="img/dream-img-4.webp">
-                <img src="img/dream-img-4.jpg" alt="Отличный отдых" width="266" height="222" class="dream-list__image">
+                <source type="image/webp" srcset="img/dream-img-4.webp" loading="lazy">
+                <img src="img/dream-img-4.jpg" alt="Поддержка туристов во время отдыха 24/7" width="266" height="222" class="dream-list__image">
               </picture>
             </div>
             <p class="dream-list__text">Вы отправляетесь путешествовать, а мы с вами остаемся на связи.</p>
@@ -380,8 +445,8 @@
             <div class="dream-list__image-wrapper">
               <span class="dream-list__count">5</span>
               <picture>
-                <source type="image/webp" srcset="img/dream-img-5.webp">
-                <img src="img/dream-img-5.jpg" alt="Сопровождение туристов" width="266" height="222" class="dream-list__image">
+                <source type="image/webp" srcset="img/dream-img-5.webp" loading="lazy">
+                <img src="img/dream-img-5.jpg" alt="Сбор отзывов и впечатлений о путешествии" width="266" height="222" class="dream-list__image">
               </picture>
             </div>
             <p class="dream-list__text">Прилетаете счастливые с отдыха и делитесь с нами своими впечатлениями</p>
@@ -398,6 +463,7 @@
       <section class="news">
         <div class="news__container">
           <h2 class="news__title">Интересное о туризме</h2>
+          <p class="payment__subtitle">Свежие новости туризма, экспертные статьи о путешествиях и отдыхе за границей</p>
             <ul class="news__list news-list">
               <li class="news-list__item">
                 <a href="articles/thailand-vietnam-hainan.html" class="news-list__link">
@@ -440,15 +506,15 @@
 
   <footer id="footer" class="footer"></footer>
 
-  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-  <script src="https://unpkg.com/imask"></script>
+  <script defer src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script defer src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script defer src="https://unpkg.com/imask"></script>
 
-  <script src="/js/booking-menu.js"></script>
-  <script src="/assets/components/subscribe/subscribe.js"></script>
-  <script src="/assets/components/bookingTour/bookingTour.js"></script>
-  <script src="/assets/components/footer.js"></script>
-  <script src="/assets/components/header.js"></script>
+  <script defer src="/js/booking-menu.js"></script>
+  <script defer src="/assets/components/subscribe/subscribe.js"></script>
+  <script defer src="/assets/components/bookingTour/bookingTour.js"></script>
+  <script defer src="/assets/components/footer.js"></script>
+  <script defer src="/assets/components/header.js"></script>
 </body>
 
 </html>

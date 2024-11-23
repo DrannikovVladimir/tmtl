@@ -8,10 +8,6 @@
 
 .booking {
   position: relative;
-  background-image: url('../img/icon-bg-booking.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
   z-index: 10;
 
   &::before {
@@ -61,7 +57,6 @@
 
 .booking__title {
   margin: 0 auto;
-  margin-bottom: 10px;
   padding: 0;
 
   font-weight: 700;
