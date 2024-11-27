@@ -173,8 +173,8 @@
 
 .article__title--list-min {
   margin-bottom: 10px;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 28px;
+  line-height: 32px;
 }
 
 .article__title--center {
@@ -348,12 +348,12 @@
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
-  font-family: Arial, sans-serif;
+  font-family: inherit;
 }
 
 .article__table-th, .article__table-td {
   border: 1px solid #ddd;
-  padding: 12px;
+  padding: 15px;
   text-align: left;
 }
 
@@ -372,7 +372,7 @@
 }
 
 .article__table-td:last-child {
-  font-weight: bold;
+  font-weight: 500;
   color: $basic-color;
 }
 
