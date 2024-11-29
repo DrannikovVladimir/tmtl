@@ -56,7 +56,7 @@ function html() {
     .pipe(plumber())
     .pipe(replace(
       /<script src="https:\/\/unpkg\.com\/react@18\/umd\/react\.development\.js" crossorigin><\/script>\s*<script src="https:\/\/unpkg\.com\/react-dom@18\/umd\/react-dom\.development\.js" crossorigin><\/script>/g,
-      '<script defer crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>\n<script defer crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>'
+      '<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>\n<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>'
     ))
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(dest(path.build.html));
