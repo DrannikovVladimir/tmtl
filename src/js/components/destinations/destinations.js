@@ -75,63 +75,76 @@ const destinationsData = [
     },
     alt: 'Горящие путевки в Таиланд: Пхукет и Паттайя с прямым перелетом из Казахстана',
     link: '/tours/thailand'
+  },
+  {
+    id: 'georgia',
+    title: 'Туры в Грузию',
+    description: 'Ощутите душу Кавказа! Величественные горы, старинные города и легендарное грузинское гостеприимство ждут вас. Попробуйте лучшие вина и насладитесь уникальной кухней!',
+    price: '175 000',
+    discount: 15,
+    images: {
+      desktop: '/img/tours/tours-georgia-desktop',
+      mobile: '/img/tours/tours-georgia-mobile'
+    },
+    alt: 'Туры в Грузию из Казахстана: экскурсии, винные туры и отдых в горах',
+    link: '/tours/georgia'
   }
 ];
 
 const DestinationCard = ({ data }) => {
-    return (
-      <div className="destination-card">
-        <div className="destination-card__image-wrapper">
-          <picture className="destination-card__image-wrapper">
-            <source
-              media="(min-width: 768px)"
-              srcSet={`${data.images.desktop}.webp 1x, 
-                      ${data.images.desktop}@2x.webp 2x`}
-              type="image/webp"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcSet={`${data.images.desktop}.jpg 1x, 
-                      ${data.images.desktop}@2x.jpg 2x`}
-              type="image/jpeg"
-            />
-            <source
-              srcSet={`${data.images.mobile}.webp 1x,
-                      ${data.images.mobile}@2x.webp 2x`}
-              type="image/webp"
-            />
-            <source
-              srcSet={`${data.images.mobile}.jpg 1x,
-                      ${data.images.mobile}@2x.jpg 2x`}
-              type="image/jpeg"
-            />
-            <img
-              src={`${data.images.desktop}.jpg`}
-              srcSet={`${data.images.desktop}@2x.jpg 2x`}
-              alt={data.alt}
-              className="destination-card__image"
-              width="380"
-              height="240"
-              loading="lazy"
-            />
-          </picture>
-          <span className="destination-card__discount">-{data.discount}%</span>
-        </div>
-        <div className="destination-card__content">
-          <h3 className="destination-card__title">{data.title}</h3>
-          <p className="destination-card__description">{data.description}</p>
-          <div className="destination-card__price">
-            <span className="destination-card__price-label">Цена на 1 человека: от</span>
-            <span>&nbsp;</span>
-            <span className="destination-card__price-value">{data.price}</span>
-            <span>&nbsp;</span>
-            <span className="destination-card__price-label">тг.</span>
-          </div>
-          <a href={data.link} className="destination-card__button">Выбрать тур</a>
-        </div>
+  return (
+    <div className="destination-card">
+      <div className="destination-card__image-wrapper">
+        <picture className="destination-card__image-wrapper">
+          <source
+            media="(min-width: 768px)"
+            srcSet={`${data.images.desktop}.webp 1x, 
+                    ${data.images.desktop}@2x.webp 2x`}
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcSet={`${data.images.desktop}.jpg 1x, 
+                    ${data.images.desktop}@2x.jpg 2x`}
+            type="image/jpeg"
+          />
+          <source
+            srcSet={`${data.images.mobile}.webp 1x,
+                    ${data.images.mobile}@2x.webp 2x`}
+            type="image/webp"
+          />
+          <source
+            srcSet={`${data.images.mobile}.jpg 1x,
+                    ${data.images.mobile}@2x.jpg 2x`}
+            type="image/jpeg"
+          />
+          <img
+            src={`${data.images.desktop}.jpg`}
+            srcSet={`${data.images.desktop}@2x.jpg 2x`}
+            alt={data.alt}
+            className="destination-card__image"
+            width="380"
+            height="240"
+            loading="lazy"
+          />
+        </picture>
+        <span className="destination-card__discount">-{data.discount}%</span>
       </div>
-    );
-  };
+      <div className="destination-card__content">
+        <h3 className="destination-card__title">{data.title}</h3>
+        <p className="destination-card__description">{data.description}</p>
+        <div className="destination-card__price">
+          <span className="destination-card__price-label">Цена на 1 человека: от</span>
+          <span>&nbsp;</span>
+          <span className="destination-card__price-value">{data.price}</span>
+          <span>&nbsp;</span>
+          <span className="destination-card__price-label">тг.</span>
+        </div>
+        <a href={data.link} className="destination-card__button">Выбрать тур</a>
+      </div>
+    </div>
+  );
+};
 
 
 const SliderControls = React.memo(({ onPrev, onNext, canGoPrev, canGoNext }) => (
