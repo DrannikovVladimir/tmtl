@@ -28,7 +28,7 @@ const destinationsData = [
     id: 'uae',
     title: 'Туры в Дубай (ОАЭ)',
     description: 'Испытайте невероятный контраст роскоши и традиций! От головокружительных небоскребов до золотых песков пустыни. Откройте для себя страну, где каждый день – новое приключение!',
-    price: '340 000',
+    price: '181 000',
     discount: 30,
     images: {
       desktop: '/img/tours/tours-uae-desktop',
@@ -41,7 +41,7 @@ const destinationsData = [
     id: 'egypt',
     title: 'Туры в Египет',
     description: 'Окунитесь в магию древних пирамид и наслаждайтесь первоклассным сервисом all inclusive! Коралловые рифы, теплое море и вечное солнце сделают ваш отдых незабываемым!',
-    price: '183 000',
+    price: '195 000',
     discount: 28,
     images: {
       desktop: '/img/tours/tours-egypt-desktop',
@@ -54,7 +54,7 @@ const destinationsData = [
     id: 'vietnam',
     title: 'Туры во Вьетнам',
     description: 'Откройте для себя рай на земле: лазурные бухты и экзотические пляжи Фукуока ждут вас! Аутентичная кухня, древние храмы и потрясающие SPA-процедуры включены!',
-    price: '290 000',
+    price: '240 000',
     discount: 25,
     images: {
       desktop: '/img/tours/tours-vietnam-desktop',
@@ -67,7 +67,7 @@ const destinationsData = [
     id: 'thailand',
     title: 'Туры в Таиланд',
     description: 'Ваш идеальный отпуск: роскошные пляжи, тайский массаж и незабываемые впечатления! От шумной Паттайи до райского Пхукета – исполните мечту о тропическом рае!',
-    price: '214 000',
+    price: '218 000',
     discount: 24,
     images: {
       desktop: '/img/tours/tours-thailand-desktop',
