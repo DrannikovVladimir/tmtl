@@ -3197,16 +3197,11 @@ input[type=radio].visually-hidden {
   background-image: url("/img/articles/hotels-phu-quoc/hotels-phu-quoc-bg.jpg");
 }
 .article__title-wraper--hotels-phu-quoc::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 10;
+}
+
+.article__title-wraper--gde-otdokhnut-v-kambodzhe {
+  background-image: url("/img/articles/gde-otdokhnut-v-kambodzhe/gde-otdokhnut-v-kambodzhe-bg.jpg");
 }
 
 .article__title {
