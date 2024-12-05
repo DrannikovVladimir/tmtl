@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head itemscope itemtype="http://schema.org/WPHeader">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YVZ5KS8WK9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-YVZ5KS8WK9');
-  </script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поиск туров по всем туроператорам | Подбор тура на сайте</title>
   <meta name="description" content="Поиск туров из всех городов Казахстана от ведущих туроператоров на сайте турагентства «Time to Travel». Подбор тура онлайн от проверенных туроператов.">
+  <link rel="canonical" href="https://tmtl.kz/tours/">
 
   <link type="image/x-icon" rel="shortcut icon" href="/img/favicon/favicon.ico">
   <link type="image/png" sizes="16x16" rel="icon" href="/img/favicon/favicon-16x16.png">
@@ -31,8 +24,6 @@
   <link sizes="144x144" rel="apple-touch-icon" href="/img/favicon/apple-touch-icon-144x144.png">
   <link sizes="152x152" rel="apple-touch-icon" href="/img/favicon/apple-touch-icon-152x152.png">
   <link sizes="180x180" rel="apple-touch-icon" href="/img/favicon/apple-touch-icon-180x180.png">
-  <link rel="canonical" href="https://tmtl.kz/tours/">
-
   <link color="#e52037" rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg">
 
   <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png">
@@ -42,9 +33,18 @@
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="application-name" content="Турагентство &laquo;Time to travel&raquo; Караганда">
   <meta name="theme-color" content="#ffffff">
-
-  <title>Поиск туров по всем туроператорам | Подбор тура на сайте</title>
+  
   <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YVZ5KS8WK9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YVZ5KS8WK9');
+  </script>
   <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
   <script type="application/ld+json">
     {
@@ -233,7 +233,9 @@
   </script>
 </head>
 <body>
-  <header id="header" class="header"></header>
+  <div class="header-wrapper">
+    <header id="header" class="header"></header>
+  </div>
 
   <main>
 
@@ -272,7 +274,10 @@
             <tbody>
                 <tr class="article__table-tr" itemprop="about" itemscope itemtype="https://schema.org/TravelAgency">
                     <td class="article__table-td" data-label="Туроператор">
-                      <img src="../img/about/kompas.jpg" alt="Логотип Туроператора Kompas" width="100" class="logo">
+                      <picture>
+                        <source type="image/webp" srcset="/img/about/kompas.webp" />
+                        <img src="/img/about/kompas.jpg" alt="Логотип Туроператора Kompas" width="100" class="logo">
+                      </picture>
                       <span itemprop="name" class="visually-hidden">Туроператор Kompas</span>
                       <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="visually-hidden">
                         <span itemprop="streetAddress">ул. Сатпаева, 30/8</span>
@@ -287,7 +292,10 @@
                 </tr>
                 <tr class="article__table-tr" itemprop="about" itemscope itemtype="https://schema.org/TravelAgency">
                     <td class="article__table-td" data-label="Туроператор">
-                      <img src="../img/about/fun-sun.jpg" alt="Логотип Туроператора Fun&Sun" width="80" class="logo">
+                      <picture>
+                        <source type="image/webp" srcset="/img/about/fun-sun.webp" />
+                        <img src="/img/about/fun-sun.jpg" alt="Логотип Туроператора Fun&Sun" width="80" class="logo">
+                      </picture>
                       <span itemprop="name" class="visually-hidden">Туроператор Fun&Sun</span>
                       <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="visually-hidden">
                         <span itemprop="streetAddress">пр. Достык, 172</span>
@@ -302,7 +310,10 @@
                 </tr>
                 <tr class="article__table-tr" itemprop="about" itemscope itemtype="https://schema.org/TravelAgency">
                     <td class="article__table-td" data-label="Туроператор">
-                      <img src="../img/about/selfie-travel.jpg" alt="Логотип Туроператора selfiTravel" width="80" class="logo">
+                      <picture>
+                        <source type="image/webp" srcset="/img/about/selfie-travel.webp">
+                        <img src="/img/about/selfie-travel.jpg" alt="Логотип Туроператора selfiTravel" width="80" class="logo">
+                      </picture>
                       <span itemprop="name" class="visually-hidden">Туроператор Selfie Travel</span>
                       <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="visually-hidden">
                         <span itemprop="streetAddress">пр. Назарбаева, 242</span>
@@ -317,7 +328,10 @@
                 </tr>
                 <tr class="article__table-tr" itemprop="about" itemscope itemtype="https://schema.org/TravelAgency">
                     <td class="article__table-td" data-label="Туроператор">
-                      <img src="../img/about/tez-tour.jpg" alt="Логотип  Туроператора TezTour" width="85" class="logo">
+                      <picture>
+                        <source type="image/webp" srcset="/img/about/tez-tour.webp">
+                        <img src="/img/about/tez-tour.jpg" alt="Логотип  Туроператора TezTour" width="85" class="logo">
+                      </picture>
                       <span itemprop="name" class="visually-hidden">Туроператор TezTour</span>
                       <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="visually-hidden">
                         <span itemprop="streetAddress">пр. Аль-Фараби, 7</span>
@@ -332,7 +346,10 @@
                 </tr>
                 <tr class="article__table-tr" itemprop="about" itemscope itemtype="https://schema.org/TravelAgency">
                     <td class="article__table-td" data-label="Туроператор">
-                      <img src="../img/about/anex-tour.jpg" alt="Логотип Туроператора Anex" width="85" class="logo">
+                      <picture>
+                        <source type="image/webp" srcset="/img/about/anex-tour.webp">
+                        <img src="/img/about/anex-tour.jpg" alt="Логотип Туроператора Anex" width="85" class="logo">
+                      </picture>
                       <span itemprop="name" class="visually-hidden">Туроператор Anex</span>
                       <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="visually-hidden">
                         <span itemprop="streetAddress">пр. Абылай хана, 135</span>
@@ -347,7 +364,10 @@
                 </tr>
                 <tr class="article__table-tr" itemprop="about" itemscope itemtype="https://schema.org/TravelAgency">
                     <td class="article__table-td" data-label="Туроператор">
-                      <img src="../img/about/join-up.png" alt="Логотип Туроператора JoinUp" width="100" class="logo">
+                      <picture>
+                        <source type="image/webp" srcset="/img/about/join-up.webp">
+                        <img src="/img/about/join-up.png" alt="Логотип Туроператора JoinUp" width="100" class="logo">
+                      </picture>
                       <span itemprop="name" class="visually-hidden">Туроператор JoinUp</span>
                       <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="visually-hidden">
                         <span itemprop="streetAddress">ул. Желтоксан, 181</span>
@@ -362,7 +382,10 @@
                 </tr>
                 <tr class="article__table-tr" itemprop="about" itemscope itemtype="https://schema.org/TravelAgency">
                     <td class="article__table-td" data-label="Туроператор">
-                      <img src="../img/about/pegas.png" alt="Логотип Туроператора Pegas Touristik" width="100" class="logo">
+                      <picture>
+                        <source type="image/webp" srcset="/img/about/pegas.webp">
+                        <img src="/img/about/pegas.png" alt="Логотип Туроператора Pegas Touristik" width="100" class="logo">
+                      </picture>
                       <span itemprop="name" class="visually-hidden">Туроператор Pegas Touristik</span>
                       <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="visually-hidden">
                         <span itemprop="streetAddress">ул. Байтурсынова, 85</span>
@@ -377,7 +400,10 @@
                 </tr>
                 <tr class="article__table-tr" itemprop="about" itemscope itemtype="https://schema.org/TravelAgency">
                     <td class="article__table-td" data-label="Туроператор">
-                      <img src="../img/about/kazunion.jpg" alt="Логотип Туроператора Kazunion" width="95" class="logo">
+                      <picture>
+                        <source type="image/webp" srcset="/img/about/kazunion.webp">
+                        <img src="/img/about/kazunion.jpg" alt="Логотип Туроператора Kazunion" width="95" class="logo">
+                      </picture>
                       <span itemprop="name" class="visually-hidden">Туроператор Kazunion</span>
                       <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="visually-hidden">
                         <span itemprop="streetAddress">пр. Абая, 76/109</span>
@@ -392,7 +418,10 @@
                 </tr>
                 <tr class="article__table-tr" itemprop="about" itemscope itemtype="https://schema.org/TravelAgency">
                     <td class="article__table-td" data-label="Туроператор">
-                      <img src="../img/about/crystal-bay-tours.jpg" alt="Логотип Туроператора Crystal Bay Tours" width="90" class="logo">
+                      <picture>
+                        <source type="image/webp" srcset="/img/about/crystal-bay-tours.webp">
+                        <img src="/img/about/crystal-bay-tours.jpg" alt="Логотип Туроператора Crystal Bay Tours" width="90" class="logo">
+                      </picture>
                       <span itemprop="name" class="visually-hidden">Туроператор Crystal Bay Tours</span>
                       <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="visually-hidden">
                         <span itemprop="streetAddress">ул. Достык, 132</span>
@@ -407,7 +436,10 @@
                 </tr>
                 <tr class="article__table-tr" itemprop="about" itemscope itemtype="https://schema.org/TravelAgency">
                     <td class="article__table-td" data-label="Туроператор">
-                      <img src="../img/about/abktourism.png" alt="Логотип ABK Tourism" width="100" class="logo">
+                      <picture>
+                        <source type="image/webp" srcset="/img/about/abktourism.webp">
+                        <img src="/img/about/abktourism.png" alt="Логотип ABK Tourism" width="100" class="logo">
+                      </picture>
                       <span itemprop="name" class="visually-hidden">ABK Tourism</span>
                       <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="visually-hidden">
                         <span itemprop="streetAddress">ул. Кунаева, 21Б</span>
@@ -453,10 +485,11 @@
         </section>
       </div>
 
-      <div id="subscribe-container"></div>
+      <div class="subs-wrapper">
+        <div id="subscribe-container"></div>
+      </div>
 
       <div class="about-page__container">
-
         <section>
           <h2 class="about-page__title--h2">Как купить тур: процесс бронирования онлайн</h2>
           <p class="about-page__text">При выборе тура важно учитывать несколько ключевых факторов, которые помогут сделать ваш отдых максимально комфортным и приятным. Прежде всего, определитесь с <a href="/country/" class="article__link">направлением</a> и типом отдыха, который вы предпочитаете: пляжный, экскурсионный, горнолыжный или комбинированный. Используя нашу систему <a href="/" class="article__link">поиска туров</a> от всех туроператоров, вы можете легко сравнить различные варианты и выбрать наиболее подходящий. Обратите внимание на рейтинг и отзывы об отеле, его расположение относительно пляжа или основных достопримечательностей можно посмотреть по карте.</p>
@@ -560,43 +593,43 @@
           <p class="about-page__text article__text--last-item">Наша <a href="/" class="article__link">система поиска и бронирования туров</a> предлагает широкий выбор путешествий в самые востребованные уголки мира. Откройте для себя незабываемые приключения в этих удивительных странах:</p>
           <section>
             <a href="/tours/turkey/" class="article__link">
-              <h3 class="article__title--h3">Туры в Турцию</h3>
+              <h3 class="article__title--list-h3">Туры в Турцию</h3>
             </a>
             <p class="article__text article__text--last-item">Откройте для себя магию <a href="/country/turkey/" class="article__link">Турции</a> – страны, где Восток встречается с Западом! Насладитесь лазурными водами Средиземного моря, погрузитесь в историю древних цивилизаций и побалуйте себя изысканной кухней. Турецкое гостеприимство, роскошные all-inclusive отели и захватывающие дух пейзажи Каппадокии ждут вас. Будь то романтический отдых в Анталии, культурное погружение в Стамбуле или релакс на пляжах Бодрума – Турция подарит вам незабываемые впечатления и оставит желание вернуться снова!</p>
           </section>
           <section>
             <a href="/tours/uae/" class="article__link">
-              <h3 class="article__title--h3">Туры в ОАЭ</h3>
+              <h3 class="article__title--list-h3">Туры в ОАЭ</h3>
             </a>
             <p class="article__text article__text--last-item">Погрузитесь в мир роскоши и инноваций в <a href="/country/uae/" class="article__link">Объединенных Арабских Эмиратах</a>! Здесь футуристические небоскребы соседствуют с древними традициями, а пустынные пейзажи сменяются ультрасовременными торговыми центрами. Насладитесь безупречным сервисом в лучших отелях мира, испытайте адреналин в тематических парках Дубая или отправьтесь на сафари по золотым песчаным дюнам. ОАЭ – это воплощение восточной сказки XXI века, где каждый найдет свое собственное чудо!</p>
           </section>
           <section>
             <a href="/tours/egypt/" class="article__link">
-              <h3 class="article__title--h3">Туры в Египет</h3>
+              <h3 class="article__title--list-h3">Туры в Египет</h3>
             </a>
             <p class="article__text article__text--last-item">Откройте для себя таинственный мир древних фараонов и современного пляжного отдыха в <a href="/country/egypt/" class="article__link">Египте</a>! Погрузитесь в кристально чистые воды Красного моря, исследуйте красочные коралловые рифы и насладитесь первоклассным дайвингом. Величественные пирамиды Гизы, загадочный Сфинкс и храмы Луксора перенесут вас на тысячи лет назад. А современные курорты Хургады и Шарм-эль-Шейха предложат все удобства для незабываемого отдыха. Египет – это идеальное сочетание истории, культуры и пляжного релакса!</p>
           </section>
           <section>
             <a href="/tours/thailand/" class="article__link">
-              <h3 class="article__title--h3">Туры в Таиланд</h3>
+              <h3 class="article__title--list-h3">Туры в Таиланд</h3>
             </a>
             <p class="article__text article__text--last-item">Окунитесь в экзотику <a href="/country/thailand/" class="article__link">Таиланда</a> – страны улыбок, буддийских храмов и райских пляжей! Насладитесь теплым Андаманским морем на Пхукете, исследуйте джунгли северного Чиангмая или погрузитесь в яркую ночную жизнь Бангкока. Тайская кухня побалует ваши вкусовые рецепторы, а традиционный массаж расслабит тело и душу. Открытые и дружелюбные тайцы, богатая культура и неповторимая атмосфера сделают ваш отдых по-настоящему незабываемым. Таиланд – это рай, где каждый найдет свой уголок блаженства!</p>
           </section>
           <section>
             <a href="/tours/vietnam/" class="article__link">
-              <h3 class="article__title--h3">Туры во Вьетнам</h3>
+              <h3 class="article__title--list-h3">Туры во Вьетнам</h3>
             </a>
             <p class="article__text article__text--last-item">Откройте для себя удивительный <a href="/country/vietnam/" class="article__link">Вьетнам</a> – страну контрастов, где древние традиции гармонично сочетаются с стремительным развитием! Насладитесь великолепными пляжами Нячанга, исследуйте живописную бухту Халонг или погрузитесь в атмосферу колониального прошлого в Хойане. Вьетнамская кухня покорит ваше сердце, а местные жители удивят своим гостеприимством. От шумных улочек Ханоя до умиротворяющих рисовых террас Сапы – каждый уголок этой страны таит в себе удивительные открытия. Вьетнам – это путешествие, которое навсегда изменит ваше представление о Юго-Восточной Азии!</p>
           </section>
           <section>
             <a href="/tours/georgia/" class="article__link">
-              <h3 class="article__title--h3">Туры в Грузию</h3>
+              <h3 class="article__title--list-h3">Туры в Грузию</h3>
             </a>
             <p class="article__text article__text--last-item">Погрузитесь в гостеприимную атмосферу Грузии – страны, где каждый гость становится другом! Насладитесь великолепной природой Кавказских гор, искупайтесь в лазурных водах Черного моря и попробуйте легендарное грузинское вино. Тбилиси очарует вас своей уникальной архитектурой, а древние храмы Мцхеты перенесут в глубину веков. Грузинское застолье с тостами, песнями и невероятно вкусной едой станет незабываемым опытом. Откройте для себя страну, где традиции бережно хранятся, а гостеприимство – не просто слово, а образ жизни!</p>
           </section>
           <section>
             <a href="/tours/china/hainan/" class="article__link">
-              <h3 class="article__title--h3">Туры на Хайнань</h3>
+              <h3 class="article__title--list-h3">Туры на Хайнань</h3>
             </a>
             <p class="article__text article__text--last-item">Откройте для себя тропический рай на острове <a href="/country/china/hainan/" class="article__link">Хайнань</a> – "Восточных Гавайях" Китая! Насладитесь белоснежными пляжами и лазурными водами Южно-Китайского моря в Санье, погрузитесь в атмосферу безмятежности в буддийских храмах или испытайте на себе чудодейственную силу местных горячих источников. Хайнань – это идеальное сочетание пляжного отдыха, богатой культуры и современной инфраструктуры. Будь то романтический отпуск или семейное путешествие, этот тропический остров подарит вам незабываемые впечатления и желание вернуться снова!</p>
           </section>

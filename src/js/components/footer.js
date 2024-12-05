@@ -7,19 +7,19 @@ const Socials = () => {
     <ul className="footer__socials socials socials--footer">
       <li className="socials__item socials__item--footer">
         <a href="https://www.instagram.com/timetotravel_krg/" target="_blank" className="socials__link socials__link--footer">
-          <img src="/img/icon-instagram.svg" alt="Instagram" className="socials__icon" />
+          <img src="/img/icon-instagram.svg" alt="Instagram" className="socials__icon" width="35" height="35" />
           <span className="visually-hidden">Instagram</span>
         </a>
       </li>
       <li className="socials__item socials__item--footer">
         <a href="https://t.me/hottours_krg" target="_blank" className="socials__link socials__link--footer">
-          <img src="/img/icon-telegram-social.svg" alt="Telegram" className="socials__icon" />
+          <img src="/img/icon-telegram-social.svg" alt="Telegram" className="socials__icon" width="35" height="35" />
           <span className="visually-hidden">Telegram</span>
         </a>
       </li>
       <li className="socials__item socials__item--footer">
         <a href="https://wa.me/77078863633" target="_blank" className="socials__link socials__link--footer">
-          <img src="/img/icon-whatsup.svg" alt="Whatsup" className="socials__link" />
+          <img src="/img/icon-whatsup.svg" alt="Whatsup" className="socials__link" width="35" height="35" />
           <span className="visually-hidden">Whatsup</span>
         </a>
       </li>

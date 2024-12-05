@@ -1,3 +1,7 @@
+.header-wrapper {
+  min-height: 222px;
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -84,6 +88,17 @@
     padding-bottom: 5px;
     padding-right: 20px;
   }
+
+  .header-wrapper {
+    min-height: 177px;
+  }
+  
+}
+
+@media (max-width: 630px) {
+  .header-wrapper {
+    min-height: 167px;
+  }  
 }
 
 @media (max-width: 590px) {
@@ -97,4 +112,14 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  .header-wrapper {
+    min-height: 158px;
+  }  
+}
+
+@media (max-width: 460px) {
+  .header-wrapper {
+    min-height: 152px;
+  }  
 }
