@@ -3505,6 +3505,11 @@ input[type=radio].visually-hidden {
     width: auto;
     margin-right: 0;
   }
+  .article__content-container__min-price__weather {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
   .article__title {
     font-size: 22px;
     line-height: 26px;
