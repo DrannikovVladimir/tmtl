@@ -15,7 +15,7 @@ const TurkeyResorts = () => {
         </a>
         <div className="resorts__item-content">
           <a href="/country/turkey/antalya/" className="resorts__item-link">
-            <h3 className="resorts__item-title">Анталья</h3>
+            <h3 id="antalya" className="resorts__item-title">Анталья</h3>
           </a>
           <p className="resorts__item-text">Один из самых популярных курортов в Турции. Город расположен на побережье Средиземного моря и знаменит своими красивыми пляжами, роскошными отелями и ресторанами. Один из главных международных аэропортов страны находится именно здесь.</p>
           <a href="/country/turkey/antalya/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
@@ -31,7 +31,7 @@ const TurkeyResorts = () => {
         </a>
         <div className="resorts__item-content">
           <a href="/country/turkey/kemer/" className="resorts__item-link">
-            <h3 className="resorts__item-title">Кемер</h3>
+            <h3 id="kemer" className="resorts__item-title">Кемер</h3>
           </a>
           <p className="resorts__item-text">Расположен между Таврскими горами и Средиземным морем в 40 километров от аэропорта. Ночные клубы, бары работают до раннего утра. Район был популярен среди туристов с древних времен, и сегодня он по-прежнему популярен среди посетителей со всего мира.</p>
           <a href="/country/turkey/kemer/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
@@ -47,7 +47,7 @@ const TurkeyResorts = () => {
         </a>
         <div className="resorts__item-content">
           <a href="/country/turkey/bodrum/" className="resorts__item-link">
-            <h3 className="resorts__item-title">Бодрум</h3>
+            <h3 id="bodrum" className="resorts__item-title">Бодрум</h3>
           </a>
           <p className="resorts__item-text">Еще один прекрасный курортный город, расположенный на Эгейском побережье Турции. В Бодруме также есть несколько удивительных пляжей с мелководьем, что делает их идеальными для купания. Самый западный курорт Турции, который расположен ближе к Греции.</p>
           <a href="/country/turkey/bodrum/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
@@ -63,7 +63,7 @@ const TurkeyResorts = () => {
         </a>
         <div className="resorts__item-content">
           <a href="/country/turkey/alanya/" className="resorts__item-link">
-            <h3 className="resorts__item-title">Алания</h3>
+            <h3 id="alanya" className="resorts__item-title">Алания</h3>
           </a>
           <p className="resorts__item-text">Здесь находится знаменитый пляж “Клеопатра”. Множество отелей на любой вкус, также много предложений для аренды аппартаментов. Аланья может похвастаться потрясающими пляжами с золотым мелким песком и лазурным морем.</p>
           <a href="/country/turkey/alanya/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
@@ -79,7 +79,7 @@ const TurkeyResorts = () => {
         </a>
         <div className="resorts__item-content">
           <a href="/country/turkey/belek/" className="resorts__item-link">
-            <h3 className="resorts__item-title">Белек</h3>
+            <h3 id="belek" className="resorts__item-title">Белек</h3>
           </a>
           <p className="resorts__item-text">Широкая песчаная береговая линия, кристально чистая вода и множество элитных отелей. Самый фешенебельный курорт турции. Отлично подходит для отдыха с детьми. Плавная береговая линия без резких спусков, что подходит всем гостям.</p>
           <a href="/country/turkey/belek/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
@@ -95,7 +95,7 @@ const TurkeyResorts = () => {
         </a>
         <div className="resorts__item-content">
           <a href="/country/turkey/side/" className="resorts__item-link">
-            <h3 className="resorts__item-title">Сиде</h3>
+            <h3 id="side" className="resorts__item-title">Сиде</h3>
           </a>
           <p className="resorts__item-text">Расположен на полуострове, окруженном морем с трех сторон, основан греками. В его историческом центре находятся древние руины римских городов, которые стали частью городского пейзажа. Пляжи Сиде удостоен голубого флага за чистоту.</p>
           <a href="/country/turkey/side/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
@@ -111,7 +111,7 @@ const TurkeyResorts = () => {
         </a>
         <div className="resorts__item-content">
           <a href="/country/turkey/stambul/" className="resorts__item-link">
-            <h3 className="resorts__item-title">Стамбул</h3>
+            <h3 id="stambul" className="resorts__item-title">Стамбул</h3>
           </a>
           <p className="resorts__item-text">Расположен на двух континентах, разделенных проливом Босфор, основан греками как Византий. В его историческом центре находятся величественные памятники четырех империй, которые стали символами города. Стамбул внесен в список Всемирного наследия ЮНЕСКО.</p>
           <a href="/country/turkey/stambul/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
@@ -127,7 +127,7 @@ const TurkeyResorts = () => {
         </a>
         <div className="resorts__item-content">
           <a href="/country/turkey/cappadocia/" className="resorts__item-link">
-            <h3 className="resorts__item-title">Каппадокия</h3>
+            <h3 id="cappadocia" className="resorts__item-title">Каппадокия</h3>
           </a>
           <p className="resorts__item-text">Каппадокия – удивительный регион в центральной части Турции. Природа словно создала здесь музей под открытым небом, где главными экспонатами стали причудливые скальные образования. Визитной карточкой Каппадокии стали полеты на воздушных шарах над ландшафтом региона.</p>
           <a href="/country/turkey/cappadocia/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
