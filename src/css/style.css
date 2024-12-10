@@ -3233,6 +3233,13 @@ input[type=radio].visually-hidden {
   background-image: url("/img/articles/gde-otdokhnut-v-kambodzhe/gde-otdokhnut-v-kambodzhe-bg.jpg");
 }
 
+.article__title-wraper--kuda-poekhat-otdykhat-v-marte {
+  background-image: url("/img/articles/kuda-poekhat-otdykhat-v-marte/kuda-poekhat-otdykhat-v-marte-bg.jpg");
+}
+.article__title-wraper--kuda-poekhat-otdykhat-v-marte::before {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .article__title {
   position: relative;
   margin: 0;
@@ -3589,15 +3596,15 @@ input[type=radio].visually-hidden {
 .article-list__item--style {
   position: relative;
   margin-bottom: 0;
-  padding-left: 18px;
+  padding-left: 15px;
 }
 .article-list__item--style::before {
   content: "";
   position: absolute;
-  top: 2px;
+  top: 0;
   left: 0;
-  width: 8px;
-  height: 12px;
+  width: 6px;
+  height: 11px;
   border-bottom: 2px solid #f75301;
   border-right: 2px solid #f75301;
   -webkit-transform: rotate(45deg);

@@ -98,29 +98,24 @@ const DestinationCard = ({ data }) => {
         <picture className="destination-card__image-wrapper">
           <source
             media="(min-width: 768px)"
-            srcSet={`${data.images.desktop}.webp 1x, 
-                    ${data.images.desktop}@2x.webp 2x`}
+            srcSet={`${data.images.desktop}.webp`}
             type="image/webp"
           />
           <source
             media="(min-width: 768px)"
-            srcSet={`${data.images.desktop}.jpg 1x, 
-                    ${data.images.desktop}@2x.jpg 2x`}
+            srcSet={`${data.images.desktop}.jpg`}
             type="image/jpeg"
           />
           <source
-            srcSet={`${data.images.mobile}.webp 1x,
-                    ${data.images.mobile}@2x.webp 2x`}
+            srcSet={`${data.images.mobile}.webp`}
             type="image/webp"
           />
           <source
-            srcSet={`${data.images.mobile}.jpg 1x,
-                    ${data.images.mobile}@2x.jpg 2x`}
+            srcSet={`${data.images.mobile}.jpg`}
             type="image/jpeg"
           />
           <img
-            src={`${data.images.desktop}.jpg`}
-            srcSet={`${data.images.desktop}@2x.jpg 2x`}
+            src={`${data.images.mobile}.jpg`}
             alt={data.alt}
             className="destination-card__image"
             width="380"
@@ -145,7 +140,6 @@ const DestinationCard = ({ data }) => {
     </div>
   );
 };
-
 
 const SliderControls = React.memo(({ onPrev, onNext, canGoPrev, canGoNext }) => (
   <>

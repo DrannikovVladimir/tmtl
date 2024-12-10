@@ -65,15 +65,15 @@
 .article-list__item--style {
   position: relative;
   margin-bottom: 0;
-  padding-left: 18px;
+  padding-left: 15px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 2px;
+    top: 0;
     left: 0;
-    width: 8px;
-    height: 12px;
+    width: 6px;
+    height: 11px;
     border-bottom: 2px solid $basic-color;
     border-right: 2px solid $basic-color;
     transform: rotate(45deg);

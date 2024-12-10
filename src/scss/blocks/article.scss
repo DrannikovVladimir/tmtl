@@ -144,6 +144,14 @@
   background-image: url('/img/articles/gde-otdokhnut-v-kambodzhe/gde-otdokhnut-v-kambodzhe-bg.jpg');
 }
 
+.article__title-wraper--kuda-poekhat-otdykhat-v-marte {
+  background-image: url('/img/articles/kuda-poekhat-otdykhat-v-marte/kuda-poekhat-otdykhat-v-marte-bg.jpg');
+
+  &::before {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
 .article__title {
   position: relative;
   margin: 0;
