@@ -3147,7 +3147,7 @@ input[type=radio].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 10px;
+  margin-bottom: 20px;
 }
 
 .article__content-container__country {
@@ -3274,7 +3274,6 @@ input[type=radio].visually-hidden {
 .article__title--list-h3 {
   margin: 0;
   padding: 0;
-  margin-bottom: 5px;
   font-size: 20px;
   line-height: 24px;
   color: #555757;
