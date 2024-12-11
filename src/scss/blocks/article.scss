@@ -352,6 +352,18 @@
   color: $basic-color;
 }
 
+.article__back-to-top {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 0.9em;
+  color: $basic-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $basic-color-hover;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .article__table {
     font-size: 14px;

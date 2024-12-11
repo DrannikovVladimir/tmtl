@@ -3437,6 +3437,17 @@ input[type=radio].visually-hidden {
   color: #f75301;
 }
 
+.article__back-to-top {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 0.9em;
+  color: #f75301;
+  text-decoration: none;
+}
+.article__back-to-top:hover {
+  color: #d04500;
+}
+
 @media screen and (max-width: 600px) {
   .article__table {
     font-size: 14px;
