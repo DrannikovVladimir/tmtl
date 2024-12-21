@@ -18,7 +18,7 @@ const EgyptResorts = () => {
           <a href="/country/egypt/sharm-el-sheikh/" className="resorts__item-link">
             <h3 className="resorts__item-title">Шарм-Эль-Шейх</h3>
           </a>
-          <p className="resorts__item-text">Шарм-эль-Шейх представляет собой курорт европейского стиля с превосходно развитой туристической инфраструктурой, отельными комплексами и уютными гостиницами. Здесь можно обнаружить как небольшие комфортабельные отели с изысканным современным дизайном, так и большие гостиницы, с полным спекторм услуг.</p>
+          <p className="resorts__item-text">Шарм-эль-Шейх представляет собой курорт европейского стиля с превосходно развитой туристической инфраструктурой, отельными комплексами и уютными гостиницами. Здесь можно обнаружить как небольшие комфортабельные отели с изысканным современным дизайном.</p>
           <a href="/country/egypt/sharm-el-sheikh/" className="resorts__item-link resorts__item-link--about">Подробнее о регионе</a>
         </div>
       </li>
@@ -43,7 +43,7 @@ const EgyptResorts = () => {
         <a href="/country/egypt/marsa-alam/" className="resorts__item-link">
           <picture>
             <source type="image/webp" srcSet="/img/tours/egypt/marsa-alam-resort.webp" />
-            <img src="/img/tours/egypt/marsa-alam-resort.jpg" alt="Марса Алам" className="resorts__item-image" width="250" />
+            <img src="/img/tours/egypt/marsa-alam-resort.jpg" alt="Марса Алам" className="resorts__item-image" width="100" loading="lazy" />
           </picture>          
         </a>
         <div className="resorts__item-content">
@@ -59,7 +59,7 @@ const EgyptResorts = () => {
         <a href="/country/egypt/dahab/" className="resorts__item-link">
           <picture>
             <source type="image/webp" srcSet="/img/tours/egypt/dahab-resort.webp" />
-            <img src="/img/tours/egypt/dahab-resort.jpg" alt="Дахаб" className="resorts__item-image" width="250" />
+            <img src="/img/tours/egypt/dahab-resort.jpg" alt="Дахаб" className="resorts__item-image" width="100" />
           </picture>          
         </a>
         <div className="resorts__item-content">
@@ -75,7 +75,7 @@ const EgyptResorts = () => {
         <a href="/country/egypt/alexandria/" className="resorts__item-link">
           <picture>
             <source type="image/webp" srcSet="/img/tours/egypt/alexandria-resort.webp" />
-            <img src="/img/tours/egypt/alexandria-resort.jpg" alt="Александрия" className="resorts__item-image" width="250" />
+            <img src="/img/tours/egypt/alexandria-resort.jpg" alt="Александрия" className="resorts__item-image" width="100" loading="lazy" />
           </picture>          
         </a>
         <div className="resorts__item-content">
@@ -91,7 +91,7 @@ const EgyptResorts = () => {
         <a href="/country/egypt/cairo/" className="resorts__item-link">
           <picture>
             <source type="image/webp" srcSet="/img/tours/egypt/cairo-resort.webp" />
-            <img src="/img/tours/egypt/cairo-resort.jpg" alt="Каир" className="resorts__item-image" width="250" />
+            <img src="/img/tours/egypt/cairo-resort.jpg" alt="Каир" className="resorts__item-image" width="100" loading="lazy" />
           </picture>          
         </a>
         <div className="resorts__item-content">
