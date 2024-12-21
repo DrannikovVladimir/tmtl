@@ -10,8 +10,8 @@ const EgyptResorts = () => {
       <li className="resorts__item">
         <a href="/country/egypt/sharm-el-sheikh/" className="resorts__item-link">
           <picture>
-            <source type="image/webp" srcSet="/img/tours/egypt/sharm-el-sheikh-resort.webp" />
-            <img src="/img/tours/egypt/sharm-el-sheikh-resort.jpg" alt="Шарм-Эль-Шейх" className="resorts__item-image" width="250" />
+            <source type="image/webp" srcSet="/img/tours/egypt/sharm-panorama-resort.webp" />
+            <img src="/img/tours/egypt/sharm-panorama-resort.jpg" alt="Шарм-Эль-Шейх" className="resorts__item-image" width="250" />
           </picture>          
         </a>
         <div className="resorts__item-content">

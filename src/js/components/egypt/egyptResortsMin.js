@@ -10,8 +10,8 @@ const EgyptResortsMin = () => {
         <li className="resorts__item resorts__item--list-min">
           <a href="/country/egypt/sharm-el-sheikh/" className="resorts__item-link resorts__item-link--list-min">
             <picture>
-              <source type="image/webp" srcSet="/img/tours/egypt/sharm-el-sheikh-resort.webp" />
-              <img src="/img/tours/egypt/sharm-el-sheikh-resort.jpg" alt="Шарм-Эль-Шейх" className="resorts__item-image resorts__item-image resorts__item-image--list-min" width="250" />
+              <source type="image/webp" srcSet="/img/tours/egypt/sharm-panorama-resort.webp" />
+              <img src="/img/tours/egypt/sharm-panorama-resort.jpg" alt="Шарм-Эль-Шейх" className="resorts__item-image resorts__item-image resorts__item-image--list-min" width="250" />
             </picture>
             <h3 className="resorts__item-title resorts__item-title--font-size-14 resorts__item-title--list-min">Шарм-Эль-Шейх</h3>
           </a>
