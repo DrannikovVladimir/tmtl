@@ -152,6 +152,14 @@
   }
 }
 
+.article__title-wraper--luchshie-oteli-sharm-el-sheikh {
+  background-image: url('/img/articles/luchshie-oteli-sharm-el-sheikh/luchshie-oteli-sharm-el-sheikh-bg.jpg');
+
+  &::before {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
 .article__title {
   position: relative;
   margin: 0;
