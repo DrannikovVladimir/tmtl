@@ -5,7 +5,7 @@ const thailandResortsMinContainer = ReactDOM.createRoot(
 const ThailandResortsMin = () => {
   return (
     <>
-      <h3 className="article__resorts-title">Остальные курорты</h3>
+      <h3 className="article__title--list-h3">Курорты Таиланда</h3>
       <ul className="article__resorts resorts resorts--list-min">
         <li className="resorts__item resorts__item--list-min">
           <a href="/country/thailand/phuket/" className="resorts__item-link resorts__item-link--list-min">
