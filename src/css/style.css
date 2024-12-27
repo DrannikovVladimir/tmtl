@@ -5108,6 +5108,63 @@ input[type=radio].visually-hidden {
     padding: 20px 0;
   }
 }
+.beaches-menu {
+  padding: 10px;
+  padding-top: 0;
+  padding-left: 5px;
+  margin-bottom: 20px;
+}
+
+.beaches-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.beaches-menu__item {
+  position: relative;
+  padding: 6px 0 6px 15px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.beaches-menu__item:last-child {
+  border-bottom: none;
+}
+
+.beaches-menu__item::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-bottom: 2px solid #f75301;
+  border-right: 2px solid #f75301;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.beaches-menu__link {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #555757;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.beaches-menu__link:hover {
+  color: #f75301;
+}
+
+.beaches-menu__count {
+  float: right;
+  font-size: 14px;
+  color: #666;
+}
+
 .link--not-active {
   color: #555757;
   opacity: 0.4;
